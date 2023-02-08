@@ -45,7 +45,7 @@ router.post("/login", (req, res) => {
         res.json({
           message: "Hibás bejeltkezés",
         });
-        console.log("!!Bejeletkezés elutasítva!!")
+        console.log("!Bejeletkezés elutasítva!")
       }
     }
 });
