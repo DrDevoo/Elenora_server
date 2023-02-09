@@ -15,7 +15,7 @@ router.get("/", async (req, res) => {
   
 });
 
-router.post("/add/:prodname/:collections/:price/:description/:gender/:colors/:pearls", upload.single('file'), async (req,res) =>{
+router.post("/add/:prodname/:collections/:price/:description/:categ/:colors/:pearls", upload.single('file'), async (req,res) =>{
     const file = req.file;
     const result = await uploadFile(file);
    const product = await Products.create({  
@@ -23,7 +23,7 @@ router.post("/add/:prodname/:collections/:price/:description/:gender/:colors/:pe
         collections: req.params.collections,
         price: req.params.price,
         description: req.params.description,
-        gender: req.params.gender,
+        categ: req.params.categ,
         colors: req.params.colors,
         pearls: req.params.pearls,
         image: result.Key,
@@ -46,6 +46,16 @@ router.get("/getall", async (req,res) =>{
         res.json({ message: err });
       }
 })
+
+router.get("/getbycateg/:categ", async (req,res) =>{
+     try{
+          const categ = req.params.categ
+         const products = await Products.find({gender:"female"},{gender:"male"});
+         res.json(products);
+       }catch(err){
+         res.json({ message: err });
+       }
+ })
 
 router.get("/getbyid/:id", async (req,res)=>{
      try{

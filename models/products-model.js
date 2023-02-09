@@ -26,7 +26,7 @@ const ProductsScheme = mongoose.Schema({
         default: "",
         required: true
     },
-    gender:{
+    categ:{
         type: String,
         default: "",
         required: true
