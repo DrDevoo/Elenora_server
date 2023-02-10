@@ -60,7 +60,7 @@ const httpsServer = https.createServer({
 }, app);
 
 //Az app nyitott portja
-httpServer.listen(80, () => {
+httpServer.listen(3900, () => {
   console.log('HTTP Server running on port 80');
 });
 
