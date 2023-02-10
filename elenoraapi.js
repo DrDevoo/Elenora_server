@@ -1,3 +1,6 @@
+const https = require('https');
+const http = require('http');
+const fs = require('fs');
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
@@ -50,6 +53,17 @@ app.use("*", (req, res) => {
   });
 });
 
+const httpServer = http.createServer(app);
+const httpsServer = https.createServer({
+  key: fs.readFileSync('/etc/letsencrypt/live/egoncompany.hu/privkey.pem'),
+  cert: fs.readFileSync('/etc/letsencrypt/live/egoncompany.hu/fullchain.pem'),
+}, app);
+
 //Az app nyitott portja
-app.listen(process.env.API_PORT);
-console.log("---A szerver elérhető a "+process.env.API_PORT+" porton---")
+httpServer.listen(80, () => {
+  console.log('HTTP Server running on port 80');
+});
+
+httpsServer.listen(443, () => {
+  console.log('HTTPS Server running on port 443');
+});
