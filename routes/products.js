@@ -50,7 +50,7 @@ router.get("/getall", async (req,res) =>{
 router.get("/getbycateg/:categ", async (req,res) =>{
      try{
           const categ = req.params.categ
-         const products = await Products.find({gender:"female"},{gender:"male"});
+         const products = await Products.find({categ:categ});
          res.json(products);
        }catch(err){
          res.json({ message: err });
