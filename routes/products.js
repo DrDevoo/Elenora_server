@@ -41,7 +41,8 @@ router.post("/add/:prodname/:collections/:price/:description/:categ/:colors/:pea
 router.get("/getall", async (req,res) =>{
     try{
         const products = await Products.find();
-        res.json(products);
+        const count = await Products.find().count();
+        res.json({products,count});
       }catch(err){
         res.json({ message: err });
       }
@@ -51,7 +52,8 @@ router.get("/getbycateg/:categ", async (req,res) =>{
      try{
           const categ = req.params.categ
          const products = await Products.find({categ:categ});
-         res.json(products);
+          const count = await Products.find({categ:categ}).count();
+         res.json({products,count});
        }catch(err){
          res.json({ message: err });
        }

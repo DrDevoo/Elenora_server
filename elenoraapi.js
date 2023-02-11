@@ -55,16 +55,10 @@ app.use("*", (req, res) => {
 });
 
 const httpServer = http.createServer(app);
-const httpsServer = https.createServer({
-  key: fs.readFileSync('/etc/letsencrypt/live/egoncompany.hu/privkey.pem'),
-  cert: fs.readFileSync('/etc/letsencrypt/live/egoncompany.hu/fullchain.pem'),
-}, app);
+
 
 //Az app nyitott portja
 httpServer.listen(3900, () => {
   console.log('HTTP Server running on port 3900');
 });
 
-httpsServer.listen(444, () => {
-  console.log('HTTPS Server running on port 444');
-});
