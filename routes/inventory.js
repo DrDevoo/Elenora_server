@@ -39,4 +39,15 @@ router.get("/getall", async (req,res) =>{
 })
 
 
+router.post("/update/:name/:quantity", async (req,res) =>{
+   try{
+      const res = await Inventory.updateOne({ item_name: req.params.name }, { item_quantity: req.params.quantity })     
+      res.json(res);
+   }catch(err){
+        res.json({ message: err });
+        console.log('Alapanyag sikertelen modositasa!!!')
+   }
+   console.log("Alapanyag sikeres modositasa!")
+})
+
 module.exports = router;
