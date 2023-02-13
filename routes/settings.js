@@ -14,7 +14,7 @@ router.get("/", async (req, res) => {
 router.get("/get/:name", async (req, res) => {
     try{
         const param = req.params.name
-       const setting = await Settings.find({name:param});
+       const setting = await Settings.findOne({name:param});
        res.json(setting);
      }catch(err){
        res.json({ message: err });
