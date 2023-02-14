@@ -35,10 +35,7 @@ const ProductsScheme = mongoose.Schema({
         type: String,
         default: "",
     },
-    pearls:{
-        type: String,
-        default: "",
-    },
+    pearls:Array,
     status:{
         type: String,
         default: "active",

@@ -15,9 +15,7 @@ router.get("/", async (req, res) => {
   
 });
 
-router.post("/add/:prodname/:collections/:price/:description/:categ/:colors/:pearls", upload.single('file'), async (req,res) =>{
-    const file = req.file;
-    const result = await uploadFile(file);
+router.post("/add/:prodname/:collections/:price/:description/:categ/:colors", async (req,res) =>{
    const product = await Products.create({  
         prodname: req.params.prodname,
         collections: req.params.collections,
@@ -25,17 +23,37 @@ router.post("/add/:prodname/:collections/:price/:description/:categ/:colors/:pea
         description: req.params.description,
         categ: req.params.categ,
         colors: req.params.colors,
-        pearls: req.params.pearls,
-        image: result.Key,
+        pearls: req.body,
    });
    try{
         const savedProduct = await product.save();
-        res.json(savedProduct);
+        res.json({ message: "Sikeres mentés!" });
    }catch(err){
         res.json({ message: err });
         console.log('Termék sikertelen mentése!!!')
    }
    console.log("Termék sikeres mentése!")
+})
+
+router.post("/addimg/:prodname", upload.single('file'), async (req,res) =>{
+     try{
+         const id = req.params.prodname
+    const file = req.file;
+    const result = await uploadFile(file);
+
+    await Products.updateOne(    
+     { prodname: id},
+     { $set: {image: result.Key}}
+     );  
+     }catch(err){
+          console.log(err)
+     }finally{
+          console.log("Termék kép mentése!")
+          res.json({ message: "Sikeres mentés!" });
+     }
+    
+
+   
 })
 
 router.get("/getall", async (req,res) =>{
