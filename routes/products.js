@@ -54,10 +54,20 @@ router.post("/addimg/:prodname", upload.single('file'), async (req,res) =>{
 })
 
 
-router.post("/update/:id/:prodname/:collections/:price/:description/:categ", async (req,res) =>{
+router.post("/update", async (req,res) =>{
      try{
           console.log(req.body)
-
+          await Products.findOneAndUpdate(    
+               { _id: req.body._id},
+               { $set:
+                     {prodname: req.body.prodname,
+                    collections: req.body.collections,
+                    price: req.body.price,
+                    description: req.body.description,
+                    categ: req.body.categ
+               }
+               }
+               );  
           res.json({ message: "Sikeres mentés!" });
      }catch(err){
           res.json({ message: err });
