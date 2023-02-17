@@ -71,8 +71,10 @@ router.post("/update/:id/:prodname/:collections/:price/:description/:categ", asy
      }catch(err){
           res.json({ message: err });
           console.log('Termék sikertelen modositva!!!')
+     }finally{
+          console.log("Termék sikeres modositva!")
      }
-     console.log("Termék sikeres modositva!")
+     
   })
 
 
