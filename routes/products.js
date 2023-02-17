@@ -56,6 +56,7 @@ router.post("/addimg/:prodname", upload.single('file'), async (req,res) =>{
 
 router.post("/update/:id/:prodname/:collections/:price/:description/:categ", async (req,res) =>{
      try{
+          console.log(req.body)
           await Products.findOneAndUpdate(    
                { _id: req.params.id},
                { $set:
