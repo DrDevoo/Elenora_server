@@ -70,7 +70,7 @@ router.post("/update/:id/:prodname/:collections/:price/:description/:categ", asy
           res.json({ message: "Sikeres mentés!" });
      }catch(err){
           res.json({ message: err });
-          console.log('Termék sikertelen modositva!!!')
+          console.log(err)
      }finally{
           console.log("Termék sikeres modositva!")
      }
