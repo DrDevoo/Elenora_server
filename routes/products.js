@@ -5,10 +5,12 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
 const Products = require('../models/products-model');
+const ProductsBoravia = require('../models/prodboravia-model');
 
 const multer = require('multer');
 const upload = multer({ dest: './prod_images/' })
-const { uploadFile, getFileStream } = require('./s3')
+const { uploadFile, getFileStream } = require('./s3');
+const prodboraviaModel = require('../models/prodboravia-model');
 
 //Autentikalt index oldal
 router.get("/", async (req, res) => {
@@ -145,4 +147,49 @@ router.get("/getbyid/:id", async (req,res)=>{
 })
 
 
+
+
+//BORAVIA KARKOTOK KEZELESE
+router.post("/add/boravia/:prodname/:price", async (req,res) =>{
+     const product = await ProductsBoravia.create({  
+          prodname: req.params.prodname,
+          price: req.params.price,
+     });
+     try{
+          const savedProduct = await ProductsBoravia.save();
+          res.json({ message: "Sikeres mentés!" });
+     }catch(err){
+          res.json({ message: err });
+          console.log('Termék sikertelen mentése!!!')
+     }
+     console.log("Termék sikeres mentése!")
+  })
+  
+  router.post("/addimg/boravia/:prodname", upload.single('file'), async (req,res) =>{
+       try{
+       const id = req.params.prodname
+      const file = req.file;
+      const result = await uploadFile(file);
+  
+      await ProductsBoravia.updateOne(    
+       { prodname: id},
+       { $set: {image: result.Key}}
+       );  
+       }catch(err){
+            console.log(err)
+       }finally{
+            console.log("Termék kép mentése!")
+            res.json({ message: "Sikeres mentés!" });
+       }
+  })
+
+  router.get("/getall/boravia", async (req,res) =>{
+     try{
+         const products = await ProductsBoravia.find();
+         const count = await ProductsBoravia.find().count();
+         res.json({products,count});
+       }catch(err){
+         res.json({ message: err });
+       }
+ })
 module.exports = router;
