@@ -156,7 +156,6 @@ router.post("/add/boravia/:prodname/:price", async (req,res) =>{
           price: req.params.price,
      });
      try{
-          const savedProduct = await ProductsBoravia.save();
           res.json({ message: "Sikeres mentés!" });
      }catch(err){
           res.json({ message: err });
