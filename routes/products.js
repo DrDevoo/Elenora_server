@@ -99,7 +99,8 @@ router.post("/update", async (req,res) =>{
                     collections: req.body.collections,
                     price: req.body.price,
                     description: req.body.description,
-                    categ: req.body.categ
+                    categ: req.body.categ,
+                    pearls: req.body.pearls,
                }
                }
                );  
