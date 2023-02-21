@@ -54,8 +54,8 @@ const ProductsScheme = mongoose.Schema({
         default: 0,
     },
     saletime:{
-        type: String,
-        default: "",
+        type: Date,
+        default: Date.now,
     },
     pearls:Array,
     status:{

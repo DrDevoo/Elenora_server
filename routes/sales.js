@@ -33,4 +33,13 @@ router.post("/addsale/:prodname/:precent/:time", async (req,res) =>{
      }
 })
 
+router.get("/getsaled", async (req,res) =>{
+     try{
+         const products = await Products.find({activesale:"true"});
+          const count = await Products.find({activesale:"true"}).count();
+         res.json({products,count});
+       }catch(err){
+         res.json({ message: err });
+       }
+ })
 module.exports = router;
