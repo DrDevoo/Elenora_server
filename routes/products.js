@@ -160,10 +160,11 @@ router.post("/add/boravia/:prodname/:price", async (req,res) =>{
           res.json({ message: "Sikeres mentés!" });
      }catch(err){
           res.json({ message: err });
-          console.log('Termék sikertelen mentése!!!')
+          console.log(err)
+     }finally{
+       console.log("Termék sikeres mentése!")   
      }
-     console.log("Termék sikeres mentése!")
-  })
+})
   
   router.post("/addimg/boravia/:prodname", upload.single('file'), async (req,res) =>{
        try{
