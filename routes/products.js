@@ -10,7 +10,6 @@ const ProductsBoravia = require('../models/prodboravia-model');
 const multer = require('multer');
 const upload = multer({ dest: './prod_images/' })
 const { uploadFile, getFileStream } = require('./s3');
-const prodboraviaModel = require('../models/prodboravia-model');
 
 //Autentikalt index oldal
 router.get("/", async (req, res) => {

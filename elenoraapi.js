@@ -21,6 +21,7 @@ const cuponsRoute = require('./routes/cupons')
 const inventoryRoute = require('./routes/inventory')
 const adminRoute = require('./routes/admin')
 const settingsRoute = require('./routes/settings')
+const salesRoute = require('./routes/sales')
 //Kulso komponensel hasznalata
 app.use('/products', productsRoute)
 app.use('/getimage', getimage)
@@ -29,6 +30,7 @@ app.use('/cupons', cuponsRoute)
 app.use('/inventory', inventoryRoute)
 app.use('/admin', adminRoute)
 app.use('/settings', settingsRoute)
+app.use('/sales', salesRoute)
 
 //Adatbazis kapcsolat
 mongoose.set("strictQuery", false);

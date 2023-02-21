@@ -45,6 +45,18 @@ const ProductsScheme = mongoose.Schema({
         type: String,
         default: "",
     },
+    activesale:{
+        type: String,
+        default: "false",
+    },
+    saleprecent:{
+        type: Number,
+        default: 0,
+    },
+    saletime:{
+        type: String,
+        default: "",
+    },
     pearls:Array,
     status:{
         type: String,
