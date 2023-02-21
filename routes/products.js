@@ -35,9 +35,9 @@ router.post("/add/:prodname/:collections/:price/:description/:categ/:colors", as
    console.log("Termék sikeres mentése!")
 })
 
-router.post("/addimg/:prodname", upload.single('file'), async (req,res) =>{
+router.post("/addimg1/:prodname", upload.single('file'), async (req,res) =>{
      try{
-         const id = req.params.prodname
+     const id = req.params.prodname
     const file = req.file;
     const result = await uploadFile(file);
 
@@ -48,8 +48,42 @@ router.post("/addimg/:prodname", upload.single('file'), async (req,res) =>{
      }catch(err){
           console.log(err)
      }finally{
-          console.log("Termék kép mentése!")
-          res.json({ message: "Sikeres mentés!" });
+          console.log("Termék 1. kép mentése!")
+          res.json({ message: "Sikeres 1. mentés!" });
+     }
+})
+router.post("/addimg2/:prodname", upload.single('file'), async (req,res) =>{
+     try{
+     const id = req.params.prodname
+    const file = req.file;
+    const result = await uploadFile(file);
+
+    await Products.updateOne(    
+     { prodname: id},
+     { $set: {image2: result.Key}}
+     );  
+     }catch(err){
+          console.log(err)
+     }finally{
+          console.log("Termék 2. kép mentése!")
+          res.json({ message: "Sikeres 2. mentés!" });
+     }
+})
+router.post("/addimg3/:prodname", upload.single('file'), async (req,res) =>{
+     try{
+     const id = req.params.prodname
+    const file = req.file;
+    const result = await uploadFile(file);
+
+    await Products.updateOne(    
+     { prodname: id},
+     { $set: {image3: result.Key}}
+     );  
+     }catch(err){
+          console.log(err)
+     }finally{
+          console.log("Termék 3. kép mentése!")
+          res.json({ message: "Sikeres 3. mentés!" });
      }
 })
 

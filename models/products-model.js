@@ -21,6 +21,16 @@ const ProductsScheme = mongoose.Schema({
         default: "none",
         required: true
     },
+    image2:{
+        type: String,
+        default: "none",
+        required: true
+    },
+    image3:{
+        type: String,
+        default: "none",
+        required: true
+    },
     collections:{
         type: String,
         default: "",
