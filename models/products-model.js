@@ -18,7 +18,7 @@ const ProductsScheme = mongoose.Schema({
     },
     image:{
         type: String,
-        default: "46bea41c0363d722467defc2f1ecc234v",
+        default: "46bea41c0363d722467defc2f1ecc234",
         required: true
     },
     image2:{
