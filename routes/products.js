@@ -114,6 +114,18 @@ router.post("/update", async (req,res) =>{
      
   })
 
+router.get("/delete/:id", async (req,res) =>{
+     try{
+          await Products.findByIdAndRemove(req.params.id)
+          res.json({ message: "Sikeres torles!" });
+     }catch(err){
+          res.json({ message: err });
+          console.log(err)
+     }finally{
+          console.log("Termék sikeres torolve!")
+     }
+})
+
 
 router.get("/getall", async (req,res) =>{
     try{
