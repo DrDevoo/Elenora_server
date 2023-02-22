@@ -35,6 +35,20 @@ router.get("/update/status/:value", async (req,res) =>{
        console.log("status sikeres mentese!")
   }
 })
+router.get("/update/headertitle/:value", async (req,res) =>{
+  try{
+       await Settings.updateOne(
+            {name: "header_title"},
+            {$set: {value: req.params.value}}
+       )
+       res.json({ message: "Sikeres mentes!" });
+  }catch(err){
+       res.json({ message: err });
+       console.log(err)
+  }finally{
+       console.log("szoveg sikeres mentese!")
+  }
+})
 
 
 module.exports = router;
