@@ -42,4 +42,20 @@ router.get("/getsaled", async (req,res) =>{
          res.json({ message: err });
        }
  })
+
+
+ router.get("/delete/:id", async (req,res) =>{
+     try{
+          await Products.updateOne(
+               {_id: req.params.id},
+               {$set: {activesale: "false",saleprecent: 0, saletime: 0 }}
+          )
+          res.json({ message: "Sikeres torles!" });
+     }catch(err){
+          res.json({ message: err });
+          console.log(err)
+     }finally{
+          console.log("Akcio sikeres torolve!")
+     }
+})
 module.exports = router;
