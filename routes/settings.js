@@ -21,5 +21,20 @@ router.get("/get/:name", async (req, res) => {
      }
 });
 
+router.get("/update/status/:value", async (req,res) =>{
+  try{
+       await Settings.updateOne(
+            {name: "sitestatus"},
+            {$set: {value: req.params.value}}
+       )
+       res.json({ message: "Sikeres mentes!" });
+  }catch(err){
+       res.json({ message: err });
+       console.log(err)
+  }finally{
+       console.log("status sikeres mentese!")
+  }
+})
+
 
 module.exports = router;
