@@ -38,4 +38,19 @@ router.post("/start", async (req,res) =>{
      }
 })
 
+router.post("/saveuser/:id", async (req,res) =>{
+     try{
+     const user = req.body
+     const id = req.params.id
+
+          console.log(user)
+          console.log("")
+          console.log(id)
+     }catch(err){
+          console.log(err)
+     }finally{
+          console.log("Rendelés adatok megadva!")
+     }
+})
+
 module.exports = router;
