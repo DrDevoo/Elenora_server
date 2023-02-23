@@ -15,7 +15,6 @@ router.get("/", async (req, res) => {
 router.post("/start", async (req,res) =>{
      try{
      const cart = req.body
-     console.log(cart)
 
      var dateObj = new Date();
      var month = dateObj.getUTCMonth() + 1; //months from 1-12
@@ -23,13 +22,18 @@ router.post("/start", async (req,res) =>{
      var year = dateObj.getUTCFullYear();
      const count = await Orders.find().count();
      const ordersnumber = count + 1
-     const orderid = year + "-" + month + "-" + day + "-" + ordersnumber;
-     console.log(orderid)
+     const orderid = year + month + day + "-" + ordersnumber;
+
+     const order = await Orders.create({  
+          orderid: orderid,
+          cart: req.body,
+     });
+     const startedOrder = await order.save();
      }catch(err){
           console.log(err)
      }finally{
           console.log("Rendelés megkezdve!")
-          res.json({ azonosito: "teszt1233" });
+          res.json(startedOrder);
      }
 })
 
