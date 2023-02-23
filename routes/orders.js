@@ -4,6 +4,7 @@ require("dotenv").config();
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
+const Orders = require('../models/orders-model');
 
 //Autentikalt index oldal
 router.get("/", async (req, res) => {
@@ -20,7 +21,9 @@ router.post("/start", async (req,res) =>{
      var month = dateObj.getUTCMonth() + 1; //months from 1-12
      var day = dateObj.getUTCDate();
      var year = dateObj.getUTCFullYear();
-     const orderid = year + "/" + month + "/" + day;
+     const count = await Orders.find().count();
+     const ordersnumber = count + 1
+     const orderid = year + "-" + month + "-" + day + "-" + ordersnumber;
      console.log(orderid)
      }catch(err){
           console.log(err)
