@@ -22,6 +22,7 @@ const inventoryRoute = require('./routes/inventory')
 const adminRoute = require('./routes/admin')
 const settingsRoute = require('./routes/settings')
 const salesRoute = require('./routes/sales')
+const ordersRoute = require('./routes/orders')
 //Kulso komponensel hasznalata
 app.use('/products', productsRoute)
 app.use('/getimage', getimage)
@@ -31,6 +32,7 @@ app.use('/inventory', inventoryRoute)
 app.use('/admin', adminRoute)
 app.use('/settings', settingsRoute)
 app.use('/sales', salesRoute)
+app.use('/orders', ordersRoute)
 
 //Adatbazis kapcsolat
 mongoose.set("strictQuery", false);
