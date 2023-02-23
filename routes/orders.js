@@ -33,6 +33,7 @@ router.post("/start", async (req,res) =>{
           console.log(err)
      }finally{
           console.log("Rendelés megkezdve!")
+          console.log(startedOrder)
           res.json(startedOrder);
      }
 })
