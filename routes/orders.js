@@ -22,13 +22,13 @@ router.post("/start", async (req,res) =>{
      var year = dateObj.getUTCFullYear();
      const count = await Orders.find().count();
      const ordersnumber = count + 1
-     const orderid = year + month + day + "-" + ordersnumber;
+     const orderid = year +""+ month+ "" + day + "-" + ordersnumber;
 
      const order = await Orders.create({  
           orderid: orderid,
           cart: req.body,
      });
-     const startedOrder = await order.save();
+     var startedOrder = await order.save();
      }catch(err){
           console.log(err)
      }finally{
