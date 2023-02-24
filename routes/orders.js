@@ -68,4 +68,15 @@ router.post("/saveuser/:id", async (req,res) =>{
      }
 })
 
+router.get("/getall", async (req,res) =>{
+     try{
+         const orders = await Orders.find();
+         const r_orders = orders.reverse()
+         const count = await Orders.find().count();
+         res.json({r_orders,count});
+       }catch(err){
+         res.json({ message: err });
+       }
+ })
+
 module.exports = router;
