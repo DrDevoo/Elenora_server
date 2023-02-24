@@ -78,5 +78,14 @@ router.get("/getall", async (req,res) =>{
          res.json({ message: err });
        }
  })
+ router.get("/getbyid/:id", async (req,res)=>{
+     try{
+          const id = req.params.id
+          const product = await Orders.findById(id);
+          res.json(product);
+     }catch(err){
+          res.json({ message: err });
+     }
+})
 
 module.exports = router;
