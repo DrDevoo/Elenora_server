@@ -49,7 +49,8 @@ router.post("/saveuser/:id", async (req,res) =>{
      await Orders.findOneAndUpdate(    
                { _id: id},
                { $set:
-                    {u_email: user.u_email,
+                    {
+                    u_email: user.u_email,
                     u_firstname: user.u_first,
                     u_name: user.u_name,
                     u_legio: user.u_regio,
