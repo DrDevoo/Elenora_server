@@ -62,8 +62,8 @@ app.use("*", (req, res) => {
 
 const httpServer = http.createServer(app);
 const httpsServer = https.createServer({
-  key: fs.readFileSync('/etc/letsencrypt/live/egoncompany.hu/privkey.pem'),
-  cert: fs.readFileSync('/etc/letsencrypt/live/egoncompany.hu/fullchain.pem'),
+  key: fs.readFileSync('/etc/letsencrypt/live/elenora.hu/privkey.pem'),
+  cert: fs.readFileSync('/etc/letsencrypt/live/elenora.hu/fullchain.pem'),
 }, app);
 
 //Az app nyitott portja
