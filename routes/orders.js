@@ -46,7 +46,7 @@ router.post("/saveuser/:id", async (req,res) =>{
           console.log(user)
           console.log("")
           console.log(id)
-     await Orders.findOneAndUpdate(    
+     var updated = await Orders.findOneAndUpdate(    
                { _id: id},
                { $set:
                     {
@@ -65,6 +65,7 @@ router.post("/saveuser/:id", async (req,res) =>{
           console.log(err)
      }finally{
           console.log("Rendelés adatok megadva!")
+          res.json(updated)
      }
 })
 
