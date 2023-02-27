@@ -37,6 +37,10 @@ const OrdersScheme = mongoose.Schema({
         type: String,
         default: "",
     },
+    shipping:{
+        type: String,
+        default: "",
+    },
 
     createdtime:{
         type: Date,

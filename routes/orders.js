@@ -69,6 +69,26 @@ router.post("/saveuser/:id", async (req,res) =>{
      }
 })
 
+router.post("/saveshipping/:id", async (req,res) =>{
+     try{
+     const shipping = req.body
+     const id = req.params.id
+     var updated = await Orders.findOneAndUpdate(    
+               { _id: id},
+               { $set:
+                    {
+                    shipping: shipping.shipping,
+               }
+               }
+               );  
+     }catch(err){
+          console.log(err)
+     }finally{
+          console.log("Rendelés adatok megadva!")
+          res.json(updated)
+     }
+})
+
 router.get("/getall", async (req,res) =>{
      try{
          const orders = await Orders.find();
