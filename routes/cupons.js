@@ -31,11 +31,23 @@ res.json(cupon);
 
 router.get("/getall", async (req,res) =>{
     try{
-        const cupons = await ProdCollection.find();
+        const cupons = await Cupons.find();
         res.json(cupons);
       }catch(err){
         res.json({ message: err });
       }
+})
+
+router.get("/delete/:id", async (req,res) =>{
+   try{
+        await Cupons.findByIdAndRemove(req.params.id)
+        res.json({ message: "Sikeres torles!" });
+   }catch(err){
+        res.json({ message: err });
+        console.log(err)
+   }finally{
+        console.log("Termék sikeres torolve!")
+   }
 })
 
 
