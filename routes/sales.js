@@ -33,6 +33,24 @@ router.post("/addsale/:prodname/:precent/:time", async (req,res) =>{
      }
 })
 
+router.post("/addsalecollection/:collectionname/:precent/:time", async (req,res) =>{
+     try{
+     const id = req.params.collectionname
+     const precent = req.params.precent
+     const time = req.params.time
+
+     await Products.updateMany(    
+     { collections : id},
+     { $set: {activesale: "true",saleprecent: precent, saletime: time }}
+     );  
+     }catch(err){
+          console.log(err)
+     }finally{
+          console.log("Akcio kolekciora mentése!")
+          res.json({ message: "Sikeres kollekcio akcio mentés!" });
+     }
+})
+
 router.get("/getsaled", async (req,res) =>{
      try{
          const products = await Products.find({activesale:"true"});
