@@ -20,7 +20,7 @@ let transporter = nodemailer.createTransport({
 async function sendOrderMail(id){
      message = {
           from: "info@elenora.hu",
-          to: "krichard001@icloud.com",
+          to: ["krichard001@icloud.com","h.krisztina0530@gmail.com","krichard@elenora.hu"],
           subject: "Új rendelés!",
           html: await readFile(path.join(__dirname, 'mails/test.html'), 'utf8')
      }
