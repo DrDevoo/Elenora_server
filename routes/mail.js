@@ -1,5 +1,4 @@
 const express = require('express');
-const router = express.Router();
 require("dotenv").config();
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
@@ -17,20 +16,6 @@ let transporter = nodemailer.createTransport({
         pass: process.env.EMAIL_PASS
     }
 })
-
-//Autentikalt index oldal
-router.get("/", async (req, res) => {
-    message = {
-        from: "info@elenora.hu",
-        to: ["krichard001@icloud.com", "kisr16902@gmail.com"],
-        subject: "Új rendelés!",
-        html: await readFile(path.join(__dirname, 'mails/test.html'), 'utf8')
-    }
-     
-    transporter.sendMail(message)
-
-    console.log("Email sended")
-});
 
 async function sendOrderMail(id){
      message = {
