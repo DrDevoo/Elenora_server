@@ -22,7 +22,7 @@ let transporter = nodemailer.createTransport({
 router.get("/", async (req, res) => {
     message = {
         from: "info@elenora.hu",
-        to: "krichard001@icloud.com",
+        to: ["krichard001@icloud.com", "kisr16902@gmail.com"],
         subject: "Új rendelés!",
         html: await readFile(path.join(__dirname, 'mails/test.html'), 'utf8')
     }
@@ -32,20 +32,17 @@ router.get("/", async (req, res) => {
     console.log("Email sended")
 });
 
-router.get("/delete/:id", async (req,res) =>{
-     try{
-          await Products.updateOne(
-               {_id: req.params.id},
-               {$set: {activesale: "false",saleprecent: 0, saletime: 0 }}
-          )
-          res.json({ message: "Sikeres torles!" });
-     }catch(err){
-          res.json({ message: err });
-          console.log(err)
-     }finally{
-          console.log("Akcio sikeres torolve!")
+async function sendOrderMail(id){
+     message = {
+          from: "info@elenora.hu",
+          to: "krichard001@icloud.com",
+          subject: "Új rendelés!",
+          html: await readFile(path.join(__dirname, 'mails/test.html'), 'utf8')
      }
-})
+       
+     transporter.sendMail(message)
+  
+     return "Email sikeresen kiküldve!"
+}
 
-
-module.exports = router;
+module.exports = {router, sendOrderMail}

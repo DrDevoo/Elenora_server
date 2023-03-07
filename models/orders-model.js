@@ -42,6 +42,11 @@ const OrdersScheme = mongoose.Schema({
         default: "",
     },
 
+
+    status:{
+        type: String,
+        default: "pending",
+    },
     createdtime:{
         type: Date,
         default: Date.now,

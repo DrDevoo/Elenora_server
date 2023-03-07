@@ -5,6 +5,7 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
 const Orders = require('../models/orders-model');
+const Mail = require('../routes/mail');
 
 //Autentikalt index oldal
 router.get("/", async (req, res) => {
@@ -85,6 +86,28 @@ router.post("/saveshipping/:id", async (req,res) =>{
           console.log(err)
      }finally{
           console.log("Rendelés adatok megadva!")
+          res.json(updated)
+     }
+})
+
+router.post("/finish/:id", async (req,res) =>{
+     try{
+          const id = req.params.id   
+          var updated = await Orders.findOneAndUpdate(    
+               { _id: id},
+               { $set:
+                    {
+                         status: "ordered",
+                    }
+               }
+          );  
+
+          var mailer = Mail.sendOrderMail(id) 
+          console.log(mailer)
+     }catch(err){
+          console.log(err)
+     }finally{
+          console.log("Rendelés leadva!")
           res.json(updated)
      }
 })
