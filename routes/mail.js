@@ -30,4 +30,4 @@ async function sendOrderMail(id){
      return "Email sikeresen kiküldve!"
 }
 
-module.exports = {router, sendOrderMail}
+module.exports = { sendOrderMail }
