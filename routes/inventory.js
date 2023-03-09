@@ -56,7 +56,7 @@ router.post("/update/reset/:name", async (req,res) =>{
       res.json(res);
    }catch(err){
         res.json({ message: err });
-        console.log('Alapanyag sikertelen modositasa!!!')
+        console.log(err)
    }
    console.log("Alapanyag sikeres modositasa!")
 })
