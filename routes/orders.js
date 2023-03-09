@@ -123,6 +123,7 @@ const storeItems = new Map([
 
 router.post("/pay", async (req, res) => {
   try {
+     console.log("Fiezetés megkezdve!")
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
       mode: "payment",
