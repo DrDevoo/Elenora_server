@@ -7,6 +7,8 @@ const jwt = require("jsonwebtoken");
 const Orders = require('../models/orders-model');
 const Mail = require('../routes/mail');
 
+const stripe = require("stripe")(process.env.STRIPE_PRIVATE_KEY)
+
 //Autentikalt index oldal
 router.get("/", async (req, res) => {
   
@@ -112,6 +114,41 @@ router.post("/finish/:id", async (req,res) =>{
      }
 })
 
+
+
+const storeItems = new Map([
+  [1, { priceInCents: 10000, name: "Learn React Today" }],
+  [2, { priceInCents: 20000, name: "Learn CSS Today" }],
+])
+
+app.post("/pay", async (req, res) => {
+  try {
+    const session = await stripe.checkout.sessions.create({
+      payment_method_types: ["card"],
+      mode: "payment",
+      line_items: req.body.items.map(item => {
+        const storeItem = storeItems.get(item.id)
+        return {
+          price_data: {
+            currency: "huf",
+            product_data: {
+              name: storeItem.name,
+            },
+            unit_amount: storeItem.priceInCents,
+          },
+          quantity: item.quantity,
+        }
+      }),
+      success_url: `${process.env.CLIENT_URL}/success.html`,
+      cancel_url: `${process.env.CLIENT_URL}/cancel.html`,
+    })
+    res.json({ url: session.url })
+  } catch (e) {
+    res.status(500).json({ error: e.message })
+  }
+})
+
+
 router.get("/getall", async (req,res) =>{
      try{
          const orders = await Orders.find();
@@ -121,8 +158,8 @@ router.get("/getall", async (req,res) =>{
        }catch(err){
          res.json({ message: err });
        }
- })
- router.get("/getbyid/:id", async (req,res)=>{
+})
+router.get("/getbyid/:id", async (req,res)=>{
      try{
           const id = req.params.id
           const product = await Orders.findById(id);
