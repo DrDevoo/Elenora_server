@@ -11,7 +11,6 @@ app.use(bodyParser.json());
 app.use(cors());
 const auth = require("./middleware/auth");
 const cron = require("node-cron");
-app.use('/prod_images', express.static('public'))
 
 //Kapcsolt komponensek
 const productsRoute = require('./routes/products');
