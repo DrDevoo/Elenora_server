@@ -58,7 +58,7 @@ router.post("/saveuser/:id", async (req,res) =>{
                     u_email: user.u_email,
                     u_firstname: user.u_first,
                     u_name: user.u_name,
-                    u_legio: user.u_regio,
+                    u_legio: "Magyarország",
                     u_postnumber: user.u_postnumber,
                     u_city: user.u_city,
                     u_addresse: user.u_addresse,
