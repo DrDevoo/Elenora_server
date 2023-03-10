@@ -121,18 +121,30 @@ router.post("/finish/:id", async (req,res) =>{
 router.post("/pay", async (req, res) => {
   try {
      console.log("Fiezetés megkezdve!")
-     const cart = req.body.items;
+     const cartt = req.body.items;
      const jsoncart = JSON.stringify(cart)
+
+     let cart = [
+          {
+               name: 'Anchor',
+               description: 'Keeps your boat in place',
+               image: 'anchor.jpg',
+               price: 99,
+               quantity: 1
+          }
+     ];
 
      const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
       mode: "payment",
-     line_items: jsoncart.map(function (item) {
+      line_items: cart.map(function (item) {
           return {
                price_data: {
-                    currency: 'huf',
+                    currency: 'usd',
                     product_data: {
                          name: item.name,
+                         description: item.description,
+                         images: [item.image]
                     },
                     unit_amount: item.price * 100,
                },
