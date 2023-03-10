@@ -121,9 +121,11 @@ router.post("/finish/:id", async (req,res) =>{
 router.post("/pay", async (req, res) => {
   try {
      console.log("Fiezetés megkezdve!")
+           console.log(req.body.items)
      const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
       mode: "payment",
+
       line_items: req.body.items.map(item => {
           console.log("--"+item)
           return {
