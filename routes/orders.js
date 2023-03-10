@@ -134,7 +134,6 @@ router.post("/pay", async (req, res) => {
       mode: "payment",
       line_items: req.body.items.map(async item => {
           const storeItem = await Products.findById(item.id);
-          console.log("---egy item: "+storeItem)
           return {
             price_data: {
               currency: "huf",
