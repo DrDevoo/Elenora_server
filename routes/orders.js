@@ -124,7 +124,8 @@ router.post("/pay", async (req, res) => {
      const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
       mode: "payment",
-      line_items: req.body.items.map(async item => {
+      line_items: req.body.items.map(item => {
+          console.log("--"+item)
           return {
             price_data: {
               currency: "huf",
