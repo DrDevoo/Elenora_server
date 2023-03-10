@@ -125,9 +125,6 @@ router.post("/pay", async (req, res) => {
      const jsonprod = JSON.stringify(products)
      const prodmap = new Map(Object.entries(JSON.parse(jsonprod)));
 
-     console.log(prodmap)
-
-
      const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
       mode: "payment",
@@ -136,7 +133,7 @@ router.post("/pay", async (req, res) => {
       line_items: req.body.items.map(item => {
           console.log("AZ ID: "+item.id)
           const storeItem = prodmap.get(item.id)
-          console.log("A STOREITEM: "+storeItem._id)
+          console.log("A STOREITEM: "+storeItem)
           return {
                price_data: {
                  currency: "huf",
