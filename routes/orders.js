@@ -123,52 +123,22 @@ router.post("/pay", async (req, res) => {
      console.log("Fiezetés megkezdve!")
      const cart = req.body.items;
      const jsoncart = JSON.stringify(cart)
-     console.log("Json kocsi: "+jsoncart)
-     const cartmap = new Map(Object.entries(JSON.parse(jsoncart)));
-     data = cartmap.map(item => {
-          return{
-               a : item.id,
-               b : item.name,
-               c : item.price
-          }
-          
-     })
-     console.log(data)
 
      const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
       mode: "payment",
-
-
-      line_items: req.body.items.map(item => {
-          const storeItem = prodmap.get(item.id)
+     line_items: jsoncart.map(function (item) {
           return {
                price_data: {
-                 currency: "huf",
-                 product_data: {
-                   name: storeItem.prodname,
-                 },
-                 unit_amount: storeItem.price,
+                    currency: 'huf',
+                    product_data: {
+                         name: item.name,
+                    },
+                    unit_amount: item.price * 100,
                },
                quantity: item.quantity,
-          }
-        }),
-
-     /*
-      line_items: req.body.items.map(item => {
-        const storeItem = storeItems.get(item.id)
-        return {
-          price_data: {
-            currency: "huf",
-            product_data: {
-              name: storeItem.name,
-            },
-            unit_amount: storeItem.priceInCents,
-          },
-          quantity: item.quantity,
-        }
-      }),
-      */
+          };
+     }),
       success_url: `${process.env.CLIENT_URL}/shop/thanks/?id=${req.body.orderid}`,
       cancel_url: `${process.env.CLIENT_URL}/shop`,
     })
