@@ -129,14 +129,14 @@ router.post("/pay", async (req, res) => {
       payment_method_types: ["card"],
       mode: "payment",
       line_items: req.body.items.map(item => {
-          console.log(item)
+          const storeItem = storeItems.get(item.id)
           return {
             price_data: {
               currency: "huf",
               product_data: {
-                name: item.name,
+                name: storeItem.name,
               },
-              unit_amount: item.price,
+              unit_amount: storeItem.priceInCents,
             },
             quantity: item.quantity,
           }
@@ -144,7 +144,6 @@ router.post("/pay", async (req, res) => {
       success_url: `${process.env.CLIENT_URL}/shop/thanks/?id=${req.body.orderid}`,
       cancel_url: `${process.env.CLIENT_URL}/shop`,
     })
-    console.log(session)
     res.json({ url: session.url })
   } catch (e) {
     res.json(e)
