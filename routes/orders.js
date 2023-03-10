@@ -143,7 +143,7 @@ router.post("/pay", async (req, res) => {
               },
               unit_amount: storeItem.price,
             },
-            quantity: item.quantity,
+            quantity: 1,
           }
         }),
 
