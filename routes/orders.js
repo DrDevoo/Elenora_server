@@ -127,7 +127,7 @@ router.post("/pay", async (req, res) => {
      console.log("Json kocsi: "+jsoncart)
      const cartmap = new Map(Object.entries(JSON.parse(jsoncart)));
      console.log("map kocsi: "+cartmap)
-     cartmap.map(item => {
+     jsoncart.map(item => {
           console.log("AZ ID: "+item.id)
           console.log("A neve: "+item.name)
           console.log("AZ ara: "+item.price)
