@@ -128,6 +128,7 @@ router.post("/pay", async (req, res) => {
      console.log("Fiezetés megkezdve!")
      const products = await Products.find();
      const prodlist = new Map(products)
+     console.log(prodlist)
 
      const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
