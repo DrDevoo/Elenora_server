@@ -121,10 +121,11 @@ router.post("/finish/:id", async (req,res) =>{
 router.post("/pay", async (req, res) => {
   try {
      console.log("Fiezetés megkezdve!")
-     
-     const p = JSON.stringify(req.body.items)
-     const mapper = new Map(Object.entries(JSON.parse(p)));
-     console.log(mapper)
+     const products = await Products.find();
+     const jsonprod = JSON.stringify(products)
+     const prodmap = new Map(Object.entries(JSON.parse(jsonprod)));
+
+     console.log(prodmap)
 
 
      const session = await stripe.checkout.sessions.create({
@@ -132,16 +133,19 @@ router.post("/pay", async (req, res) => {
       mode: "payment",
 
 
-      line_items: mapper.map(item => {
+      line_items: req.body.items.map(item => {
+          console.log("AZ ID: "+item.id)
+          const storeItem = prodmap.get(item.id)
+          console.log("A STOREITEM: "+storeItem)
           return {
-            price_data: {
-              currency: "huf",
-              product_data: {
-                name: item.name,
-              },
-              unit_amount: item.price,
-            },
-            quantity: item.quantity,
+               price_data: {
+                 currency: "huf",
+                 product_data: {
+                   name: storeItem.prodname,
+                 },
+                 unit_amount: storeItem.price,
+               },
+               quantity: item.quantity,
           }
         }),
 
