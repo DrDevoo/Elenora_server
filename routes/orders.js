@@ -127,7 +127,6 @@ router.post("/pay", async (req, res) => {
   try {
      console.log("Fiezetés megkezdve!")
      const products = await Products.find();
-     console.log(req.body.items)
 
      const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
@@ -166,6 +165,7 @@ router.post("/pay", async (req, res) => {
     })
     res.json({ url: session.url })
   } catch (e) {
+     console.log(e)
     res.status(500).json({ error: e.message })
   }
 })
