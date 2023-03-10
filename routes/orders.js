@@ -127,12 +127,13 @@ router.post("/pay", async (req, res) => {
      console.log("Json kocsi: "+jsoncart)
      const cartmap = new Map(Object.entries(JSON.parse(jsoncart)));
      console.log("map kocsi: "+cartmap)
-     jsoncart.map(item => {
+     data = jsoncart.map(item => {
           console.log("AZ ID: "+item.id)
           console.log("A neve: "+item.name)
           console.log("AZ ara: "+item.price)
           console.log("A db: "+item.quantity)
      })
+     console.log(data)
 
      const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
