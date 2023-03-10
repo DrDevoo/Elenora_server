@@ -127,12 +127,13 @@ router.post("/pay", async (req, res) => {
   try {
      console.log("Fiezetés megkezdve!")
      const products = await Products.find();
+     const prodlist = new Map(products)
 
      const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
       mode: "payment",
       line_items: req.body.items.map(async item => {
-          const storeItem = await Products.findById(item.id);
+          const storeItem = prodlist.get(item.id)
           return {
             price_data: {
               currency: "huf",
