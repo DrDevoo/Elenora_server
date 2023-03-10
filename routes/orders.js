@@ -169,7 +169,7 @@ router.post("/pay", async (req, res) => {
     })
     res.json({ url: session.url })
   } catch (e) {
-    res.status(500).json({ error: e.message })
+    res.json(e)
   }
 })
 
