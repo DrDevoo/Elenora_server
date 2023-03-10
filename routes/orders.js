@@ -132,7 +132,7 @@ router.post("/pay", async (req, res) => {
               },
               unit_amount: item.price * 100,
             },
-            quantity: 1,
+            quantity: item.quantity,
           }
         }),
       success_url: `${process.env.CLIENT_URL}/shop/thanks/?id=${req.body.orderid}`,
