@@ -132,8 +132,8 @@ router.post("/pay", async (req, res) => {
      const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
       mode: "payment",
-      line_items: req.body.items.map(item => {
-          const storeItem = Products.findById(item.id);
+      line_items: req.body.items.map(async item => {
+          const storeItem = await Products.findById(item.id);
           console.log("---egy item: "+storeItem)
           return {
             price_data: {
