@@ -118,32 +118,22 @@ router.post("/finish/:id", async (req,res) =>{
 
 
 
-const storeItems = new Map([
-  [1, { priceInCents: 10000, name: "Learn React Today" }],
-  [2, { priceInCents: 20000, name: "Learn CSS Today" }],
-])
-
 router.post("/pay", async (req, res) => {
   try {
      console.log("Fiezetés megkezdve!")
-     const products = await Products.find();
-     const prodlist = new Map(products)
-     console.log(prodlist)
-
      const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
       mode: "payment",
       line_items: req.body.items.map(async item => {
-          const storeItem = products.get(item.id)
           return {
             price_data: {
               currency: "huf",
               product_data: {
-                name: storeItem.prodname,
+                name: item.name,
               },
-              unit_amount: storeItem.price,
+              unit_amount: item.price,
             },
-            quantity: 1,
+            quantity: item.quantity,
           }
         }),
 
