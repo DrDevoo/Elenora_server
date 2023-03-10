@@ -133,6 +133,7 @@ router.post("/pay", async (req, res) => {
       line_items: req.body.items.map(item => {
           console.log("AZ ID: "+item.id)
           const storeItem = prodmap.get(item.id)
+          console.log(prodmap)
           console.log("A STOREITEM: "+storeItem)
           return {
                price_data: {
