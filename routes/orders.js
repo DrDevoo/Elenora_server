@@ -116,41 +116,31 @@ router.post("/finish/:id", async (req,res) =>{
      }
 })
 
-
+     const storeItems = new Map([
+          [1, { priceInCents: 10000, name: "Learn React Today" }],
+          [2, { priceInCents: 20000, name: "Learn CSS Today" }],
+        ])
 
 router.post("/pay", async (req, res) => {
   try {
      console.log("Fiezetés megkezdve!")
-     const cartt = req.body.items;
-     const jsoncart = JSON.stringify(cart)
-
-     let cart = [
-          {
-               name: 'Anchor',
-               description: 'Keeps your boat in place',
-               image: 'anchor.jpg',
-               price: 99,
-               quantity: 1
-          }
-     ];
 
      const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
       mode: "payment",
-      line_items: cart.map(function (item) {
+      line_items: req.body.items.map(item => {
+          console.log(item)
           return {
-               price_data: {
-                    currency: 'usd',
-                    product_data: {
-                         name: item.name,
-                         description: item.description,
-                         images: [item.image]
-                    },
-                    unit_amount: item.price * 100,
-               },
-               quantity: item.quantity,
-          };
-     }),
+            price_data: {
+              currency: "huf",
+              product_data: {
+                name: item.name,
+              },
+              unit_amount: item.price,
+            },
+            quantity: item.quantity,
+          }
+        }),
       success_url: `${process.env.CLIENT_URL}/shop/thanks/?id=${req.body.orderid}`,
       cancel_url: `${process.env.CLIENT_URL}/shop`,
     })
