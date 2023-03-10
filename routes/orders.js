@@ -134,7 +134,7 @@ router.post("/pay", async (req, res) => {
       payment_method_types: ["card"],
       mode: "payment",
       line_items: req.body.items.map(async item => {
-          const storeItem = prodlist.get(item.id)
+          const storeItem = products.get(item.id)
           return {
             price_data: {
               currency: "huf",
