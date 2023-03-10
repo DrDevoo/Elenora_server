@@ -134,7 +134,7 @@ router.post("/pay", async (req, res) => {
             price_data: {
               currency: "huf",
               product_data: {
-                name: storeItem.name,
+                name: "teszt nev",
               },
               unit_amount: storeItem.priceInCents,
             },
