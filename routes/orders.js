@@ -6,12 +6,14 @@ const jwt = require("jsonwebtoken");
 
 const Orders = require('../models/orders-model');
 const Mail = require('../routes/mail');
+const Products = require('../models/products-model');
 
 const stripe = require("stripe")(process.env.STRIPE_PRIVATE_KEY)
 
 //Autentikalt index oldal
 router.get("/", async (req, res) => {
-  
+     const products = await Products.find();
+     console.log(products)
 });
 
 
@@ -124,9 +126,26 @@ const storeItems = new Map([
 router.post("/pay", async (req, res) => {
   try {
      console.log("Fiezetés megkezdve!")
-    const session = await stripe.checkout.sessions.create({
+     const products = await Products.find();
+
+     const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
       mode: "payment",
+      line_items: req.body.items.map(item => {
+          const storeItem = products.get(item.id)
+          return {
+            price_data: {
+              currency: "huf",
+              product_data: {
+                name: storeItem.prodname,
+              },
+              unit_amount: storeItem.price,
+            },
+            quantity: item.quantity,
+          }
+        }),
+
+     /*
       line_items: req.body.items.map(item => {
         const storeItem = storeItems.get(item.id)
         return {
@@ -140,6 +159,7 @@ router.post("/pay", async (req, res) => {
           quantity: item.quantity,
         }
       }),
+      */
       success_url: `${process.env.CLIENT_URL}/shop/thanks/?id=${req.body.orderid}`,
       cancel_url: `${process.env.CLIENT_URL}/shop`,
     })

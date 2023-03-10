@@ -19,7 +19,7 @@ const OrdersScheme = mongoose.Schema({
     },
     u_legio:{
         type: String,
-        default: "",
+        default: "Magyarország",
     },
     u_postnumber:{
         type: String,
