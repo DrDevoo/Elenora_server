@@ -126,10 +126,12 @@ router.post("/pay", async (req, res) => {
      console.log("Json kocsi: "+jsoncart)
      const cartmap = new Map(Object.entries(JSON.parse(jsoncart)));
      data = cartmap.map(item => {
-          console.log("AZ ID: "+item.id)
-          console.log("A neve: "+item.name)
-          console.log("AZ ara: "+item.price)
-          console.log("A db: "+item.quantity)
+          return{
+               a : item.id,
+               b : item.name,
+               c : item.price
+          }
+          
      })
      console.log(data)
 
