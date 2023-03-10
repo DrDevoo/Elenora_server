@@ -133,7 +133,7 @@ router.post("/pay", async (req, res) => {
       payment_method_types: ["card"],
       mode: "payment",
       line_items: req.body.items.map(item => {
-          const storeItem = products.get(item.id)
+          const storeItem = Products.findById(item.id);
           console.log("---egy item: "+storeItem)
           return {
             price_data: {
@@ -167,6 +167,7 @@ router.post("/pay", async (req, res) => {
     })
     res.json({ url: session.url })
   } catch (e) {
+     console.log(e)
     res.status(500).json({ error: e.message })
   }
 })
