@@ -119,7 +119,6 @@ router.post("/finish/:id", async (req,res) =>{
 router.post("/pay", async (req, res) => {
   try {
      console.log("Fiezetés megkezdve!")
-
      const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
       mode: "payment",
@@ -136,7 +135,7 @@ router.post("/pay", async (req, res) => {
           }
         }),
       success_url: `${process.env.CLIENT_URL}/shop/thanks/?id=${req.body.orderid}`,
-      cancel_url: `${process.env.CLIENT_URL}/shop`,
+      cancel_url: `${process.env.CLIENT_URL}/shop/checkout/summary?order=${req.body.orderid}`,
     })
     res.json({ url: session.url })
   } catch (e) {
