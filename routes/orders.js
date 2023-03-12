@@ -76,6 +76,7 @@ router.post("/saveuser/:id", async (req,res) =>{
 
 router.post("/saveshipping/:id", async (req,res) =>{
      try{
+     console.log(req.body)
      const order = req.body.order
      const szamlazas = req.body.szamlazas
      console.log(szamlazas)
