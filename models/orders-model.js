@@ -53,6 +53,10 @@ const OrdersScheme = mongoose.Schema({
         required: true
     },
     cart:Array,
+    szamlazasimod:{
+        type: String,
+        default: "same",
+    },
     szamlazasOrszag:{
         type: String,
         default: "",

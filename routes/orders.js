@@ -83,6 +83,14 @@ router.post("/saveshipping/:id", async (req,res) =>{
                { $set:
                {
                     shipping: order.shipping,
+                    szamlazasimod: order.szamlazasimod,
+                    szamlazasOrszag: order.regio,
+                    szamlazasVezeteknev: order.first_name,
+                    szamlazasUtonev: order.name,
+                    szamlazasIranyitoszam: order.postnumber,
+                    szamlazasTelepules: order.city,
+                    szamlazasCim: order.addresse,
+                    szamlazasTel: order.tel,
                }
                }
      );  
