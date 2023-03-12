@@ -74,12 +74,9 @@ router.post("/saveuser/:id", async (req,res) =>{
      }
 })
 
-router.post("/saveshipping/:id/:szamlazas", async (req,res) =>{
+router.post("/saveshipping/:id", async (req,res) =>{
      try{
-     console.log(req.body)
      const order = req.body
-     const szamlazas = req.params.szamlazas
-     console.log(szamlazas)
      const id = req.params.id
      var updated = await Orders.findOneAndUpdate(    
                { _id: id},
@@ -89,6 +86,18 @@ router.post("/saveshipping/:id/:szamlazas", async (req,res) =>{
                }
                }
      );  
+     
+     }catch(err){
+          console.log(err)
+     }finally{
+          console.log("Rendelés adatok megadva!")
+          res.json(updated)
+     }
+})
+router.post("/saveszamla/:id", async (req,res) =>{
+     try{
+     const szamlazas = req.body
+     const id = req.params.id
      var updated = await Orders.findOneAndUpdate(    
           { _id: id},
           { $set:
@@ -106,7 +115,7 @@ router.post("/saveshipping/:id/:szamlazas", async (req,res) =>{
      }catch(err){
           console.log(err)
      }finally{
-          console.log("Rendelés adatok megadva!")
+          console.log("Szamla adatok megadva!")
           res.json(updated)
      }
 })
