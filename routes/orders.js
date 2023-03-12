@@ -84,13 +84,13 @@ router.post("/saveshipping/:id", async (req,res) =>{
                {
                     shipping: order.shipping,
                     szamlazasimod: order.szamlazasimod,
-                    szamlazasOrszag: order.regio,
-                    szamlazasVezeteknev: order.first_name,
-                    szamlazasUtonev: order.name,
-                    szamlazasIranyitoszam: order.postnumber,
-                    szamlazasTelepules: order.city,
-                    szamlazasCim: order.addresse,
-                    szamlazasTel: order.tel,
+                    szamlazasOrszag: order.szamlazasOrszag,
+                    szamlazasVezeteknev: order.szamlazasVezeteknev,
+                    szamlazasUtonev: order.szamlazasUtonev,
+                    szamlazasIranyitoszam: order.szamlazasIranyitoszam,
+                    szamlazasTelepules: order.szamlazasTelepules,
+                    szamlazasCim: order.szamlazasCim,
+                    szamlazasTel: order.szamlazasTel,
                }
                }
      );  

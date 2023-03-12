@@ -59,7 +59,7 @@ const OrdersScheme = mongoose.Schema({
     },
     szamlazasOrszag:{
         type: String,
-        default: "",
+        default: "Magyarország",
     },
     szamlazasVezteknev:{
         type: String,
