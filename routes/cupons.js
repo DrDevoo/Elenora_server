@@ -29,6 +29,17 @@ res.json(cupon);
    console.log("Kupon sikeres mentése!")
 })
 
+router.get("/check/:code", async (req,res) =>{
+     try{
+          const code = req.params.code
+          const checked = await Cupons.findOne({cupon_name:code})
+          console.log(checked)
+
+       }catch(err){
+         res.json({ message: err });
+       }
+ })
+
 router.get("/getall", async (req,res) =>{
     try{
         const cupons = await Cupons.find();

@@ -51,6 +51,8 @@ router.post("/addsalecollection/:collectionname/:precent/:time", async (req,res)
      }
 })
 
+
+
 router.get("/getsaled", async (req,res) =>{
      try{
          const products = await Products.find({activesale:"true"});
