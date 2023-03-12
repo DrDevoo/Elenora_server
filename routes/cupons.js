@@ -34,6 +34,11 @@ router.get("/check/:code", async (req,res) =>{
           const code = req.params.code
           const checked = await Cupons.findOne({cupon_name:code})
           console.log(checked)
+          if(checked == null){
+               console.log("Nincs ilyen kupon")
+          }else{
+               console.log("Van ilyen kupon: " + checked.cupon_value)
+          }
 
        }catch(err){
          res.json({ message: err });
