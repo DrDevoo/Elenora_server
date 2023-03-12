@@ -53,7 +53,34 @@ const OrdersScheme = mongoose.Schema({
         required: true
     },
     cart:Array,
-    szamlazas:Array,
+    szamlazasOrszag:{
+        type: String,
+        default: "",
+    },
+    szamlazasVezteknev:{
+        type: String,
+        default: "",
+    },
+    szamlazasUtonev:{
+        type: String,
+        default: "",
+    },
+    szamlazasIranyitoszam:{
+        type: String,
+        default: "",
+    },
+    szamlazasTelepules:{
+        type: String,
+        default: "",
+    },
+    szamlazasCim:{
+        type: String,
+        default: "",
+    },
+    szamlazasTel:{
+        type: String,
+        default: "",
+    },
 });
 
 module.exports = mongoose.model('Orders', OrdersScheme);
