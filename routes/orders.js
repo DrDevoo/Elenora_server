@@ -78,6 +78,7 @@ router.post("/saveshipping/:id", async (req,res) =>{
      try{
      const order = req.body.order
      const szamlazas = req.body.szamlazas
+     console.log(szamlazas)
      const id = req.params.id
      var updated = await Orders.findOneAndUpdate(    
                { _id: id},
