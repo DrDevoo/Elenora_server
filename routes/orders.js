@@ -103,7 +103,7 @@ router.post("/saveszamla/:id", async (req,res) =>{
           { $set:
           {
                szamlazasOrszag: szamlazas.regio,
-               szamlazasVezeteknev: szamlazas.firstname ,
+               szamlazasVezeteknev: szamlazas.first_name,
                szamlazasUtonev: szamlazas.name,
                szamlazasIranyitoszam: szamlazas.postnumber,
                szamlazasTelepules: szamlazas.city,
