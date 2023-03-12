@@ -53,6 +53,7 @@ const OrdersScheme = mongoose.Schema({
         required: true
     },
     cart:Array,
+    szamlazas:Array,
 });
 
 module.exports = mongoose.model('Orders', OrdersScheme);

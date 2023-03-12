@@ -76,16 +76,25 @@ router.post("/saveuser/:id", async (req,res) =>{
 
 router.post("/saveshipping/:id", async (req,res) =>{
      try{
-     const shipping = req.body
+     const order = req.body.order
+     const szamlazas = req.body.szamlazas
      const id = req.params.id
      var updated = await Orders.findOneAndUpdate(    
                { _id: id},
                { $set:
-                    {
-                    shipping: shipping.shipping,
+               {
+                    shipping: order.shipping,
                }
                }
-               );  
+     );  
+     var updated = await Orders.findOneAndUpdate(    
+          { _id: id},
+          { $set:
+          {
+               szamlazas: szamlazas,
+          }
+          }
+     ); 
      }catch(err){
           console.log(err)
      }finally{
