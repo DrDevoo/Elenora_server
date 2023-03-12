@@ -74,11 +74,11 @@ router.post("/saveuser/:id", async (req,res) =>{
      }
 })
 
-router.post("/saveshipping/:id", async (req,res) =>{
+router.post("/saveshipping/:id/:szamlazas", async (req,res) =>{
      try{
      console.log(req.body)
-     const order = req.body.order
-     const szamlazas = req.body.szamlazas
+     const order = req.body
+     const szamlazas = req.params.szamlazas
      console.log(szamlazas)
      const id = req.params.id
      var updated = await Orders.findOneAndUpdate(    
