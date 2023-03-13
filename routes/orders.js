@@ -128,7 +128,7 @@ router.post("/saveszamla/:id", async (req,res) =>{
      }
 })
 
-router.post("/finish/:id", async (req,res) =>{
+router.get("/finish/:id", async (req,res) =>{
      try{
           const id = req.params.id   
           var updated = await Orders.findOneAndUpdate(    
