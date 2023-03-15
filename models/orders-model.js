@@ -85,6 +85,10 @@ const OrdersScheme = mongoose.Schema({
         type: String,
         default: "",
     },
+    usedcupon:{
+        type: String,
+        default: "",
+    },
 });
 
 module.exports = mongoose.model('Orders', OrdersScheme);

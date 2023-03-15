@@ -74,6 +74,26 @@ router.post("/saveuser/:id", async (req,res) =>{
      }
 })
 
+router.post("/savecupon/:id", async (req,res) =>{
+     try{
+     const cupon = req.body
+     const id = req.params.id
+     var updated = await Orders.findOneAndUpdate(    
+               { _id: id},
+               { $set:
+                    {
+                    usedcupon: cupon,
+               }
+               }
+               );  
+     }catch(err){
+          console.log(err)
+     }finally{
+          console.log("Kupon rendeleshez adva!")
+          res.json(updated)
+     }
+})
+
 router.post("/saveshipping/:id", async (req,res) =>{
      try{
      const order = req.body
