@@ -74,16 +74,16 @@ router.post("/saveuser/:id", async (req,res) =>{
      }
 })
 
-router.post("/savecupon/:id", async (req,res) =>{
+router.get("/savecupon/:id/:cupon", async (req,res) =>{
      try{
-     const cupon = req.body
      const id = req.params.id
+     const cupon = req.params.cupon
      var updated = await Orders.findOneAndUpdate(    
                { _id: id},
                { $set:
                     {
                     usedcupon: cupon,
-               }
+                    }
                }
                );  
      }catch(err){
