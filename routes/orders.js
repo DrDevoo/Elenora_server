@@ -48,9 +48,6 @@ router.post("/saveuser/:id", async (req,res) =>{
      const user = req.body
      const id = req.params.id
 
-          console.log(user)
-          console.log("")
-          console.log(id)
      var updated = await Orders.findOneAndUpdate(    
                { _id: id},
                { $set:
@@ -166,6 +163,27 @@ router.get("/finish/:id", async (req,res) =>{
           console.log(err)
      }finally{
           console.log("Rendelés leadva!")
+          res.json(updated)
+     }
+})
+
+router.post("/updatecart/:id", async (req,res) =>{
+     try{
+     const cart = req.body
+     const id = req.params.id
+
+     var updated = await Orders.findOneAndUpdate(    
+               { _id: id},
+               { $set:
+                    {
+                    cart: cart
+                    }
+               }
+               );  
+     }catch(err){
+          console.log(err)
+     }finally{
+          console.log("Rendelés kosar frissitve!")
           res.json(updated)
      }
 })
