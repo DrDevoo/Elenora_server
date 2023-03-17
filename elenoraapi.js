@@ -68,6 +68,11 @@ cron.schedule('53 11 17 3 *', () => {
   console.log('!!!teszt AZ ELENORA OLDAL MEGNYILT!!!');
 });
 
+cron.schedule("*/3 * * * * *", function () {
+  console.log("---------------------");
+  console.log("running a task every 3 seconds");
+});
+
 const httpServer = http.createServer(app);
 const httpsServer = https.createServer({
   key: fs.readFileSync('/etc/letsencrypt/live/elenora.hu/privkey.pem'),
