@@ -64,13 +64,8 @@ app.use("*", (req, res) => {
 cron.schedule('0 17 31 3 *', () => {
   console.log('!!!AZ ELENORA OLDAL MEGNYILT!!!');
 });
-cron.schedule('53 11 17 3 *', () => {
+cron.schedule('05 12 17 3 *', () => {
   console.log('!!!teszt AZ ELENORA OLDAL MEGNYILT!!!');
-});
-
-cron.schedule("*/3 * * * * *", function () {
-  console.log("---------------------");
-  console.log("running a task every 3 seconds");
 });
 
 const httpServer = http.createServer(app);
