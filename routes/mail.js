@@ -29,5 +29,17 @@ async function sendOrderMail(id){
   
      return "Email sikeresen kiküldve!"
 }
+async function sendOpened(){
+     message = {
+          from: "info@elenora.hu",
+          to: ["krichard@elenora.hu","hkrisztina05@gmail.com"],
+          subject: "Új rendelés!",
+          html: await readFile(path.join(__dirname, 'mails/opened.html'), 'utf8')
+     }
+       
+     transporter.sendMail(message)
+  
+     return "Email sikeresen kiküldve!"
+}
 
-module.exports = { sendOrderMail }
+module.exports = { sendOrderMail,sendOpened }

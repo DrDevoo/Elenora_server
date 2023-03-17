@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.use(cors());
 const auth = require("./middleware/auth");
 const cron = require("node-cron");
-
+const Mail = require('../routes/mail');
 //Kapcsolt komponensek
 const productsRoute = require('./routes/products');
 const getimage = require('./routes/getimage')
@@ -61,11 +61,21 @@ app.use("*", (req, res) => {
   });
 });
 
-cron.schedule('00 17 31 3 *', () => {
+cron.schedule('00 17 31 3 *', async function() {
   console.log('!!!AZ ELENORA OLDAL MEGNYILT!!!');
-});
-cron.schedule('14 12 17 3 *', () => {
-  console.log('!!!teszt AZ ELENORA OLDAL MEGNYILT!!!');
+  try{
+    await Settings.updateOne(
+         {name: "sitestatus"},
+         {$set: {value: "online"}}
+    )
+    res.json({ message: "Sikeres mentes!" });
+}catch(err){
+    res.json({ message: err });
+    console.log(err)
+}finally{
+  var mailer = Mail.sendOpened() 
+  console.log(mailer)
+}
 });
 
 const httpServer = http.createServer(app);
