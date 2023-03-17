@@ -61,10 +61,10 @@ app.use("*", (req, res) => {
   });
 });
 
-cron.schedule('0 17 31 3 *', () => {
+cron.schedule('00 17 31 3 *', () => {
   console.log('!!!AZ ELENORA OLDAL MEGNYILT!!!');
 });
-cron.schedule('05 12 17 3 *', () => {
+cron.schedule('14 12 17 3 *', () => {
   console.log('!!!teszt AZ ELENORA OLDAL MEGNYILT!!!');
 });
 
