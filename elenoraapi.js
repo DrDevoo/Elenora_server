@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.use(cors());
 const auth = require("./middleware/auth");
 const cron = require("node-cron");
-const Mail = require('../routes/mail');
+const Mail = require('./routes/mail');
 //Kapcsolt komponensek
 const productsRoute = require('./routes/products');
 const getimage = require('./routes/getimage')
