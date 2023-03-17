@@ -17,7 +17,8 @@ router.get("/", async (req, res) => {
 });
 
 router.post("/add/:prodname/:collections/:price/:description/:categ/:colors", async (req,res) =>{
-   const product = await Products.create({  
+   try{
+        const product = await Products.create({  
         prodname: req.params.prodname,
         collections: req.params.collections,
         price: req.params.price,
@@ -26,9 +27,11 @@ router.post("/add/:prodname/:collections/:price/:description/:categ/:colors", as
         colors: req.params.colors,
         pearls: req.body,
    });
-   try{
         const savedProduct = await product.save();
         res.json({ message: "Sikeres mentés!" });
+        console.log("-------termek-------")
+        console.log(savedProduct)
+        console.log("--------------")
    }catch(err){
         res.json({ message: err });
         console.log('Termék sikertelen mentése!!!')
@@ -41,7 +44,11 @@ router.post("/addimg1/:prodname", upload.single('file'), async (req,res) =>{
      const id = req.params.prodname
     const file = req.file;
     const result = await uploadFile(file);
-
+    console.log("-------kep1-------")
+    console.log(id)
+    console.log(file)
+    console.log(result)
+    console.log("--------------")
     await Products.updateOne(    
      { prodname: id},
      { $set: {image: result.Key}}
@@ -58,7 +65,11 @@ router.post("/addimg2/:prodname", upload.single('file'), async (req,res) =>{
      const id = req.params.prodname
     const file = req.file;
     const result = await uploadFile(file);
-
+    console.log("-------kep2-------")
+    console.log(id)
+    console.log(file)
+    console.log(result)
+    console.log("--------------")
     await Products.updateOne(    
      { prodname: id},
      { $set: {image2: result.Key}}
@@ -75,6 +86,11 @@ router.post("/addimg3/:prodname", upload.single('file'), async (req,res) =>{
      const id = req.params.prodname
     const file = req.file;
     const result = await uploadFile(file);
+    console.log("-------kep3-------")
+    console.log(id)
+    console.log(file)
+    console.log(result)
+    console.log("--------------")
 
     await Products.updateOne(    
      { prodname: id},
@@ -91,8 +107,7 @@ router.post("/addimg3/:prodname", upload.single('file'), async (req,res) =>{
 
 router.post("/update", async (req,res) =>{
      try{
-          console.log(req.body)
-          await Products.findOneAndUpdate(    
+          const updated = await Products.findOneAndUpdate(    
                { _id: req.body._id},
                { $set:
                      {prodname: req.body.prodname,
@@ -105,6 +120,9 @@ router.post("/update", async (req,res) =>{
                }
                );  
           res.json({ message: "Sikeres mentés!" });
+          console.log("-------friss-termek-------")
+          console.log(updated)
+          console.log("--------------")
      }catch(err){
           res.json({ message: err });
           console.log(err)
