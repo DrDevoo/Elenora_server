@@ -61,6 +61,13 @@ app.use("*", (req, res) => {
   });
 });
 
+cron.schedule('0 17 31 3 *', () => {
+  console.log('!!!AZ ELENORA OLDAL MEGNYILT!!!');
+});
+cron.schedule('53 11 17 3 *', () => {
+  console.log('!!!teszt AZ ELENORA OLDAL MEGNYILT!!!');
+});
+
 const httpServer = http.createServer(app);
 const httpsServer = https.createServer({
   key: fs.readFileSync('/etc/letsencrypt/live/elenora.hu/privkey.pem'),
@@ -69,9 +76,9 @@ const httpsServer = https.createServer({
 
 //Az app nyitott portja
 httpServer.listen(3900, () => {
-  console.log('HTTP Server running on port 3900');
+  console.log('---HTTP szerver elerheto a 3900 porton---');
 });
 
 httpsServer.listen(444, () => {
-  console.log('HTTPS Server running on port 444');
+  console.log('---HTTPS szerver elerheto a 444 porton---');
 });
