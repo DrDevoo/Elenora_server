@@ -39,9 +39,11 @@ async function sendOrderMail(id){
           from: "informacio@elenora.hu",
           to: order.u_email,
           subject: "A megrendelést megkaptuk",
-          template: 'email', // the name of the template file i.e email.handlebars
+          template: 'megrendelve', // the name of the template file i.e email.handlebars
           context:{
-              order: order, // replace {{name}} with Adebola
+              orderid : order.orderid,
+              firstname: order.u_firstname,
+              lastname: order.u_name,
           }
      }
        
