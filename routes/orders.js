@@ -205,11 +205,12 @@ router.get("/update/ordered/:id", async (req,res) =>{
                     }
                }
           );  
-          Mail.sendOrderMail(id) 
+          
      }catch(err){
           console.log(err)
      }finally{
           console.log("Rendelés leadva!")
+          Mail.sendOrderMail(id) 
      }
 })
 
