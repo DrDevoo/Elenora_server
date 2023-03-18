@@ -145,28 +145,6 @@ router.post("/saveszamla/:id", async (req,res) =>{
      }
 })
 
-router.get("/finish/:id", async (req,res) =>{
-     try{
-          const id = req.params.id   
-          var updated = await Orders.findOneAndUpdate(    
-               { _id: id},
-               { $set:
-                    {
-                         status: "ordered",
-                    }
-               }
-          );  
-
-          var mailer = Mail.sendOrderMail(id) 
-          console.log(mailer)
-     }catch(err){
-          console.log(err)
-     }finally{
-          console.log("Rendelés leadva!")
-          res.json(updated)
-     }
-})
-
 router.post("/updatecart/:id", async (req,res) =>{
      try{
      const cart = req.body
@@ -215,7 +193,87 @@ router.post("/pay", async (req, res) => {
   }
 })
 
+//Frissitesek(Autenticated)
+router.get("/update/ordered/:id", async (req,res) =>{
+     try{
+          const id = req.params.id   
+          await Orders.findOneAndUpdate(    
+               { _id: id},
+               { $set:
+                    {
+                         status: "ordered",
+                    }
+               }
+          );  
+          Mail.sendOrderMail(id) 
+     }catch(err){
+          console.log(err)
+     }finally{
+          console.log("Rendelés leadva!")
+     }
+})
 
+router.get("/update/del/:id", async (req,res) =>{
+     try{
+          const id = req.params.id
+          await Orders.findByIdAndRemove(id)
+     }catch(err){
+          res.json({ message: err });
+          console.log(err)
+     }finally{
+          console.log("Rendelés sikeres törölve!")
+     }
+})
+router.get("/update/maked/:id", async (req,res) =>{
+     try{
+          const id = req.params.id
+          await Orders.findOneAndUpdate(    
+               { _id: id},
+               { $set:
+                    {status : "maked"}
+               }
+          );  
+     }catch(err){
+          res.json({ message: err });
+          console.log(err)
+     }finally{
+          console.log("Rendelés összekészítve!")
+     }
+})
+router.get("/update/shipping/:id", async (req,res) =>{
+     try{
+          const id = req.params.id 
+          await Orders.findOneAndUpdate(    
+               { _id: id},
+               { $set:
+                    {status : "shipping"}
+               }
+          );  
+     }catch(err){
+          res.json({ message: err });
+          console.log(err)
+     }finally{
+          console.log("Rendelés szállítás alatt!")
+     }
+})
+router.get("/update/finish/:id", async (req,res) =>{
+     try{
+          const id = req.params.id
+          await Orders.findOneAndUpdate(    
+               { _id: id},
+               { $set:
+                    {status : "done"}
+               }
+          );  
+     }catch(err){
+          res.json({ message: err });
+          console.log(err)
+     }finally{
+          console.log("Rendelés sikeresen teljesítve!")
+     }
+})
+
+//Lekeresek (Autenticated)
 router.get("/getall", async (req,res) =>{
      try{
          const orders = await Orders.find();
