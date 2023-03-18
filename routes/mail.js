@@ -22,10 +22,10 @@ let transporter = nodemailer.createTransport({
 // point to the template folder
 const handlebarOptions = {
      viewEngine: {
-         partialsDir: path.resolve('./mails/'),
+         partialsDir: path.resolve('./routes/mails/'),
          defaultLayout: false,
      },
-     viewPath: path.resolve('./mails/'),
+     viewPath: path.resolve('./routes/mails/'),
 };
 // use a template file with nodemailer
 transporter.use('compile', hbs(handlebarOptions))
