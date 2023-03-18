@@ -41,9 +41,7 @@ async function sendOrderMail(id){
           subject: "A megrendelést megkaptuk",
           template: 'email', // the name of the template file i.e email.handlebars
           context:{
-              firstname: order.u_first, // replace {{name}} with Adebola
-              lastname: order.u_name, // replace {{name}} with Adebola
-              company: 'ELENORA' // replace {{company}} with My Company
+              order: order, // replace {{name}} with Adebola
           }
      }
        
