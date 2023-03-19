@@ -1,5 +1,4 @@
 const express = require('express');
-const router = express.Router();
 require("dotenv").config();
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
@@ -124,9 +123,24 @@ async function sendOpened(){
      return "Email sikeresen kiküldve!"
 }
 
-//email teszteles
-router.get("/testmail", async (req,res) =>{
-     sendShippingMaill() 
-})
 
-module.exports = { sendOrderMail,sendOpened,sendShippingMail,sendSzamlaMail }
+
+
+async function TsendShippingMail(id){
+     console.log("Fut az email kuldes... (TESZT)")
+
+     message = {
+          from: "informacio@elenora.hu",
+          to: "krichard001@icloud.com",
+          subject: "Rendelésed úton van hozzád",
+          template: 'szallitas', // the name of the template file i.e email.handlebars
+          context:{
+
+          }
+     }
+       
+     transporter.sendMail(message)
+  
+     return "TESZT Email sikeresen kiküldve!"
+}
+module.exports = { sendOrderMail,sendOpened,sendShippingMail,sendSzamlaMail,TsendShippingMail }

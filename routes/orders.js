@@ -294,4 +294,9 @@ router.get("/getbyid/:id", async (req,res)=>{
      }
 })
 
+//email teszteles
+router.get("/testmail", async (req,res) =>{
+     Mail.TsendShippingMail() 
+})
+
 module.exports = router;
