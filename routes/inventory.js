@@ -12,16 +12,12 @@ router.get("/", async (req, res) => {
 });
 
 router.post("/add/:name/:quantity", async (req,res) =>{
-
    try{
-
        const item = await Inventory.create({  
         item_name: req.params.name,
         item_quantity: req.params.quantity,
    });
-res.json(item);
-    
-
+   res.json(item);
    }catch(err){
         res.json({ message: err });
         console.log('Alapanyag sikertelen mentése!!!')
@@ -37,7 +33,6 @@ router.get("/getall", async (req,res) =>{
         res.json({ message: err });
       }
 })
-
 
 router.post("/update/:name/:quantity", async (req,res) =>{
    try{
@@ -60,5 +55,6 @@ router.post("/update/reset/:name", async (req,res) =>{
    }
    console.log("Alapanyag sikeres modositasa!")
 })
+
 
 module.exports = router;

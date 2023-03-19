@@ -12,6 +12,8 @@ app.use(cors());
 const auth = require("./middleware/auth");
 const cron = require("node-cron");
 const Mail = require('./routes/mail');
+
+
 //Kapcsolt komponensek
 const productsRoute = require('./routes/products');
 const getimage = require('./routes/getimage')
@@ -61,6 +63,7 @@ app.use("*", (req, res) => {
   });
 });
 
+//Automatikus nyitás időzités
 cron.schedule('00 17 31 3 *', async function() {
   console.log('!!!AZ ELENORA OLDAL MEGNYILT!!!');
   try{
@@ -68,7 +71,6 @@ cron.schedule('00 17 31 3 *', async function() {
          {name: "sitestatus"},
          {$set: {value: "online"}}
     )
-    res.json({ message: "Sikeres mentes!" });
 }catch(err){
     res.json({ message: err });
     console.log(err)
@@ -78,17 +80,19 @@ cron.schedule('00 17 31 3 *', async function() {
 }
 });
 
+
+
+//Szerver certificates
 const httpServer = http.createServer(app);
 const httpsServer = https.createServer({
   key: fs.readFileSync('/etc/letsencrypt/live/elenora.hu/privkey.pem'),
   cert: fs.readFileSync('/etc/letsencrypt/live/elenora.hu/fullchain.pem'),
 }, app);
 
-//Az app nyitott portja
+//Az app nyitott portjai
 httpServer.listen(3900, () => {
   console.log('---HTTP szerver elerheto a 3900 porton---');
 });
-
 httpsServer.listen(444, () => {
   console.log('---HTTPS szerver elerheto a 444 porton---');
 });
