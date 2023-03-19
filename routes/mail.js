@@ -30,6 +30,9 @@ const handlebarOptions = {
 // use a template file with nodemailer
 transporter.use('compile', hbs(handlebarOptions))
 
+
+
+
 //Rendeles leadva FELHASZBALOI email
 async function sendOrderMail(id){
      console.log("Fut az email kuldes...")
@@ -40,6 +43,48 @@ async function sendOrderMail(id){
           to: order.u_email,
           subject: "A megrendelést megkaptuk",
           template: 'megrendelve', // the name of the template file i.e email.handlebars
+          context:{
+              orderid : order.orderid,
+              firstname: order.u_firstname,
+              lastname: order.u_name,
+          }
+     }
+       
+     transporter.sendMail(message)
+  
+     return "Email sikeresen kiküldve!"
+}
+//Rendeles szallita alatt FELHASZBALOI email
+async function sendShippingMail(id){
+     console.log("Fut az email kuldes...")
+     const order = await Orders.findById(id);
+
+     message = {
+          from: "informacio@elenora.hu",
+          to: order.u_email,
+          subject: "Rendelésed úton van hozzád",
+          template: 'szallitas', // the name of the template file i.e email.handlebars
+          context:{
+              orderid : order.orderid,
+              firstname: order.u_firstname,
+              lastname: order.u_name,
+          }
+     }
+       
+     transporter.sendMail(message)
+  
+     return "Email sikeresen kiküldve!"
+}
+//Rendeles szamla FELHASZBALOI email
+async function sendSzamlaMail(id){
+     console.log("Fut az email kuldes...")
+     const order = await Orders.findById(id);
+
+     message = {
+          from: "informacio@elenora.hu",
+          to: order.u_email,
+          subject: "A rendelésedhez tartozó számla",
+          template: 'szamla', // the name of the template file i.e email.handlebars
           context:{
               orderid : order.orderid,
               firstname: order.u_firstname,
@@ -78,4 +123,9 @@ async function sendOpened(){
      return "Email sikeresen kiküldve!"
 }
 
-module.exports = { sendOrderMail,sendOpened }
+//email teszteles
+router.get("/testmail", async (req,res) =>{
+     sendShippingMaill() 
+})
+
+module.exports = { sendOrderMail,sendOpened,sendShippingMail,sendSzamlaMail }
