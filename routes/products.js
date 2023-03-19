@@ -5,6 +5,7 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
 const Products = require('../models/products-model');
+const Inventory = require('../models/inventory-model');
 const ProductsBoravia = require('../models/prodboravia-model');
 
 const multer = require('multer');
@@ -40,7 +41,6 @@ router.post("/add/:prodname/:collections/:price/:description/:categ/:colors", as
    }
    console.log("Termék sikeres mentése!")
 })
-
 router.post("/addimg1/:prodid", upload.single('file'), async (req,res) =>{
      try{
      const id = req.params.prodid
@@ -172,13 +172,40 @@ router.get("/getbyid/:id", async (req,res)=>{
      try{
           const id = req.params.id
           const product = await Products.findById(id);
-          res.json(product);
+          var xs = true
+          var s = true
+          var m = true
+          var l = true
+          var xl = true
+          var xxl = true
+          for(item in product.pearls){
+               const x = await Inventory.findOne({ item_name: product.pearls[item].name })   
+               const idb = x.item_quantity  
+               console.log(idb)
+               if(product.pearls[item].xs > idb){
+                    xs = false
+               }
+               if(product.pearls[item].s > idb){
+                    s = false
+               }
+               if(product.pearls[item].m > idb){
+                    m = false
+               }
+               if(product.pearls[item].l > idb){
+                    l = false
+               }
+               if(product.pearls[item].xl > idb){
+                    xl = false
+               }
+               if(product.pearls[item].xxl > idb){
+                    xxl = false
+               }
+          }
+          res.json({product,xs,s,m,l,xl,xxl});
      }catch(err){
           res.json({ message: err });
      }
 })
-
-
 
 
 //BORAVIA KARKOTOK KEZELESE
@@ -196,8 +223,7 @@ router.post("/add/boravia/:prodname/:price", async (req,res) =>{
        console.log("Termék sikeres mentése!")   
      }
 })
-  
-  router.post("/addimg/boravia/:prodname", upload.single('file'), async (req,res) =>{
+router.post("/addimg/boravia/:prodname", upload.single('file'), async (req,res) =>{
        try{
        const id = req.params.prodname
       const file = req.file;
@@ -213,9 +239,8 @@ router.post("/add/boravia/:prodname/:price", async (req,res) =>{
             console.log("Termék kép mentése!")
             res.json({ message: "Sikeres mentés!" });
        }
-  })
-
-  router.get("/getall/boravia", async (req,res) =>{
+})
+router.get("/getall/boravia", async (req,res) =>{
      try{
          const products = await ProductsBoravia.find();
          const count = await ProductsBoravia.find().count();
@@ -223,5 +248,6 @@ router.post("/add/boravia/:prodname/:price", async (req,res) =>{
        }catch(err){
          res.json({ message: err });
        }
- })
+})
+
 module.exports = router;

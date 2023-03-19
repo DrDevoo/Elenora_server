@@ -79,16 +79,9 @@ cron.schedule('00 17 31 3 *', async function() {
 });
 
 const httpServer = http.createServer(app);
-const httpsServer = https.createServer({
-  key: fs.readFileSync('/etc/letsencrypt/live/elenora.hu/privkey.pem'),
-  cert: fs.readFileSync('/etc/letsencrypt/live/elenora.hu/fullchain.pem'),
-}, app);
+
 
 //Az app nyitott portja
 httpServer.listen(3900, () => {
   console.log('---HTTP szerver elerheto a 3900 porton---');
-});
-
-httpsServer.listen(444, () => {
-  console.log('---HTTPS szerver elerheto a 444 porton---');
 });

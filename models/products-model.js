@@ -9,7 +9,6 @@ const ProductsScheme = mongoose.Schema({
     description:{
         type: String,
         default: "",
-        required: true
     },
     price:{
         type: Number,

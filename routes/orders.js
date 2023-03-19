@@ -206,6 +206,8 @@ router.get("/update/ordered/:id", async (req,res) =>{
                }
           );  
           Mail.sendOrderMail(id) 
+
+          
      }catch(err){
           console.log(err)
      }finally{
