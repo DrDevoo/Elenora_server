@@ -7,6 +7,7 @@ const jwt = require("jsonwebtoken");
 const Orders = require('../models/orders-model');
 const Mail = require('../routes/mail');
 const Products = require('../models/products-model');
+const Inventory = require('../models/inventory-model');
 
 const stripe = require("stripe")(process.env.STRIPE_PRIVATE_KEY)
 
@@ -206,8 +207,52 @@ router.get("/update/ordered/:id", async (req,res) =>{
                }
           );  
           Mail.sendOrderMail(id) 
+          var order = await Orders.findById(id);
+          for(items in order.cart){
+               var size = order.cart[items].size
+               const product = await Products.findOne({prodname : order.cart[items].name});
+               if(!(product.pearls == null)){
+                    for(x in product.pearls){
+                         if(size == "XS"){
+                              console.log(product.pearls[x].name + " minuss(XS): " + product.pearls[x].xs)
+                              const inv = await Inventory.findOne({item_name: product.pearls[x].name})
+                              const newdb = inv.item_quantity - product.pearls[x].xs
+                              await Inventory.updateOne({ item_name: product.pearls[x].name }, { item_quantity: newdb })
+                         }
+                         if(size == "S"){
+                              console.log(product.pearls[x].name + " minuss(XS): " + product.pearls[x].s)
+                              const inv = await Inventory.findOne({item_name: product.pearls[x].name})
+                              const newdb = inv.item_quantity - product.pearls[x].s
+                              await Inventory.updateOne({ item_name: product.pearls[x].name }, { item_quantity: newdb })
+                         }
+                         if(size == "M"){
+                              console.log(product.pearls[x].name + " minuss(M): " + product.pearls[x].m)
+                              const inv = await Inventory.findOne({item_name: product.pearls[x].name})
+                              const newdb = inv.item_quantity - product.pearls[x].m
+                              await Inventory.updateOne({ item_name: product.pearls[x].name }, { item_quantity: newdb })
+                         }    
+                         if(size == "L"){
+                              console.log(product.pearls[x].name + " minuss(XS): " + product.pearls[x].l)
+                              const inv = await Inventory.findOne({item_name: product.pearls[x].name})
+                              const newdb = inv.item_quantity - product.pearls[x].l
+                              await Inventory.updateOne({ item_name: product.pearls[x].name }, { item_quantity: newdb })
+                         }
+                         if(size == "XL"){
+                              console.log(product.pearls[x].name + " minuss(XS): " + product.pearls[x].xl)
+                              const inv = await Inventory.findOne({item_name: product.pearls[x].name})
+                              const newdb = inv.item_quantity - product.pearls[x].xl
+                              await Inventory.updateOne({ item_name: product.pearls[x].name }, { item_quantity: newdb })
+                         }
+                         if(size == "XXL"){
+                              console.log(product.pearls[x].name + " minuss(XS): " + product.pearls[x].xxl)
+                              const inv = await Inventory.findOne({item_name: product.pearls[x].name})
+                              const newdb = inv.item_quantity - product.pearls[x].xxl
+                              await Inventory.updateOne({ item_name: product.pearls[x].name }, { item_quantity: newdb })
+                         }
+                    } 
+               }
 
-          
+          }
      }catch(err){
           console.log(err)
      }finally{

@@ -181,7 +181,6 @@ router.get("/getbyid/:id", async (req,res)=>{
           for(item in product.pearls){
                const x = await Inventory.findOne({ item_name: product.pearls[item].name })   
                const idb = x.item_quantity  
-               console.log(idb)
                if(product.pearls[item].xs > idb){
                     xs = false
                }
