@@ -249,6 +249,7 @@ router.get("/update/shipping/:id", async (req,res) =>{
                     {status : "shipping"}
                }
           );  
+          Mail.sendShippingMail(id)
      }catch(err){
           res.json({ message: err });
           console.log(err)
