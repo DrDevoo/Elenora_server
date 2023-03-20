@@ -22,9 +22,11 @@
     "mongoose": "^6.8.3",
     "multer": "^1.4.5-lts.1",
     "node-cron": "^3.0.2",
+    "node-fetch": "^2.6.9",
     "nodemailer": "^6.9.1",
     "nodemailer-express-handlebars": "^6.1.0",
     "nodemon": "^2.0.20",
-    "stripe": "^11.13.0"
+    "stripe": "^11.13.0",
+    "szamlazz.js": "^6.0.2"
   }
 }

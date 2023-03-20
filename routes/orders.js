@@ -3,6 +3,8 @@ const router = express.Router();
 require("dotenv").config();
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
+const fetch = require("node-fetch");
+const fs = require('fs');
 
 const Orders = require('../models/orders-model');
 const Mail = require('../routes/mail');
@@ -343,8 +345,22 @@ router.get("/getbyid/:id", async (req,res)=>{
 })
 
 //email teszteles
-router.get("/testmail", async (req,res) =>{
-     Mail.TsendShippingMail() 
+router.get("/testszamla", async (req,res) =>{
+     console.log("Számla lekérése...")
+     const id = "641334fc7143e0710be1365d"
+     const order = await Orders.findById(id);
+     console.log(order)
+
+     let resszamla = await fetch(process.env.SZAMLAZO_API_URL,{
+          method: "POST",
+          headers: {
+               "Content-Type": "application/json",
+          },
+          body: JSON.stringify(order),
+     });
+     const json = await resszamla.json();
+     var buffer = Buffer.from(json.pdf, 'base64')
+     fs.writeFileSync('./szamlak/'+json.invoiceId + ".pdf", buffer)
 })
 
 module.exports = router;
