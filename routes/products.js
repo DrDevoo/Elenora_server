@@ -7,6 +7,7 @@ const jwt = require("jsonwebtoken");
 const Products = require('../models/products-model');
 const Inventory = require('../models/inventory-model');
 const ProductsBoravia = require('../models/prodboravia-model');
+const ProductsStone = require('../models/prodstone-model');
 
 const multer = require('multer');
 const upload = multer({ dest: './prod_images/' })
@@ -249,4 +250,45 @@ router.get("/getall/boravia", async (req,res) =>{
        }
 })
 
+
+//Kavics termékek kezelése
+router.post("/add/stone/:prodname/:price", async (req,res) =>{
+     const product = await ProductsStone.create({  
+          prodname: req.params.prodname,
+          price: req.params.price,
+     });
+     try{
+          res.json({ message: "Sikeres mentés!" });
+     }catch(err){
+          res.json({ message: err });
+          console.log(err)
+     }finally{
+       console.log("Termék sikeres mentése!")   
+     }
+})
+router.post("/addimg/stone/:prodname", upload.single('file'), async (req,res) =>{
+       try{
+       const id = req.params.prodname
+      const file = req.file;
+      const result = await uploadFile(file);
+  
+      await ProductsStone.updateOne(    
+       { prodname: id},
+       { $set: {image: result.Key}}
+       );  
+       }catch(err){
+            console.log(err)
+       }finally{
+            console.log("Termék kép mentése!")
+            res.json({ message: "Sikeres mentés!" });
+       }
+})
+router.get("/getall/stone", async (req,res) =>{
+     try{
+         const products = await ProductsStone.find();
+         res.json(products);
+       }catch(err){
+         res.json({ message: err });
+       }
+})
 module.exports = router;
