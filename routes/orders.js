@@ -349,14 +349,23 @@ router.get("/testszamla", async (req,res) =>{
      console.log("Számla lekérése...")
      const id = "641334fc7143e0710be1365d"
      const order = await Orders.findById(id);
-     console.log(order)
-
+     let list = []
+     for(x in order.cart){
+          list.push({
+               label: order.cart[x].name,
+               quantity: order.cart[x].quantity,
+               unit: "db",
+               vat: "AAM",
+               grossUnitPrice: order.cart[x].price,
+             });
+     }
+     console.log(list)
      let resszamla = await fetch(process.env.SZAMLAZO_API_URL,{
           method: "POST",
           headers: {
                "Content-Type": "application/json",
           },
-          body: JSON.stringify(order),
+          body: JSON.stringify({order,list}),
      });
      const json = await resszamla.json();
      var buffer = Buffer.from(json.pdf, 'base64')
