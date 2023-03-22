@@ -167,6 +167,15 @@ router.get("/getbycateg/:categ", async (req,res) =>{
        }catch(err){
          res.json({ message: err });
        }
+})
+router.get("/getbycollection/:collection", async (req,res) =>{
+     try{
+          const collection = req.params.collection
+         const products = await Products.find({collections:collection});
+         res.json(products);
+       }catch(err){
+         res.json({ message: err });
+       }
  })
 
 router.get("/getbyid/:id", async (req,res)=>{
