@@ -347,7 +347,7 @@ router.get("/getbyid/:id", async (req,res)=>{
 //email teszteles
 router.get("/testszamla", async (req,res) =>{
      console.log("Számla lekérése...")
-     const id = "641334fc7143e0710be1365d"
+     const id = "641eb9320b2a8981adae572d"
      const order = await Orders.findById(id);
      let list = []
      for(x in order.cart){
