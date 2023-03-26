@@ -210,7 +210,7 @@ router.get("/update/ordered/:id", async (req,res) =>{
                     }
                }
           );  
-          Mail.sendOrderMail(id) 
+
           var order = await Orders.findById(id);
           for(items in order.cart){
                var size = order.cart[items].size
@@ -258,7 +258,6 @@ router.get("/update/ordered/:id", async (req,res) =>{
 
           //Szamla kiallitasa
           console.log("Számla lekérése...")
-          const order = await Orders.findById(id);
           let list = []
           for(x in order.cart){
           list.push({
@@ -288,10 +287,13 @@ router.get("/update/ordered/:id", async (req,res) =>{
                }
           ); 
           }
+          console.log("Szamlaid: "+json.invoiceId)
+          Mail.sendOrderMail(id) 
+          Mail.sendSzamlaMail(id,json.invoiceId)
           }catch(err){
           console.log(err)
           }finally{
-          console.log("Rendelés leadva és szamla kiallitva!")
+          console.log("Rendelés leadva és szamla kiallitva és emailek elkuldve!")
           }
 })
 //Rendelés törlése

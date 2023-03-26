@@ -76,7 +76,7 @@ async function sendShippingMail(id){
      return "Email sikeresen kiküldve!"
 }
 //Rendeles szamla FELHASZBALOI email
-async function sendSzamlaMail(id){
+async function sendSzamlaMail(id,szamlaid){
      console.log("Fut az email kuldes...")
      const order = await Orders.findById(id);
 
