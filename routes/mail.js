@@ -89,7 +89,12 @@ async function sendSzamlaMail(id,szamlaid){
               orderid : order.orderid,
               firstname: order.u_firstname,
               lastname: order.u_name,
-          }
+          },
+          attachments: [
+               {   // filename and content type is derived from path
+                    path: './szamlak/' + szamlaid
+               },
+          ]
      }
        
      transporter.sendMail(message)
