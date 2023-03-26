@@ -15,7 +15,7 @@ router.post("/subscribe", async (req,res) =>{
    try{
       console.log(req.body)
       const subbed = await Newsletter.create({  
-        name: req.body.name,
+        name: req.body.name1 + " " + req.body.name2,
         email: req.body.email,
       });
       res.json(subbed);
