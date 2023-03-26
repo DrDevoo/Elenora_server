@@ -215,7 +215,7 @@ router.get("/update/ordered/:id", async (req,res) =>{
           for(items in order.cart){
                var size = order.cart[items].size
                const product = await Products.findOne({prodname : order.cart[items].name});
-               if(!(product.pearls == null)){
+               if(product.pearls){
                     for(x in product.pearls){
                          if(size == "XS"){
                               console.log(product.pearls[x].name + " minuss(XS): " + product.pearls[x].xs)
@@ -255,7 +255,7 @@ router.get("/update/ordered/:id", async (req,res) =>{
                          }
                     } 
                }
-
+          }
           //Szamla kiallitasa
           console.log("Számla lekérése...")
           let list = []
@@ -286,7 +286,8 @@ router.get("/update/ordered/:id", async (req,res) =>{
                     }
                }
           ); 
-          }
+          
+
           console.log("Szamlaid: "+json.invoiceId)
           Mail.sendOrderMail(id) 
           Mail.sendSzamlaMail(id,json.invoiceId)
