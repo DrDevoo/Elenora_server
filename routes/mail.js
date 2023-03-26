@@ -92,7 +92,7 @@ async function sendSzamlaMail(id,szamlaid){
           },
           attachments: [
                {   // filename and content type is derived from path
-                    path: './szamlak/' + szamlaid
+                    path: './szamlak/' + szamlaid + '.pdf'
                },
           ]
      }
