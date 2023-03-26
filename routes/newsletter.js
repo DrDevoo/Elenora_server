@@ -13,6 +13,7 @@ router.get("/", async (req, res) => {
 
 router.post("/subscribe", async (req,res) =>{
    try{
+      console.log(req.body)
       const subbed = await Newsletter.create({  
         name: req.body.name,
         email: req.body.email,
