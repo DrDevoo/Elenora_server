@@ -273,13 +273,15 @@ router.get("/update/ordered/:id", async (req,res) =>{
           console.log("Számla lekérése...")
           let list = []
           for(x in order.cart){
-          list.push({
+               if(order.cart[x].price > 0){
+               list.push({
                label: order.cart[x].name,
                quantity: order.cart[x].quantity,
                unit: "db",
                vat: "AAM",
                grossUnitPrice: order.cart[x].price,
-             });
+               });
+               }
           }
           let resszamla = await fetch(process.env.SZAMLAZO_API_URL,{
           method: "POST",
