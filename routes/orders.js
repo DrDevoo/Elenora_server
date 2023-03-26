@@ -268,7 +268,8 @@ router.get("/update/ordered/:id", async (req,res) =>{
           }
 
           try{
-                         //Szamla kiallitasa
+          //Szamla kiallitasa
+          const id = req.params.id   
           console.log("Számla lekérése...")
           let list = []
           for(x in order.cart){
