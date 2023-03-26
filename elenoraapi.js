@@ -89,7 +89,6 @@ httpServer.listen(3900, () => {
   console.log('---HTTP szerver elerheto a 3900 porton---');
 });
 
-
 const httpsServer = https.createServer({
   key: fs.readFileSync('/etc/letsencrypt/live/elenora.hu/privkey.pem'),
   cert: fs.readFileSync('/etc/letsencrypt/live/elenora.hu/fullchain.pem'),

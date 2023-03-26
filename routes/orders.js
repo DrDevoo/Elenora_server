@@ -402,17 +402,20 @@ router.get("/getbyid/:id", async (req,res)=>{
 //teszteles
 router.get("/testszamla", async (req,res) =>{
      console.log("Számla lekérése...")
-     const id = "641eb9320b2a8981adae572d"
+     const id = "642006e5ed35b6e26d38c9e3"
      const order = await Orders.findById(id);
      let list = []
      for(x in order.cart){
-          list.push({
+          if(order.cart[x].price > 0){
+                        list.push({
                label: order.cart[x].name,
                quantity: order.cart[x].quantity,
                unit: "db",
                vat: "AAM",
                grossUnitPrice: order.cart[x].price,
-             });
+             }); 
+          }
+
      }
      console.log(list)
      let resszamla = await fetch(process.env.SZAMLAZO_API_URL,{
