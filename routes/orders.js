@@ -201,6 +201,7 @@ router.post("/pay", async (req, res) => {
 //Frissitesek(Autenticated)
 router.get("/update/ordered/:id", async (req,res) =>{
      try{
+          console.log("Rendelés véglegesítése")
           const id = req.params.id   
           await Orders.findOneAndUpdate(    
                { _id: id},
@@ -256,7 +257,18 @@ router.get("/update/ordered/:id", async (req,res) =>{
                     } 
                }
           }
-          //Szamla kiallitasa
+
+          
+
+
+          }catch(err){
+          console.log(err)
+          }finally{
+          console.log("Rendelés leadva!")
+          }
+
+          try{
+                         //Szamla kiallitasa
           console.log("Számla lekérése...")
           let list = []
           for(x in order.cart){
@@ -286,15 +298,14 @@ router.get("/update/ordered/:id", async (req,res) =>{
                     }
                }
           ); 
-          
-
           console.log("Szamlaid: "+json.invoiceId)
           Mail.sendOrderMail(id) 
           Mail.sendSzamlaMail(id,json.invoiceId)
+
           }catch(err){
           console.log(err)
           }finally{
-          console.log("Rendelés leadva és szamla kiallitva és emailek elkuldve!")
+          console.log("Rendelés szamla kiallitva és emailek elkuldve!")
           }
 })
 //Rendelés törlése
