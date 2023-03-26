@@ -89,6 +89,10 @@ const OrdersScheme = mongoose.Schema({
         type: String,
         default: "",
     },
+    szamlaid:{
+        type: String,
+        default: "",
+    },
 });
 
 module.exports = mongoose.model('Orders', OrdersScheme);

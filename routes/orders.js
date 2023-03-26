@@ -19,7 +19,7 @@ router.get("/", async (req, res) => {
      console.log(products)
 });
 
-
+//Rendelés létrehozása
 router.post("/start", async (req,res) =>{
      try{
      const cart = req.body
@@ -45,7 +45,7 @@ router.post("/start", async (req,res) =>{
           res.json(startedOrder);
      }
 })
-
+//Rendelés adatok mentése
 router.post("/saveuser/:id", async (req,res) =>{
      try{
      const user = req.body
@@ -73,7 +73,7 @@ router.post("/saveuser/:id", async (req,res) =>{
           res.json(updated)
      }
 })
-
+//Rendelés kupon használat mentése
 router.get("/savecupon/:id/:cupon", async (req,res) =>{
      try{
      const id = req.params.id
@@ -93,7 +93,7 @@ router.get("/savecupon/:id/:cupon", async (req,res) =>{
           res.json(updated)
      }
 })
-
+//Rendelés szállítási adatok mentése
 router.post("/saveshipping/:id", async (req,res) =>{
      try{
      const order = req.body
@@ -122,6 +122,7 @@ router.post("/saveshipping/:id", async (req,res) =>{
           res.json(updated)
      }
 })
+//Rendelés számlázási címének mentése
 router.post("/saveszamla/:id", async (req,res) =>{
      try{
      const szamlazas = req.body
@@ -147,7 +148,7 @@ router.post("/saveszamla/:id", async (req,res) =>{
           res.json(updated)
      }
 })
-
+//Rendelés kosarának frissítése
 router.post("/updatecart/:id", async (req,res) =>{
      try{
      const cart = req.body
@@ -168,7 +169,7 @@ router.post("/updatecart/:id", async (req,res) =>{
           res.json(updated)
      }
 })
-
+//Rendelés ONLINE fizetése
 router.post("/pay", async (req, res) => {
   try {
      console.log("Fiezetés megkezdve!")
@@ -195,6 +196,7 @@ router.post("/pay", async (req, res) => {
     res.json(e)
   }
 })
+
 
 //Frissitesek(Autenticated)
 router.get("/update/ordered/:id", async (req,res) =>{
@@ -254,14 +256,45 @@ router.get("/update/ordered/:id", async (req,res) =>{
                     } 
                }
 
+          //Szamla kiallitasa
+          console.log("Számla lekérése...")
+          const order = await Orders.findById(id);
+          let list = []
+          for(x in order.cart){
+          list.push({
+               label: order.cart[x].name,
+               quantity: order.cart[x].quantity,
+               unit: "db",
+               vat: "AAM",
+               grossUnitPrice: order.cart[x].price,
+             });
           }
-     }catch(err){
+          let resszamla = await fetch(process.env.SZAMLAZO_API_URL,{
+          method: "POST",
+          headers: {
+               "Content-Type": "application/json",
+          },
+          body: JSON.stringify({order,list}),
+          });
+          const json = await resszamla.json();
+          var buffer = Buffer.from(json.pdf, 'base64')
+          fs.writeFileSync('./szamlak/'+json.invoiceId + ".pdf", buffer)
+          await Orders.findOneAndUpdate(    
+               { _id: id},
+               { $set:
+                    {
+                         szamlaid: json.invoiceId,
+                    }
+               }
+          ); 
+          }
+          }catch(err){
           console.log(err)
-     }finally{
-          console.log("Rendelés leadva!")
-     }
+          }finally{
+          console.log("Rendelés leadva és szamla kiallitva!")
+          }
 })
-
+//Rendelés törlése
 router.get("/update/del/:id", async (req,res) =>{
      try{
           const id = req.params.id
@@ -273,6 +306,7 @@ router.get("/update/del/:id", async (req,res) =>{
           console.log("Rendelés sikeres törölve!")
      }
 })
+//Rendelés összekészítve
 router.get("/update/maked/:id", async (req,res) =>{
      try{
           const id = req.params.id
@@ -289,6 +323,7 @@ router.get("/update/maked/:id", async (req,res) =>{
           console.log("Rendelés összekészítve!")
      }
 })
+//Rendelés szállítás alatt
 router.get("/update/shipping/:id", async (req,res) =>{
      try{
           const id = req.params.id 
@@ -306,6 +341,7 @@ router.get("/update/shipping/:id", async (req,res) =>{
           console.log("Rendelés szállítás alatt!")
      }
 })
+//Rendelés kész
 router.get("/update/finish/:id", async (req,res) =>{
      try{
           const id = req.params.id
@@ -323,7 +359,8 @@ router.get("/update/finish/:id", async (req,res) =>{
      }
 })
 
-//Lekeresek (Autenticated)
+
+//Lekérések (Autenticated)
 router.get("/getall", async (req,res) =>{
      try{
          const orders = await Orders.find();
@@ -344,7 +381,8 @@ router.get("/getbyid/:id", async (req,res)=>{
      }
 })
 
-//email teszteles
+
+//teszteles
 router.get("/testszamla", async (req,res) =>{
      console.log("Számla lekérése...")
      const id = "641eb9320b2a8981adae572d"
