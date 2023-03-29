@@ -200,9 +200,18 @@ router.post("/pay", async (req, res) => {
 
 //Frissitesek(Autenticated)
 router.get("/update/ordered/:id", async (req,res) =>{
-     try{
-          console.log("Rendelés véglegesítése")
+console.log("rendeles ellenorzese...")
+     const id = req.params.id   
+
+     const statusdb = await Orders.findById(id);
+     const statusdata = statusdb.status
+     if(statusdata == "ordered"){
+          console.log("Rendelés már véglegesítve lett!")
+     }else{
+               console.log("Rendelés véglegesítése")
+ try{
           const id = req.params.id   
+
           await Orders.findOneAndUpdate(    
                { _id: id},
                { $set:
@@ -310,6 +319,9 @@ router.get("/update/ordered/:id", async (req,res) =>{
           }finally{
           console.log("Rendelés szamla kiallitva és emailek elkuldve!")
           }
+     }
+
+    
 })
 //Rendelés törlése
 router.get("/update/del/:id", async (req,res) =>{
