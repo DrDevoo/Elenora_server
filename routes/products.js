@@ -188,6 +188,7 @@ router.get("/getbyid/:id", async (req,res)=>{
           var l = true
           var xl = true
           var xxl = true
+          var box = true
           for(item in product.pearls){
                const x = await Inventory.findOne({ item_name: product.pearls[item].name })   
                const idb = x.item_quantity  
@@ -210,7 +211,14 @@ router.get("/getbyid/:id", async (req,res)=>{
                     xxl = false
                }
           }
-          res.json({product,xs,s,m,l,xl,xxl});
+          const feketedoboz = await Inventory.findOne({ item_name: 'Fekete doboz' })   
+          const feketedb = feketedoboz.item_quantity  
+          const feherdoboz = await Inventory.findOne({ item_name: 'Fehér doboz' })   
+          const feherdb = feherdoboz.item_quantity 
+          if(feketedb < 1 && feherdb < 1){
+               box = false
+          }
+          res.json({product,xs,s,m,l,xl,xxl,box});
      }catch(err){
           res.json({ message: err });
      }
