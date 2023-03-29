@@ -8,6 +8,7 @@ const fs = require('fs');
 
 const Orders = require('../models/orders-model');
 const Mail = require('../routes/mail');
+const Ftp = require('../routes/ftp');
 const Products = require('../models/products-model');
 const Inventory = require('../models/inventory-model');
 
@@ -302,6 +303,9 @@ console.log("rendeles ellenorzese...")
           const json = await resszamla.json();
           var buffer = Buffer.from(json.pdf, 'base64')
           fs.writeFileSync('./szamlak/'+json.invoiceId + ".pdf", buffer)
+
+          await Ftp.Upload('./szamlak/'+json.invoiceId + ".pdf","szamlak/"+json.invoiceId + ".pdf")
+
           await Orders.findOneAndUpdate(    
                { _id: id},
                { $set:
