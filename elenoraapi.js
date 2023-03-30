@@ -54,12 +54,11 @@ app.get("/", auth, (req, res) => {
   
 app.get("/statistic", async (req, res) => {
   const today = new Date();
-  const firstDay = new Date(today.setDate(today.getDate() - today.getDay()));
-  const lastDay = new Date(today.setDate(today.getDate() - today.getDay() + 6));
-  var startOfWeek = moment().startOf('week').toDate();
-  var endOfWeek   = moment().endOf('week').toDate();
-  console.log(startOfWeek); 
-  console.log(endOfWeek); 
+  const firstDay = new Date(today.setHours(0,0,0,0).setDate(today.setHours(0,0,0,0).getDate() - today.setHours(0,0,0,0).getDay()));
+  const lastDay = new Date(today.setHours(23,59,59,59).setDate(today.setHours(23,59,59,59).getDate() - today.setHours(23,59,59,59).getDay() + 6));
+
+  console.log(firstDay); 
+  console.log(lastDay); 
 
   try{
 
