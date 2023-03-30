@@ -106,7 +106,7 @@ async function sendSzamlaMail(id,szamlaid){
 async function sendOrderSYS(id){
      message = {
           from: "informacio@elenora.hu",
-          to: ["krichard@elenora.hu"],
+          to: ["krichard@elenora.hu","h.krisztina0530@gmail.com"],
           subject: "Új rendelés!",
           html: await readFile(path.join(__dirname, 'mails/test.html'), 'utf8')
      }
@@ -118,7 +118,7 @@ async function sendOrderSYS(id){
 async function sendOpened(){
      message = {
           from: "informacio@elenora.hu",
-          to: ["krichard@elenora.hu","hkrisztina05@gmail.com"],
+          to: ["krichard@elenora.hu","h.krisztina0530@gmail.com"],
           subject: "Új rendelés!",
           html: await readFile(path.join(__dirname, 'mails/opened.html'), 'utf8')
      }
@@ -133,7 +133,7 @@ async function sendPanaszSYS(firstname,lastname,email,text){
      console.log("Fut az email kuldes...")
      message = {
           from: "informacio@elenora.hu",
-          to: ["krichard@elenora.hu","hkrisztina05@gmail.com"],
+          to: ["krichard@elenora.hu","h.krisztina0530@gmail.com"],
           subject: "Új panasz",
           template: 'panasz', // the name of the template file i.e email.handlebars
           context:{
@@ -149,21 +149,4 @@ async function sendPanaszSYS(firstname,lastname,email,text){
      return "Email sikeresen kiküldve!"
 }
 
-async function TsendShippingMail(id){
-     console.log("Fut az email kuldes... (TESZT)")
-
-     message = {
-          from: "informacio@elenora.hu",
-          to: ["krichard@elenora.hu","hkrisztina05@gmail.com"],
-          subject: "Rendelésed úton van hozzád",
-          template: 'szallitas', // the name of the template file i.e email.handlebars
-          context:{
-
-          }
-     }
-       
-     transporter.sendMail(message)
-  
-     return "TESZT Email sikeresen kiküldve!"
-}
-module.exports = { sendOrderMail,sendOpened,sendShippingMail,sendSzamlaMail,TsendShippingMail,sendOrderSYS,sendPanaszSYS }
+module.exports = { sendOrderMail,sendOpened,sendShippingMail,sendSzamlaMail,sendOrderSYS,sendPanaszSYS }

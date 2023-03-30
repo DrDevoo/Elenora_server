@@ -12,8 +12,6 @@ app.use(cors());
 const auth = require("./middleware/auth");
 const cron = require("node-cron");
 const Mail = require('./routes/mail');
-const Orders = require('./models/orders-model');
-
 
 //Kapcsolt komponensek
 const productsRoute = require('./routes/products');
@@ -39,7 +37,6 @@ app.use('/sales', salesRoute)
 app.use('/orders', ordersRoute)
 app.use('/newsletter', newsletterRoute)
 
-
 //Adatbazis kapcsolat
 mongoose.set("strictQuery", false);
 mongoose.connect(
@@ -49,29 +46,7 @@ mongoose.connect(
 
 //Autentikalt index oldal
 app.get("/", auth, (req, res) => {
-  res.status(200).send("Welcome 🙌 ");
-});
-  
-app.get("/statistic", async (req, res) => {
-  const today = new Date();
-  const firstDay = new Date(today.setDate(today.getDate().setHours(0,0,0,0) - today.getDay().setHours(0,0,0,0)));
-  const lastDay = new Date(today.setDate(today.getDate().setHours(23,59,59,59) - today.getDay().setHours(23,59,59,59) + 6));
-
-  console.log(firstDay); 
-  console.log(lastDay); 
-
-  try{
-
-    const count = await Orders.find({
-      createdtime: {
-        $gte: "2023-03-29T13:59:23.555+00:00",
-        $lte: "2023-03-29T13:59:23.555+00:00",
-      }
-    }).count();
-    res.json({count,datet});
-  }catch(err){
-    res.json({ message: err });
-  }
+  res.status(200).send("ELENORA API 1.0.0 🙌 ");
 });
 
 // 404 Not found oldal
@@ -98,12 +73,10 @@ cron.schedule('00 17 31 3 *', async function() {
     res.json({ message: err });
     console.log(err)
 }finally{
-  var mailer = Mail.sendOpened() 
+  Mail.sendOpened() 
   console.log(mailer)
 }
 });
-
-
 
 //Szerver certificates
 const httpServer = http.createServer(app);
