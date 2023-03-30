@@ -129,7 +129,25 @@ async function sendOpened(){
 }
 
 
-
+async function sendPanaszSYS(firstname,lastname,email,text){
+     console.log("Fut az email kuldes...")
+     message = {
+          from: "informacio@elenora.hu",
+          to: ["krichard@elenora.hu","hkrisztina05@gmail.com"],
+          subject: "Új panasz",
+          template: 'panasz', // the name of the template file i.e email.handlebars
+          context:{
+              fistname : firstname,
+              lastname: lastname,
+              email: email,
+              message: text,
+          }
+     }
+       
+     transporter.sendMail(message)
+  
+     return "Email sikeresen kiküldve!"
+}
 
 async function TsendShippingMail(id){
      console.log("Fut az email kuldes... (TESZT)")
@@ -148,4 +166,4 @@ async function TsendShippingMail(id){
   
      return "TESZT Email sikeresen kiküldve!"
 }
-module.exports = { sendOrderMail,sendOpened,sendShippingMail,sendSzamlaMail,TsendShippingMail,sendOrderSYS }
+module.exports = { sendOrderMail,sendOpened,sendShippingMail,sendSzamlaMail,TsendShippingMail,sendOrderSYS,sendPanaszSYS }
