@@ -330,6 +330,7 @@ console.log("rendeles ellenorzese...")
           console.log("Szamlaid: "+json.invoiceId)
           Mail.sendOrderMail(id) 
           Mail.sendSzamlaMail(id,json.invoiceId)
+          Mail.sendOrderSYS()
 
           }catch(err){
           console.log(err)

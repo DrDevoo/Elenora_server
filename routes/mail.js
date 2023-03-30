@@ -105,7 +105,7 @@ async function sendSzamlaMail(id,szamlaid){
 
 async function sendOrderSYS(id){
      message = {
-          from: "info@elenora.hu",
+          from: "informacio@elenora.hu",
           to: ["krichard@elenora.hu"],
           subject: "Új rendelés!",
           html: await readFile(path.join(__dirname, 'mails/test.html'), 'utf8')
@@ -117,7 +117,7 @@ async function sendOrderSYS(id){
 }
 async function sendOpened(){
      message = {
-          from: "info@elenora.hu",
+          from: "informacio@elenora.hu",
           to: ["krichard@elenora.hu","hkrisztina05@gmail.com"],
           subject: "Új rendelés!",
           html: await readFile(path.join(__dirname, 'mails/opened.html'), 'utf8')
@@ -136,7 +136,7 @@ async function TsendShippingMail(id){
 
      message = {
           from: "informacio@elenora.hu",
-          to: "krichard001@icloud.com",
+          to: ["krichard@elenora.hu","hkrisztina05@gmail.com"],
           subject: "Rendelésed úton van hozzád",
           template: 'szallitas', // the name of the template file i.e email.handlebars
           context:{
@@ -148,4 +148,4 @@ async function TsendShippingMail(id){
   
      return "TESZT Email sikeresen kiküldve!"
 }
-module.exports = { sendOrderMail,sendOpened,sendShippingMail,sendSzamlaMail,TsendShippingMail }
+module.exports = { sendOrderMail,sendOpened,sendShippingMail,sendSzamlaMail,TsendShippingMail,sendOrderSYS }
