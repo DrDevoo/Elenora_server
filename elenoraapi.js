@@ -53,18 +53,13 @@ app.get("/", auth, (req, res) => {
 });
   
 app.get("/statistic", async (req, res) => {
-    let datet = new Date()
-    console.log(datet)
-    const today = new Date();
-
-// ✅ Get the first day of the current week (Sunday)
-const firstDay = new Date(today.setDate(today.getDate() - today.getDay()));
-
-// ✅ Get the last day of the current week (Saturday)
-const lastDay = new Date(today.setDate(today.getDate() - today.getDay() + 6));
-
-console.log(firstDay); // 👉️ Sunday August 7 2022
-console.log(lastDay); // 👉️ Saturday August 13 2022
+  const today = new Date();
+  const firstDay = new Date(today.setDate(today.getDate() - today.getDay()));
+  const lastDay = new Date(today.setDate(today.getDate() - today.getDay() + 6));
+  var startOfWeek = moment().startOf('week').toDate();
+  var endOfWeek   = moment().endOf('week').toDate();
+  console.log(startOfWeek); 
+  console.log(endOfWeek); 
 
   try{
 
