@@ -54,8 +54,8 @@ app.get("/", auth, (req, res) => {
   
 app.get("/statistic", async (req, res) => {
   const today = new Date();
-  const firstDay = new Date(today.setHours(0,0,0,0).setDate(today.setHours(0,0,0,0).getDate() - today.setHours(0,0,0,0).getDay()));
-  const lastDay = new Date(today.setHours(23,59,59,59).setDate(today.setHours(23,59,59,59).getDate() - today.setHours(23,59,59,59).getDay() + 6));
+  const firstDay = new Date(today.setDate(today.getDate().setHours(0,0,0,0) - today.getDay().setHours(0,0,0,0)));
+  const lastDay = new Date(today.setDate(today.getDate().setHours(23,59,59,59) - today.getDay().setHours(23,59,59,59) + 6));
 
   console.log(firstDay); 
   console.log(lastDay); 
