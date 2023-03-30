@@ -88,8 +88,11 @@ router.get("/savecupon/:id/:cupon", async (req,res) =>{
                     }
                }
      );  
+
+
      const gettedcupon = await Cupons.find({cupon_name:cupon.toUpperCase()})
      console.log(gettedcupon)
+     console.log(typeof gettedcupon.cupon_used);
      const cuponcount = gettedcupon.cupon_used + 1
      console.log(cuponcount)
      var updated = await Cupons.findOneAndUpdate(    
