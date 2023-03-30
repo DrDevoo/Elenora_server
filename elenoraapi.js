@@ -12,7 +12,7 @@ app.use(cors());
 const auth = require("./middleware/auth");
 const cron = require("node-cron");
 const Mail = require('./routes/mail');
-const Orders = require('../models/orders-model');
+const Orders = require('./models/orders-model');
 
 
 //Kapcsolt komponensek
