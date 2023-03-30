@@ -137,7 +137,7 @@ async function sendPanaszSYS(firstname,lastname,email,text){
           subject: "Új panasz",
           template: 'panasz', // the name of the template file i.e email.handlebars
           context:{
-              fistname : firstname,
+              firstname : firstname,
               lastname: lastname,
               email: email,
               message: text,
