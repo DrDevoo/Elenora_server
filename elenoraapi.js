@@ -53,7 +53,7 @@ app.get("/", auth, (req, res) => {
 });
   
 app.get("/statistic", async (req, res) => {
-    let datet = new Date.now
+    let datet = new Date()
     console.log(datet)
   try{
 
