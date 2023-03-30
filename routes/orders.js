@@ -11,6 +11,7 @@ const Mail = require('../routes/mail');
 const Ftp = require('../routes/ftp');
 const Products = require('../models/products-model');
 const Inventory = require('../models/inventory-model');
+const Cupons = require('../models/cupons-model');
 
 const stripe = require("stripe")(process.env.STRIPE_PRIVATE_KEY)
 
@@ -83,10 +84,20 @@ router.get("/savecupon/:id/:cupon", async (req,res) =>{
                { _id: id},
                { $set:
                     {
-                    usedcupon: cupon,
+                    usedcupon: cupon.toUpperCase(),
                     }
                }
-               );  
+     );  
+     const gettedcupon = await Cupons.find({cupon_name:cupon.toUpperCase()})
+     const cuponcount = gettedcupon.cupon.cupon_used + 1
+     var updated = await Cupons.findOneAndUpdate(    
+          { _id: gettedcupon._id},
+          { $set:
+               {
+               cupon_used: cuponcount,
+               }
+          }
+     ); 
      }catch(err){
           console.log(err)
      }finally{

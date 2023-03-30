@@ -10,6 +10,10 @@ const CuponsScheme = mongoose.Schema({
         type: Number,
         default: 0,
         required: true
+    },
+    cupon_used:{
+        type: Number,
+        default: 0,
     }
 });
 

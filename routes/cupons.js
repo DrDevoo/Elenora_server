@@ -14,9 +14,10 @@ router.get("/", async (req, res) => {
 router.post("/add/:name/:value", async (req,res) =>{
 
    try{
-
+          const defname = req.params.name
+          const keszname = defname.toUpperCase()
        const cupon = await Cupons.create({  
-        cupon_name: req.params.name,
+        cupon_name: keszname,
         cupon_value: req.params.value,
    });
 res.json(cupon);
@@ -32,7 +33,8 @@ res.json(cupon);
 router.get("/check/:code", async (req,res) =>{
      try{
           const code = req.params.code
-          const checked = await Cupons.findOne({cupon_name:code})
+          const keszcode= code.toUpperCase()
+          const checked = await Cupons.findOne({cupon_name:keszcode})
           const msg = "Érvénytelen kupon!"
           console.log(checked)
           if(checked == null){
