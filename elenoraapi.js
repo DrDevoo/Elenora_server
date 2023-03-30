@@ -12,6 +12,7 @@ app.use(cors());
 const auth = require("./middleware/auth");
 const cron = require("node-cron");
 const Mail = require('./routes/mail');
+const Orders = require('../models/orders-model');
 
 
 //Kapcsolt komponensek
@@ -51,6 +52,22 @@ app.get("/", auth, (req, res) => {
   res.status(200).send("Welcome 🙌 ");
 });
   
+app.get("/statistic", async (req, res) => {
+  try{
+    let date = new Date.now
+    console.log(date)
+    const count = await Orders.find({
+      createdtime: {
+        $gte: "2023-03-29T13:59:23.555+00:00",
+        $lte: "2023-03-29T13:59:23.555+00:00",
+      }
+    }).count();
+    res.json({count});
+  }catch(err){
+    res.json({ message: err });
+  }
+});
+
 // 404 Not found oldal
 app.use("*", (req, res) => {
   res.status(404).json({
