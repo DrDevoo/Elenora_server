@@ -168,6 +168,14 @@ router.get("/getbycateg/:categ", async (req,res) =>{
          res.json({ message: err });
        }
 })
+router.get("/getajanlott", async (req,res) =>{
+     try{
+         const products = await Products.find({ajanlott:"true"});
+         res.json(products);
+       }catch(err){
+         res.json({ message: err });
+       }
+})
 router.get("/getbycollection/:collection", async (req,res) =>{
      try{
           const collection = req.params.collection
