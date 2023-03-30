@@ -53,9 +53,10 @@ app.get("/", auth, (req, res) => {
 });
   
 app.get("/statistic", async (req, res) => {
-  try{
     let datet = new Date.now
     console.log(datet)
+  try{
+
     const count = await Orders.find({
       createdtime: {
         $gte: "2023-03-29T13:59:23.555+00:00",
