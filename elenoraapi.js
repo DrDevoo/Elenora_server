@@ -52,7 +52,7 @@ app.get("/", auth, (req, res) => {
 
 
 const upload = multer ({
-dest: "./public",
+dest: "../a",
 limits: {
 fileSize: 5000000
 }
