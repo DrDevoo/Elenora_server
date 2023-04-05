@@ -50,13 +50,13 @@ app.get("/", auth, (req, res) => {
   res.status(200).send("ELENORA API 1.0.0 🙌 ");
 });
 
-app.post("/testupload", (req, res) => {
+app.post("/testupload",upload.single('file'), (req, res) => {
   
-  if (!req.files) {
+  if (!req.file) {
     return res.status(500).send({ msg: "file is not found" })
 }
     // accessing the file
-const myFile = req.files.file;
+const myFile = req.file;
 
 //  mv() method places the file inside public directory
 myFile.mv(`${__dirname}/public/${myFile.name}`, function (err) {
