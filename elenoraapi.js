@@ -13,7 +13,7 @@ app.use(cors());
 const auth = require("./middleware/auth");
 const cron = require("node-cron");
 const Mail = require('./routes/mail');
-
+const multer = require( "multer");
 //Kapcsolt komponensek
 const productsRoute = require('./routes/products');
 const getimage = require('./routes/getimage')
@@ -50,23 +50,15 @@ app.get("/", auth, (req, res) => {
   res.status(200).send("ELENORA API 1.0.0 🙌 ");
 });
 
-app.post("/testupload", (req, res) => {
-  
-  if (!req.file) {
-    return res.status(500).send({ msg: "file is not found" })
-}
-    // accessing the file
-const myFile = req.file;
 
-//  mv() method places the file inside public directory
-myFile.mv(`${__dirname}/public/${myFile.name}`, function (err) {
-    if (err) {
-        console.log(err)
-        return res.status(500).send({ msg: "Error occured" });
-    }
-    // returing the response with file path and name
-    return res.send({name: myFile.name, path: `/${myFile.name}`});
+const upload = multer ({
+dest: "./public",
+limits: {
+fileSize: 5000000
+}
 });
+app.post('/upload', upload.single('file'), (req, res) => {
+  res.json({ file: req.file });
 });
 
 // 404 Not found oldal
