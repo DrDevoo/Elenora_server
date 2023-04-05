@@ -10,7 +10,12 @@ const ProductsBoravia = require('../models/prodboravia-model');
 const ProductsStone = require('../models/prodstone-model');
 
 const multer = require('multer');
-const upload = multer({ dest: './prod_images/' })
+const upload = multer ({
+     dest: "../../../var/www/Elenora_client/dist/prodimgs",
+     limits: {
+     fileSize: 5000000
+     }
+});
 const { uploadFile, getFileStream } = require('./s3');
 
 //Autentikalt index oldal
@@ -45,16 +50,14 @@ router.post("/add/:prodname/:collections/:price/:description/:categ/:colors", as
 router.post("/addimg1/:prodid", upload.single('file'), async (req,res) =>{
      try{
      const id = req.params.prodid
-    const file = req.file;
-    const result = await uploadFile(file);
+     const file = req.file;
+
     console.log("-------kep1-------")
-    console.log(id)
     console.log(file)
-    console.log(result)
     console.log("--------------")
     await Products.findOneAndUpdate(    
      { _id: id},
-     { $set: {image: result.Key}}
+     { $set: {image: file.filename}}
      );  
      }catch(err){
           console.log(err)
@@ -66,16 +69,14 @@ router.post("/addimg1/:prodid", upload.single('file'), async (req,res) =>{
 router.post("/addimg2/:prodid", upload.single('file'), async (req,res) =>{
      try{
      const id = req.params.prodid
-    const file = req.file;
-    const result = await uploadFile(file);
-    console.log("-------kep2-------")
-    console.log(id)
+     const file = req.file;
+
+    console.log("-------kep1-------")
     console.log(file)
-    console.log(result)
     console.log("--------------")
     await Products.findOneAndUpdate(    
      { _id: id},
-     { $set: {image2: result.Key}}
+     { $set: {image2: file.filename}}
      );  
      }catch(err){
           console.log(err)
@@ -87,17 +88,15 @@ router.post("/addimg2/:prodid", upload.single('file'), async (req,res) =>{
 router.post("/addimg3/:prodid", upload.single('file'), async (req,res) =>{
      try{
      const id = req.params.prodid
-    const file = req.file;
-    const result = await uploadFile(file);
-    console.log("-------kep3-------")
-    console.log(id)
+     const file = req.file;
+
+    console.log("-------kep1-------")
     console.log(file)
-    console.log(result)
     console.log("--------------")
 
     await Products.findOneAndUpdate(    
      { _id: id},
-     { $set: {image3: result.Key}}
+     { $set: {image3: file.filename}}
      );  
      }catch(err){
           console.log(err)
