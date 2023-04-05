@@ -50,7 +50,7 @@ app.get("/", auth, (req, res) => {
   res.status(200).send("ELENORA API 1.0.0 🙌 ");
 });
 
-app.post("/testupload", auth, (req, res) => {
+app.post("/testupload", (req, res) => {
   
   if (!req.files) {
     return res.status(500).send({ msg: "file is not found" })
