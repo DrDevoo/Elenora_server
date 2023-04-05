@@ -52,7 +52,7 @@ app.get("/", auth, (req, res) => {
 
 
 const upload = multer ({
-dest: "../a",
+dest: "../../var/www/Elenora_client/public/prodimgs",
 limits: {
 fileSize: 5000000
 }
