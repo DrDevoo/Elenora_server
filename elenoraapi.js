@@ -6,6 +6,7 @@ const app = express();
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors  = require("cors");
+const fileUpload = require('express-fileupload');
 require("dotenv").config();
 app.use(bodyParser.json());
 app.use(cors());
@@ -47,6 +48,25 @@ mongoose.connect(
 //Autentikalt index oldal
 app.get("/", auth, (req, res) => {
   res.status(200).send("ELENORA API 1.0.0 🙌 ");
+});
+
+app.post("/testupload", auth, (req, res) => {
+  
+  if (!req.files) {
+    return res.status(500).send({ msg: "file is not found" })
+}
+    // accessing the file
+const myFile = req.files.file;
+
+//  mv() method places the file inside public directory
+myFile.mv(`${__dirname}/public/${myFile.name}`, function (err) {
+    if (err) {
+        console.log(err)
+        return res.status(500).send({ msg: "Error occured" });
+    }
+    // returing the response with file path and name
+    return res.send({name: myFile.name, path: `/${myFile.name}`});
+});
 });
 
 // 404 Not found oldal
