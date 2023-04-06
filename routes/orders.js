@@ -58,7 +58,7 @@ router.post("/saveuser/:id", async (req,res) =>{
                { $set:
                     {
                     u_email: user.u_email,
-                    u_firstname: user.u_first,
+                    u_firstname: user.u_firstname,
                     u_name: user.u_name,
                     u_legio: "Magyarország",
                     u_postnumber: user.u_postnumber,
