@@ -62,6 +62,10 @@ const ProductsScheme = mongoose.Schema({
         default: "active",
         required: true
     },
+    selled:{
+        type: Number,
+        default: 0,
+    },
 });
 
 module.exports = mongoose.model('Products', ProductsScheme);

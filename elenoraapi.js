@@ -88,7 +88,6 @@ cron.schedule('00 17 31 3 *', async function() {
     console.log(err)
 }finally{
   Mail.sendOpened() 
-  console.log(mailer)
 }
 });
 
@@ -96,7 +95,7 @@ cron.schedule('00 17 31 3 *', async function() {
 const httpServer = http.createServer(app);
 //Az app nyitott portjai
 httpServer.listen(3900, () => {
-  console.log('---HTTP szerver elerheto a 3900 porton---');
+  console.log('---HTTP gerinc szerver elerheto a 3900 porton---');
 });
 
 const httpsServer = https.createServer({
@@ -104,5 +103,5 @@ const httpsServer = https.createServer({
   cert: fs.readFileSync('/etc/letsencrypt/live/elenora.hu/fullchain.pem'),
 }, app);
 httpsServer.listen(444, () => {
-  console.log('---HTTPS szerver elerheto a 444 porton---');
+  console.log('---HTTPS gerinc szerver elerheto a 444 porton---');
 });
