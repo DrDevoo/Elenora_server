@@ -71,7 +71,7 @@ router.post("/addimg2/:prodid", upload.single('file'), async (req,res) =>{
      const id = req.params.prodid
      const file = req.file;
 
-    console.log("-------kep1-------")
+    console.log("-------kep2-------")
     console.log(file)
     console.log("--------------")
     await Products.findOneAndUpdate(    
@@ -90,7 +90,7 @@ router.post("/addimg3/:prodid", upload.single('file'), async (req,res) =>{
      const id = req.params.prodid
      const file = req.file;
 
-    console.log("-------kep1-------")
+    console.log("-------kep3-------")
     console.log(file)
     console.log("--------------")
 
