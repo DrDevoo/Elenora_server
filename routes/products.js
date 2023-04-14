@@ -176,9 +176,13 @@ router.get("/getajanlott", async (req,res) =>{
        }
 })
 router.get("/getsaled", async (req,res) =>{
-     try{
+     try{ű
+          let responseitems = []
          const products = await Products.find({activesale:"true"});
-         res.json(products);
+         for(let x = 0;x<4;x++){
+          responseitems.push(products[x])
+     }
+         res.json(responseitems);
        }catch(err){
          res.json({ message: err });
        }
@@ -187,7 +191,7 @@ router.get("/getnews", async (req,res) =>{
      try{
           let responseitems = []
          const products = await Products.find({categ:"aproko"});
-          for(let x = 1;x<4;x++){
+          for(let x = 0;x<4;x++){
                responseitems.push(products[x])
           }
          res.json(responseitems);
