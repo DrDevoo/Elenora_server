@@ -175,6 +175,26 @@ router.get("/getajanlott", async (req,res) =>{
          res.json({ message: err });
        }
 })
+router.get("/getsaled", async (req,res) =>{
+     try{
+         const products = await Products.find({activesale:"true"});
+         res.json(products);
+       }catch(err){
+         res.json({ message: err });
+       }
+})
+router.get("/getnews", async (req,res) =>{
+     try{
+          let responseitems = []
+         const products = await Products.find({categ:"aproko"});
+          for(let x = 1;x<4;x++){
+               responseitems.push(products[x])
+          }
+         res.json(responseitems);
+       }catch(err){
+         res.json({ message: err });
+       }
+})
 router.get("/getbycollection/:collection", async (req,res) =>{
      try{
           const collection = req.params.collection
