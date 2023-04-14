@@ -50,8 +50,8 @@ router.post("/uploadimg/:id", upload.single('file'), async (req,res) =>{
    try{
    const id = req.params.id
    const file = req.file;
-
-  console.log("-------kep1-------")
+      console.log(id)
+  console.log("-------kep-------")
   console.log(file)
   console.log("--------------")
   await ProdCollection.findOneAndUpdate(    
