@@ -39,12 +39,7 @@ router.get("/getall", async (req,res) =>{
         res.json({ message: err });
       }
 })
-router.post(
-   "/testupload",
-   uploadController.uploadImages,
-   uploadController.resizeImages,
-   uploadController.getResult
- );
+
 router.post("/uploadimg/:id", async (req,res) =>{
    try{
    const id = req.params.id
