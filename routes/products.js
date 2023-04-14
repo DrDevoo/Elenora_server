@@ -176,7 +176,7 @@ router.get("/getajanlott", async (req,res) =>{
        }
 })
 router.get("/getsaled", async (req,res) =>{
-     try{ű
+     try{
           let responseitems = []
          const products = await Products.find({activesale:"true"});
          for(let x = 0;x<4;x++){
