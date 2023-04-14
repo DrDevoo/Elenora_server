@@ -5,7 +5,7 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
 const ProdCollection = require('../models/collections-model');
-const uploadController = require("./imgcontroller");
+
 
 //Autentikalt index oldal
 router.get("/", async (req, res) => {
