@@ -6,7 +6,13 @@ const jwt = require("jsonwebtoken");
 
 const ProdCollection = require('../models/collections-model');
 
-
+const multer = require('multer');
+const upload = multer ({
+     dest: "../../../var/www/Elenora_client/dist/coverimgs",
+     limits: {
+     fileSize: 5000000
+     }
+});
 //Autentikalt index oldal
 router.get("/", async (req, res) => {
   
@@ -40,7 +46,7 @@ router.get("/getall", async (req,res) =>{
       }
 })
 
-router.post("/uploadimg/:id", async (req,res) =>{
+router.post("/uploadimg/:id", upload.single('file'), async (req,res) =>{
    try{
    const id = req.params.id
    const file = req.file;
