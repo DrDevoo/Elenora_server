@@ -54,7 +54,7 @@ router.post("/uploadimg/:id", upload.single('file'), async (req,res) =>{
   console.log("-------kep1-------")
   console.log(file)
   console.log("--------------")
-  await Products.findOneAndUpdate(    
+  await ProdCollection.findOneAndUpdate(    
    { _id: id},
    { $set: {coverimg: file.filename}}
    );  
