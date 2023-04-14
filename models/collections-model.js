@@ -15,6 +15,10 @@ const CollectionScheme = mongoose.Schema({
         type: String,
         default: "",
         required: true
+    },
+    coverimg:{
+        type: String,
+        default: ""
     }
 });
 

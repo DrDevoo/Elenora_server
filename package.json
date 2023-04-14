@@ -28,6 +28,8 @@
     "nodemailer": "^6.9.1",
     "nodemailer-express-handlebars": "^6.1.0",
     "nodemon": "^2.0.22",
+    "sharp": "^0.32.0",
+    "sharp-multer": "^0.2.5",
     "stripe": "^11.13.0",
     "szamlazz.js": "^6.0.2"
   }

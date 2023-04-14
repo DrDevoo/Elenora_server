@@ -5,6 +5,18 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
 const ProdCollection = require('../models/collections-model');
+const multer = require('multer');
+const SharpMulter  =  require("sharp-multer");
+const storage =  
+ SharpMulter ({
+              destination:(req, file, callback) =>callback(null, "../../../var/www/Elenora_client/dist/coverimgs"),
+              imageOptions:{
+               fileFormat: "jpg",
+               quality: 80,
+               resize: { width: 500, height: 500 },
+                 }
+           });
+const upload  =  multer({ storage });
 
 //Autentikalt index oldal
 router.get("/", async (req, res) => {
@@ -38,6 +50,24 @@ router.get("/getall", async (req,res) =>{
         res.json({ message: err });
       }
 })
+router.post("/uploadimg/:id", upload.single('file'), async (req,res) =>{
+   try{
+   const id = req.params.id
+   const file = req.file;
 
+  console.log("-------kep1-------")
+  console.log(file)
+  console.log("--------------")
+  await Products.findOneAndUpdate(    
+   { _id: id},
+   { $set: {coverimg: file.filename}}
+   );  
+   }catch(err){
+        console.log(err)
+   }finally{
+        console.log("Kollekcio kép mentése!")
+        res.json({ message: "Kollekcio kep mentés!" });
+   }
+})
 
 module.exports = router;
