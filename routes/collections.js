@@ -5,18 +5,7 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
 const ProdCollection = require('../models/collections-model');
-const multer = require('multer');
-const SharpMulter = require("sharp");
-const storage =  
- SharpMulter ({
-              destination:(req, file, callback) =>callback(null, "../../../var/www/Elenora_client/dist/coverimgs"),
-              imageOptions:{
-               fileFormat: "jpg",
-               quality: 80,
-               resize: { width: 500, height: 500 },
-                 }
-           });
-const upload  =  multer({ storage });
+const uploadController = require("./imgcontroller");
 
 //Autentikalt index oldal
 router.get("/", async (req, res) => {
@@ -50,7 +39,13 @@ router.get("/getall", async (req,res) =>{
         res.json({ message: err });
       }
 })
-router.post("/uploadimg/:id", upload.single('file'), async (req,res) =>{
+router.post(
+   "/testupload",
+   uploadController.uploadImages,
+   uploadController.resizeImages,
+   uploadController.getResult
+ );
+router.post("/uploadimg/:id", async (req,res) =>{
    try{
    const id = req.params.id
    const file = req.file;
