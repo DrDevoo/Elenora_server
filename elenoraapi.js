@@ -97,7 +97,7 @@ const httpServer = http.createServer(app);
 httpServer.listen(3900, () => {
   console.log('---HTTP gerinc szerver elerheto a 3900 porton---');
 });
-/*
+
 const httpsServer = https.createServer({
   key: fs.readFileSync('/etc/letsencrypt/live/elenora.hu/privkey.pem'),
   cert: fs.readFileSync('/etc/letsencrypt/live/elenora.hu/fullchain.pem'),
@@ -105,4 +105,3 @@ const httpsServer = https.createServer({
 httpsServer.listen(444, () => {
   console.log('---HTTPS gerinc szerver elerheto a 444 porton---');
 });
-*/
