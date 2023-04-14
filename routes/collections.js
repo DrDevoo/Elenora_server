@@ -6,7 +6,7 @@ const jwt = require("jsonwebtoken");
 
 const ProdCollection = require('../models/collections-model');
 const multer = require('multer');
-const SharpMulter  =  require("sharp-multer");
+const SharpMulter = require("sharp");
 const storage =  
  SharpMulter ({
               destination:(req, file, callback) =>callback(null, "../../../var/www/Elenora_client/dist/coverimgs"),
