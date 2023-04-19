@@ -302,7 +302,7 @@ console.log("rendeles ellenorzese...")
                quantity: order.cart[x].quantity,
                unit: "db",
                vat: "AAM",
-               grossUnitPrice: Math.round(order.cart[x].price - (order.cart[x].price / 100) * order.cart[x].sale) * 100,
+               grossUnitPrice: Math.round(order.cart[x].price - (order.cart[x].price / 100) * order.cart[x].sale),
                });
                }
           }
