@@ -197,29 +197,7 @@ router.post("/neworder", async (req, res) => {
           const ordersnumber = count + 1
           const orderid = year +""+ month+ "" + day + "-" + ordersnumber;
      
-          const order = await Orders.create({  
-               orderid: orderid,
-               u_email: ,
-               u_firstname: ,
-               u_name: ,
-               u_legio: "Magyarország",
-               u_postnumber: ,
-               u_city: ,
-               u_addresse: ,
-               u_tel: "null",
-               shipping: ,
-               szamlazasimod: "same",
-               szamlazasOrszag: "Magyarország",
-               szamlazasVezeteknev: ,
-               szamlazasUtonev: ,
-               szamlazasIranyitoszam: ,
-               szamlazasTelepules: ,
-               szamlazasCim: ,
-               szamlazasTel: ,
-               cart: ,
-          });
-          var Order = await order.save();
-          
+  
 
      }catch(err){
           console.log(err)
