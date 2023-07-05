@@ -183,6 +183,52 @@ router.post("/updatecart/:id", async (req,res) =>{
           res.json(updated)
      }
 })
+//NewPayment rendelés felvétele
+router.post("/neworder", async (req, res) => {
+     try{
+          const body = req.body
+          console.log(body)
+
+          var dateObj = new Date();
+          var month = dateObj.getUTCMonth() + 1; //months from 1-12
+          var day = dateObj.getUTCDate();
+          var year = dateObj.getUTCFullYear();
+          const count = await Orders.find().count();
+          const ordersnumber = count + 1
+          const orderid = year +""+ month+ "" + day + "-" + ordersnumber;
+     
+          const order = await Orders.create({  
+               orderid: orderid,
+               u_email: ,
+               u_firstname: ,
+               u_name: ,
+               u_legio: "Magyarország",
+               u_postnumber: ,
+               u_city: ,
+               u_addresse: ,
+               u_tel: "null",
+               shipping: ,
+               szamlazasimod: "same",
+               szamlazasOrszag: "Magyarország",
+               szamlazasVezeteknev: ,
+               szamlazasUtonev: ,
+               szamlazasIranyitoszam: ,
+               szamlazasTelepules: ,
+               szamlazasCim: ,
+               szamlazasTel: ,
+               cart: ,
+          });
+          var Order = await order.save();
+          
+
+     }catch(err){
+          console.log(err)
+     }finally{
+          console.log("Rendelés felvéve!")
+          res.json(Order)
+     }
+})
+
 //Rendelés ONLINE fizetése
 router.post("/pay", async (req, res) => {
   try {
@@ -280,9 +326,6 @@ console.log("rendeles ellenorzese...")
                     } 
                }
           }
-
-          
-
 
           }catch(err){
           console.log(err)
