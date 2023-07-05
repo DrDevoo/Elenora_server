@@ -186,11 +186,13 @@ router.post("/updatecart/:id", async (req,res) =>{
 //NewPayment rendelés felvétele
 router.post("/neworder", async (req, res) => {
      try{
-          const body = JSON.parse(req.body) 
-          console.log(body.info)
-          console.log(body.info.fname)
+          const body = req.body
+          const cart = JSON.parse(body.cart)
+          const info = JSON.parse(body.info)
+          console.log(info)
+          console.log(info.fname)
           console.log("----------------")
-          console.log(body.cart)
+          console.log(cart)
 
           var dateObj = new Date();
           var month = dateObj.getUTCMonth() + 1; //months from 1-12
