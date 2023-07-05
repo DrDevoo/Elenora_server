@@ -186,7 +186,7 @@ router.post("/updatecart/:id", async (req,res) =>{
 //NewPayment rendelés felvétele
 router.post("/neworder", async (req, res) => {
      try{
-          const body = req.body
+          const body = JSON.parse(req.body) 
           console.log(body.info)
           console.log(body.info.fname)
           console.log("----------------")
