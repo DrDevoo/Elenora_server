@@ -184,7 +184,7 @@ router.post("/updatecart/:id", async (req,res) =>{
      }
 })
 //NewPayment rendelés felvétele
-router.post("/neworder/:fname/:lname/:email/:city/:postcode/:addresse", async (req, res) => {
+router.post("/neworder/:fname/:lname/:email/:city/:postcode/:addresse/:payment", async (req, res) => {
      try{
           const body = req.body
 
