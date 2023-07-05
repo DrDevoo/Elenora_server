@@ -187,7 +187,10 @@ router.post("/updatecart/:id", async (req,res) =>{
 router.post("/neworder", async (req, res) => {
      try{
           const body = req.body
-          console.log(body)
+          console.log(body.info)
+          console.log(body.info.fname)
+          console.log("----------------")
+          console.log(body.cart)
 
           var dateObj = new Date();
           var month = dateObj.getUTCMonth() + 1; //months from 1-12
