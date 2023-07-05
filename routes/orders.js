@@ -248,7 +248,7 @@ router.post("/pay", async (req, res) => {
           }
         }),
       success_url: `${process.env.CLIENT_URL}/shop/thanks/?id=${req.body.orderid}`,
-      cancel_url: `${process.env.CLIENT_URL}/shop/checkout?order=${req.body.orderid}`,
+      cancel_url: `${process.env.CLIENT_URL}/shop`,
     })
     res.json({ url: session.url })
   } catch (e) {
