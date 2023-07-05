@@ -184,15 +184,9 @@ router.post("/updatecart/:id", async (req,res) =>{
      }
 })
 //NewPayment rendelés felvétele
-router.post("/neworder", async (req, res) => {
+router.post("/neworder/:fname/:lname/:email/:city/:postcode/:addresse", async (req, res) => {
      try{
           const body = req.body
-          const cart = JSON.parse(body.cart)
-          const info = JSON.parse(body.info)
-          console.log(info)
-          console.log(info.fname)
-          console.log("----------------")
-          console.log(cart)
 
           var dateObj = new Date();
           var month = dateObj.getUTCMonth() + 1; //months from 1-12
@@ -204,24 +198,24 @@ router.post("/neworder", async (req, res) => {
      
           const order = await Orders.create({  
                orderid: orderid,
-               u_email: body.info.email,
-               u_firstname: body.info.fname,
-               u_name: body.info.lname,
+               u_email: req.params.email,
+               u_firstname: req.params.fname,
+               u_name: req.params.lname,
                u_legio: "Magyarország",
-               u_postnumber: body.info.postcode,
-               u_city: body.info.city,
-               u_addresse: body.info.addresse,
+               u_postnumber: req.params.postcode,
+               u_city: req.params.city,
+               u_addresse: req.params.addresse,
                u_tel: "null",
-               shipping: body.info.payment,
+               shipping: req.params.payment,
                szamlazasimod: "same",
                szamlazasOrszag: "Magyarország",
-               szamlazasVezeteknev: body.info.fname,
-               szamlazasUtonev: body.info.lname,
-               szamlazasIranyitoszam: body.info.postcode,
-               szamlazasTelepules: body.info.city,
-               szamlazasCim: body.info.addresse,
+               szamlazasVezeteknev: req.params.fname,
+               szamlazasUtonev: req.params.lname,
+               szamlazasIranyitoszam: req.params.postcode,
+               szamlazasTelepules: req.params.city,
+               szamlazasCim: req.params.addresse,
                szamlazasTel: "null",
-               cart: body.cart,
+               cart: body,
           });
           var Order = await order.save();
           
