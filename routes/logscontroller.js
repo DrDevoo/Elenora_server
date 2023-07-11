@@ -18,9 +18,7 @@ router.post("/save/:time/:os/:action", async (req,res) =>{
 
 router.get("/get/:action", async (req,res) =>{
      const action = req.params.action
-
-     var count = Logs.get(action)
-
+     var count = await Logs.get(action)
      res.json(count)
 })
 
