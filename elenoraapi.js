@@ -26,6 +26,7 @@ const salesRoute = require('./routes/sales')
 const ordersRoute = require('./routes/orders')
 const newsletterRoute = require('./routes/newsletter')
 const customRoute = require('./routes/custom')
+const logscontrollerRoute = require('./routes/logscontroller')
 
 //Kulso komponensel hasznalata
 app.use('/products', productsRoute)
@@ -39,6 +40,7 @@ app.use('/sales', salesRoute)
 app.use('/orders', ordersRoute)
 app.use('/newsletter', newsletterRoute)
 app.use('/custom', customRoute)
+app.use('/logscontroller', logscontrollerRoute)
 
 //Adatbazis kapcsolat
 mongoose.set("strictQuery", false);
