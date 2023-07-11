@@ -16,4 +16,12 @@ router.post("/save/:time/:os/:action", async (req,res) =>{
      await Logs.saveLog(time,os,action)
 })
 
+router.get("/get/:action", async (req,res) =>{
+     const action = req.params.action
+
+     var query = Logs.find({action:action})
+
+     res.json(query.count())
+})
+
 module.exports = router;
