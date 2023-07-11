@@ -23,6 +23,8 @@ async function get(action){
      console.log("Log lekérése...")
      try{
           var query = await Logs.find({action:action})
+          console.log(query)
+          console.log(query.count())
           return query.count()
    }catch(err){
         console.log('Log sikertelen lekérése!!!')
