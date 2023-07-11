@@ -3,9 +3,9 @@ require("dotenv").config();
 
 const Logs = require('../models/logs-model');
 
-//Pénztár megnyitása
+
 async function saveLog(time,os,action){
-     console.log("Log mentése...")
+     console.log("Log rögzitése...")
      try{
        const saved = await Logs.create({  
         action: action,
@@ -14,11 +14,21 @@ async function saveLog(time,os,action){
      });
      console.log(saved)
    }catch(err){
-        res.json({ message: err });
         console.log('Log sikertelen rögzitése!!!')
    }
    console.log("Log sikeres rögzitése!")
 }
 
+async function get(action){
+     console.log("Log lekérése...")
+     try{
+          var query = Logs.find({action:action})
+          return query.count()
+   }catch(err){
+        console.log('Log sikertelen lekérése!!!')
+   }
+   console.log("Log sikeres lekérése!")
+}
 
-module.exports = { saveLog }
+
+module.exports = { saveLog,get }
