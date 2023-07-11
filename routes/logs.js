@@ -22,10 +22,9 @@ async function saveLog(time,os,action){
 async function get(action){
      console.log("Log lekérése...")
      try{
-          var query = await Logs.find({action:action})
+          const query = await Logs.find({action:action}).count()
           console.log(query)
-          console.log(query.count())
-          return query.count()
+          return query
    }catch(err){
         console.log('Log sikertelen lekérése!!!')
    }
