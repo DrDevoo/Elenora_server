@@ -30,7 +30,7 @@ router.post("/subscribe", async (req,res) =>{
 router.post("/subscribe/popup/:email", async (req,res) =>{
    try{
       const subbed = await Newsletter.create({  
-        name: "",
+        name: "anonymus",
         email: req.params.email,
       });
       res.json(subbed);
