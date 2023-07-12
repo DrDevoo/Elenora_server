@@ -27,6 +27,20 @@ router.post("/subscribe", async (req,res) =>{
    console.log("Uj hirlevel felirakozo sikeres mentése!")
 })
 
+router.post("/subscribe/popup/:email", async (req,res) =>{
+   try{
+      const subbed = await Newsletter.create({  
+        name: "",
+        email: req.params.email,
+      });
+      res.json(subbed);
+   }catch(err){
+        res.json({ message: err });
+        console.log('Uj hirlevel felirakozo sikertelen mentése!!!')
+   }
+   console.log("Uj hirlevel felirakozo sikeres mentése!")
+})
+
 router.post("/addmail", async (req,res) =>{
    try{
       console.log(req.body)
