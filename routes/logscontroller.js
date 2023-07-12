@@ -22,4 +22,9 @@ router.get("/get/:action", async (req,res) =>{
      res.json(count)
 })
 
+router.get("/getall", async (req,res) =>{
+     var q = await Logs.getall()
+     res.json(q)
+})
+
 module.exports = router;

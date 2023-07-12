@@ -30,6 +30,16 @@ async function get(action){
    }
    console.log("Log sikeres lekérése!")
 }
+async function getall(){
+     console.log("Logok lekérése...")
+     try{
+          const query = await Logs.find()
+          console.log(query)
+          return query
+   }catch(err){
+        console.log('Logok sikertelen lekérése!!!')
+   }
+   console.log("Logok sikeres lekérése!")
+}
 
-
-module.exports = { saveLog,get }
+module.exports = { saveLog,get,getall }
