@@ -36,7 +36,7 @@ router.post("/subscribe/popup/:email", async (req,res) =>{
       res.json(subbed);
    }catch(err){
         res.json({ message: err });
-        console.log('Uj hirlevel felirakozo sikertelen mentése!!!')
+        console.log('Uj hirlevel felirakozo sikertelen mentése!!!' + err)
    }
    console.log("Uj hirlevel felirakozo sikeres mentése!")
 })
