@@ -11,6 +11,11 @@ const InvoicesScheme = mongoose.Schema({
         default: "",
         required: true
     },
+    sended:{
+        type: String,
+        default: "false",
+        required: true
+    },
     date:{
         type: Date,
         default: Date.now,

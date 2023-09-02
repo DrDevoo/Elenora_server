@@ -250,7 +250,16 @@ router.get("/sendszamla/:id/:invoiceid", async (req, res) => {
      try {
           const id = req.params.id
           const invoiceid = req.params.invoiceid
-          await Mail.sendSzamlaMail(id,invoiceid)
+          await Mail.sendSzamlaMail(id, invoiceid)
+          
+          await Invoices.findOneAndUpdate(    
+               { orderid: id},
+               { $set:
+                    {
+                         sended: 'true',
+                    }
+               }
+          ); 
      }catch(err){
           console.log(err)
           }
