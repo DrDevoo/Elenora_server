@@ -251,7 +251,9 @@ router.get("/sendszamla/:id/:invoiceid", async (req, res) => {
           const id = req.params.id
           const invoiceid = req.params.invoiceid
           await Mail.sendSzamlaMail(id,invoiceid)
-     }
+     }catch(err){
+          console.log(err)
+          }
 })
 router.get("/getszamlak", async (req, res) => {
      try{
