@@ -13,7 +13,8 @@ app.use(cors());
 const auth = require("./middleware/auth");
 const cron = require("node-cron");
 const Mail = require('./routes/mail');
-const multer = require( "multer");
+const multer = require("multer");
+
 //Kapcsolt komponensek
 const productsRoute = require('./routes/products');
 const getimage = require('./routes/getimage')

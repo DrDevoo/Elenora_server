@@ -7,7 +7,6 @@ const fetch = require("node-fetch");
 const fs = require('fs');
 
 const Orders = require('../models/orders-model');
-const Invoices = require('../models/invoices-model');
 const Mail = require('../routes/mail');
 const Ftp = require('../routes/ftp');
 const Products = require('../models/products-model');
@@ -22,6 +21,147 @@ router.get("/", async (req, res) => {
      console.log(products)
 });
 
+//Rendelés létrehozása
+router.post("/start", async (req,res) =>{
+     try{
+     const cart = req.body
+
+     var dateObj = new Date();
+     var month = dateObj.getUTCMonth() + 1; //months from 1-12
+     var day = dateObj.getUTCDate();
+     var year = dateObj.getUTCFullYear();
+     const count = await Orders.find().count();
+     const ordersnumber = count + 1
+     const orderid = year +""+ month+ "" + day + "-" + ordersnumber;
+
+     const order = await Orders.create({  
+          orderid: orderid,
+          cart: req.body,
+     });
+     var startedOrder = await order.save();
+     }catch(err){
+          console.log(err)
+     }finally{
+          console.log("Rendelés megkezdve!")
+          console.log(startedOrder)
+          res.json(startedOrder);
+     }
+})
+//Rendelés adatok mentése
+router.post("/saveuser/:id", async (req,res) =>{
+     try{
+     const user = req.body
+     const id = req.params.id
+
+     var updated = await Orders.findOneAndUpdate(    
+               { _id: id},
+               { $set:
+                    {
+                    u_email: user.u_email,
+                    u_firstname: user.u_firstname,
+                    u_name: user.u_name,
+                    u_legio: "Magyarország",
+                    u_postnumber: user.u_postnumber,
+                    u_city: user.u_city,
+                    u_addresse: user.u_addresse,
+                    u_tel: user.u_tel,
+               }
+               }
+               );  
+     }catch(err){
+          console.log(err)
+     }finally{
+          console.log("Rendelés adatok megadva!")
+          res.json(updated)
+     }
+})
+//Rendelés kupon használat mentése
+router.get("/savecupon/:id/:cupon", async (req,res) =>{
+     try{
+     const id = req.params.id
+     const cupon = req.params.cupon
+     var updated = await Orders.findOneAndUpdate(    
+               { _id: id},
+               { $set:
+                    {
+                    usedcupon: cupon.toUpperCase(),
+                    }
+               }
+     );  
+
+
+     const gettedcupon = await Cupons.findOne({cupon_name:cupon.toUpperCase()})
+     const cuponcount = gettedcupon.cupon_used + 1
+     var updated = await Cupons.findOneAndUpdate(    
+          { _id: gettedcupon._id},
+          { $set:
+               {
+               cupon_used: cuponcount,
+               }
+          }
+     ); 
+     }catch(err){
+          console.log(err)
+     }finally{
+          console.log("Kupon rendeleshez adva!")
+          res.json(updated)
+     }
+})
+//Rendelés szállítási adatok mentése
+router.post("/saveshipping/:id", async (req,res) =>{
+     try{
+     const order = req.body
+     const id = req.params.id
+     var updated = await Orders.findOneAndUpdate(    
+               { _id: id},
+               { $set:
+               {
+                    shipping: order.shipping,
+                    szamlazasimod: order.szamlazasimod,
+                    szamlazasOrszag: order.szamlazasOrszag,
+                    szamlazasVezeteknev: order.szamlazasVezeteknev,
+                    szamlazasUtonev: order.szamlazasUtonev,
+                    szamlazasIranyitoszam: order.szamlazasIranyitoszam,
+                    szamlazasTelepules: order.szamlazasTelepules,
+                    szamlazasCim: order.szamlazasCim,
+                    szamlazasTel: order.szamlazasTel,
+               }
+               }
+     );  
+     
+     }catch(err){
+          console.log(err)
+     }finally{
+          console.log("Rendelés adatok megadva!")
+          res.json(updated)
+     }
+})
+//Rendelés számlázási címének mentése
+router.post("/saveszamla/:id", async (req,res) =>{
+     try{
+     const szamlazas = req.body
+     const id = req.params.id
+     var updated = await Orders.findOneAndUpdate(    
+          { _id: id},
+          { $set:
+          {
+               szamlazasOrszag: szamlazas.regio,
+               szamlazasVezeteknev: szamlazas.first_name,
+               szamlazasUtonev: szamlazas.name,
+               szamlazasIranyitoszam: szamlazas.postnumber,
+               szamlazasTelepules: szamlazas.city,
+               szamlazasCim: szamlazas.addresse,
+               szamlazasTel: szamlazas.tel,
+          }
+          }
+     ); 
+     }catch(err){
+          console.log(err)
+     }finally{
+          console.log("Szamla adatok megadva!")
+          res.json(updated)
+     }
+})
 //Rendelés kosarának frissítése
 router.post("/updatecart/:id", async (req,res) =>{
      try{
@@ -219,6 +359,8 @@ console.log("rendeles ellenorzese...")
           var buffer = Buffer.from(json.pdf, 'base64')
           fs.writeFileSync('./szamlak/'+json.invoiceId + ".pdf", buffer)
 
+          await Ftp.Upload('./szamlak/'+json.invoiceId + ".pdf","szamlak/"+json.invoiceId + ".pdf")
+
           await Orders.findOneAndUpdate(    
                { _id: id},
                { $set:
@@ -227,14 +369,10 @@ console.log("rendeles ellenorzese...")
                     }
                }
           ); 
-
-          const invoice = await Invoices.create({  
-               orderid: id,
-               invoiceid: json.invoiceId
-          });
-               
-          await Mail.sendOrderMail(id) 
-          await Mail.sendOrderSYS()
+          console.log("Szamlaid: "+json.invoiceId)
+          Mail.sendOrderMail(id) 
+          Mail.sendSzamlaMail(id,json.invoiceId)
+          Mail.sendOrderSYS()
 
           }catch(err){
           console.log(err)
@@ -245,23 +383,6 @@ console.log("rendeles ellenorzese...")
 
     
 })
-//send szamla
-router.get("/sendszamla/:id/:invoiceid", async (req, res) => {
-     try {
-          const id = req.params.id
-          const invoiceid = req.params.invoiceid
-          await Mail.sendSzamlaMail(id,invoiceid)
-     }
-})
-router.get("/getszamlak", async (req, res) => {
-     try{
-        const invoices = await Invoices.find();
-        res.json(invoices);
-      }catch(err){
-        res.json({ message: err });
-      }
-})
-
 //Rendelés törlése
 router.get("/update/del/:id", async (req,res) =>{
      try{
