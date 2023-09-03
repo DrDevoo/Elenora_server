@@ -342,7 +342,7 @@ router.get("/getall/stone", async (req,res) =>{
 
 router.get("/changeallprice/:count", async (req,res) =>{
      try {
-          const count = req.params.count
+          const count = Number(req.params.count) 
           const products = await Products.find();
 
           products.forEach(async (prod) => {
