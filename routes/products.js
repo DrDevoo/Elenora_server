@@ -346,8 +346,12 @@ router.get("/changeallprice/:count", async (req,res) =>{
           const products = await Products.find();
 
           products.forEach(async (prod) => {
-               console.log(prod.prodname)
-          });
+               let newprice = prod.price + count
+               await Products.updateOne(    
+                    { prodname: prod.prodname},
+                    { $set: {price: newprice}}
+                    );  
+               });
       }catch(err){
         res.json({ message: err });
       }
