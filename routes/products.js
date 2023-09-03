@@ -351,7 +351,8 @@ router.get("/changeallprice/:count", async (req,res) =>{
                     { prodname: prod.prodname},
                     { $set: {price: newprice}}
                     );  
-               });
+          });
+          res.json("Sikeres ár változás")
       }catch(err){
         res.json({ message: err });
       }
