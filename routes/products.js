@@ -339,4 +339,18 @@ router.get("/getall/stone", async (req,res) =>{
          res.json({ message: err });
        }
 })
+
+router.get("/changeallprice/:count", async (req,res) =>{
+     try {
+          const count = req.params.count
+          const products = await Products.find();
+
+          products.forEach(async (prod) => {
+               console.log(prod.prodname)
+          });
+      }catch(err){
+        res.json({ message: err });
+      }
+})
+
 module.exports = router;
