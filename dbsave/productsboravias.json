@@ -1,0 +1,1393 @@
+[{
+  "_id": {
+    "$oid": "63f4e432d58ff7212e95db66"
+  },
+  "prodname": "Kagyló sárga fonott karkötő",
+  "price": 590,
+  "image": "523538e63cbbc21f1474aaa1041d61ce",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4e314d58ff7212e95db3c"
+  },
+  "prodname": "“Vibe” lila fonott karkötő",
+  "price": 590,
+  "image": "b9525019424363045acecdfa106c349c",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4e4a0d58ff7212e95db6d"
+  },
+  "prodname": "“Vibe” sárga fonott karkötő",
+  "price": 590,
+  "image": "1364da238f6a5744ba657b7aaf65b36b",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4e6f9d58ff7212e95dbb2"
+  },
+  "prodname": "“Bff” szürke fonott karkötő",
+  "price": 590,
+  "image": "3ab3b22e7f332783eeafe2986b202386",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4e396d58ff7212e95db5b"
+  },
+  "prodname": "“Sun” barna fonott karkötő",
+  "price": 590,
+  "image": "154b2b84d606b475567567ede18cd8cc",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4edfcd58ff7212e95dc88"
+  },
+  "prodname": "“Mum” rózsaszín fonott karkötő",
+  "price": 590,
+  "image": "472f8b7cd891ceba03191a670ff538a3",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4f313e9d8a8cf1c3c6927"
+  },
+  "prodname": "Barna, zöld és lila fonott karkötő",
+  "price": 890,
+  "image": "94fd09780d37f2bd374ff6bc2afedeb8",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4f367e9d8a8cf1c3c6935"
+  },
+  "prodname": "“Summer” zöld fonott karkötő",
+  "price": 590,
+  "image": "c3bc56b195ed05a78bfc5353b6ba1607",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4f549e9d8a8cf1c3c6967"
+  },
+  "prodname": "“Love” fehér fonott karkötő",
+  "price": 590,
+  "image": "6495422f6e1b1cbc83adcf15104f903e",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4fcf4e9d8a8cf1c3c6a33"
+  },
+  "prodname": "“Wave” tenger kék fonott karkötő",
+  "price": 590,
+  "image": "6c006439bdc102e73316fc442d1ac861",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4fe09e9d8a8cf1c3c6a41"
+  },
+  "prodname": "“Wave” narancs fonott karkötő",
+  "price": 590,
+  "image": "4e1ddd80fde8a76d6d7efa06eec28120",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f50fb2e9d8a8cf1c3c6cd9"
+  },
+  "prodname": "Fehér, világos és sötét rózsaszín fonott karkötő",
+  "price": 890,
+  "image": "dedfd203ba925ebe8fb3bf2dec139d1f",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f517654c7babcddb8e9fcd"
+  },
+  "prodname": "Világos rózsaszín, zöld és fehér fonott karkötő",
+  "price": 890,
+  "image": "eb1140b7dd90a073d9a69945cc53661b",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f60dd1f61d66bcfa298b31"
+  },
+  "prodname": "Szürke “Love” fonott karkötő",
+  "price": 590,
+  "image": "7d70161db564f40de702f1e9d4ba861b",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f6104ef61d66bcfa298b9b"
+  },
+  "prodname": "Rózsaszín, zöld és lila fonott karkötő",
+  "price": 890,
+  "image": "c86e9be726ed5a77d23a5aaa48dc0992",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f61151f61d66bcfa298bcf"
+  },
+  "prodname": "Rózsaszín fehér kagyló fonott karkötő",
+  "price": 590,
+  "image": "95bb9d5c2af7d2da15c006b3f8c7ecac",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f61337f61d66bcfa298c48"
+  },
+  "prodname": "Fekete betűs “Bff” fonott karkötő",
+  "price": 590,
+  "image": "d2b6d1591cdf9a882cb189198eebced6",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f614c1b52d378aec3b6456"
+  },
+  "prodname": "Sötétkék, fekete és fehér fonott karkötő ",
+  "price": 890,
+  "image": "46bea41c0363d722467defc2f1ecc234",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f61607b52d378aec3b64a6"
+  },
+  "prodname": "Méreg zöld kagyló fonott karkötő",
+  "price": 590,
+  "image": "03cf0d7de6fd930d794c5c23dc974a06",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f6172db52d378aec3b64f2"
+  },
+  "prodname": "Világos kék, kék és méreg zöld fonott karkötő",
+  "price": 890,
+  "image": "6a764e20d9d4325ed3e6f7e7cceb08f7",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f61877b52d378aec3b656a"
+  },
+  "prodname": "Sötétkék, fehér, fekete fonott karkötő",
+  "price": 890,
+  "image": "83831583d85f44677cddce5adf4675de",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f61dc7b52d378aec3b6621"
+  },
+  "prodname": "Sötétkék fekete betűs “dad” fonott karkötő",
+  "price": 590,
+  "image": "e6d77a39676e0e7399ffeb0392a48fed",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f61e1ab52d378aec3b6632"
+  },
+  "prodname": "Világos és sötét kék karkötő",
+  "price": 890,
+  "image": "83907aa9d1e8707e76f6597f79bd9815",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f631dd85696c8900921543"
+  },
+  "prodname": "Matt tigris jáspis kötött ásvány karkötő",
+  "price": 4490,
+  "image": "90a07690938e6b4286dc166e347e7144",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4e4e4d58ff7212e95db78"
+  },
+  "prodname": "Kagyló szürke fonott karkötő",
+  "price": 590,
+  "image": "edb582cbce7d972e5a396eeb057ab2db",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4e673d58ff7212e95dba4"
+  },
+  "prodname": "Zöld, szürke és rózsaszín fonott karkötő",
+  "price": 890,
+  "image": "036b9698144f83c9f5d714a348e22b67",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4e7d1d58ff7212e95dbd0"
+  },
+  "prodname": "Fehér, rózsaszín és lila fonott karkötő",
+  "price": 890,
+  "image": "deea76dba78ec139eae4d3b76fa5947f",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4e963d58ff7212e95dc15"
+  },
+  "prodname": "Ezüst kagyló fehér fonott karkötő",
+  "price": 590,
+  "image": "04ce866bf6b9ea9d7c6a9e8ffb0f536e",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4f031d58ff7212e95dcaf"
+  },
+  "prodname": "Zöld, lila és rózsaszín fonott karkötő",
+  "price": 890,
+  "image": "25157d9248616e91eb23727a98385ae2",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4f1d5d58ff7212e95dd08"
+  },
+  "prodname": "Krém, fehér és barna fonott karkötő",
+  "price": 890,
+  "image": "9279111a08eba86c2b7b65a0e61e09b4",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4f205d58ff7212e95dd19"
+  },
+  "prodname": "Barna, sárga fonott karkötő",
+  "price": 890,
+  "image": "add1a5996ed5c8cadc146827cca78598",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4f3c4e9d8a8cf1c3c693f"
+  },
+  "prodname": "“Family” lila fonott karkötő",
+  "price": 590,
+  "image": "e4df5fdeea05155ab3bce8e588b48fae",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4f41ce9d8a8cf1c3c694b"
+  },
+  "prodname": "“Love” zöld fonott karkötő",
+  "price": 590,
+  "image": "335db3c9ccac0372b70eaaffddb0d740",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4fa99e9d8a8cf1c3c69ec"
+  },
+  "prodname": "“Mum” krém fonott karkötő",
+  "price": 590,
+  "image": "474a83c4ab6f6997b5d64399c6898284",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4fad6e9d8a8cf1c3c69ff"
+  },
+  "prodname": "Fekete, bordó és rózsaszín fonott karkötő",
+  "price": 890,
+  "image": "714f369d100719880be04b8ff8e3c9e1",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4fc91e9d8a8cf1c3c6a2c"
+  },
+  "prodname": "Citrom, narancs és fehér fonott karkötő",
+  "price": 890,
+  "image": "e9852f9862b82942c837bef18e2765d8",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4ffcae9d8a8cf1c3c6a67"
+  },
+  "prodname": "Arany kagyló krém fonott karkötő",
+  "price": 590,
+  "image": "3214016e6a02ff832326e33685cc7063",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f50608e9d8a8cf1c3c6b2d"
+  },
+  "prodname": "Lila “Cool” fonott karkötő",
+  "price": 590,
+  "image": "4d19b06922969568fc3adba3c9df4764",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f50ce4e9d8a8cf1c3c6c4e"
+  },
+  "prodname": "Arany kagyló, narancssárga fonott karkötő",
+  "price": 590,
+  "image": "35752b66cc32774689e5610c3900353f",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f50d73e9d8a8cf1c3c6c71"
+  },
+  "prodname": "Halvány lila “Vibe” fonott karkötő",
+  "price": 590,
+  "image": "1d17f5f07836bba01c9d0faa42ca5fc1",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f50de3e9d8a8cf1c3c6c8e"
+  },
+  "prodname": "Méreg zöld, citrom és narancs fonott karkötő",
+  "price": 890,
+  "image": "6add021ab5bdb9552c0b21598c6ac9d4",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f60e0bf61d66bcfa298b3d"
+  },
+  "prodname": "Barna, kék és zöld fonott karkötő",
+  "price": 890,
+  "image": "14c8bde12a1e53ca08658f7bfaf0cfcc",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f60e4cf61d66bcfa298b49"
+  },
+  "prodname": "Citrom, kék és lila fonott karkötő",
+  "price": 890,
+  "image": "ccc54de828f402e84a61e111f40722fd",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f61097f61d66bcfa298ba7"
+  },
+  "prodname": "Tenger kék, sötétkék és narancs fonott karkötő",
+  "price": 880,
+  "image": "5b9cf88906148327193fb45c45c6b0c1",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f61119f61d66bcfa298bc3"
+  },
+  "prodname": "Fehér, sötét és világos kék fonott karkötő",
+  "price": 890,
+  "image": "33a713aa7cfcaa9d9efb5aa1be5540a2",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f61377f61d66bcfa298c61"
+  },
+  "prodname": "Fehér, bordó, rózsaszín fonott karkötő",
+  "price": 890,
+  "image": "fba3ae64b2e4c60b9759c84bdba4c09a",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f613bff61d66bcfa298c73"
+  },
+  "prodname": "Fekete betűs rózsaszín “Summer” fonott karkötő",
+  "price": 590,
+  "image": "a87e1e34c51bf9c37cf03ff302388178",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f61690b52d378aec3b64c1"
+  },
+  "prodname": "Sötétkék, fehér kagyló fonott karkötő ",
+  "price": 590,
+  "image": "46bea41c0363d722467defc2f1ecc234",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f6311b85696c89009214df"
+  },
+  "prodname": "Barna képjáspis kötött ásvány karkötő",
+  "price": 4490,
+  "image": "93ca2a19d0ae6b4609b0797bad1df36c",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4e6bad58ff7212e95dbab"
+  },
+  "prodname": "“Sun” sárga fonott karkötő",
+  "price": 590,
+  "image": "ba4bd6a7e1f9b76ebb430307d438840a",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4e83ad58ff7212e95dbde"
+  },
+  "prodname": "“Love” szürke fonott karkötő",
+  "price": 590,
+  "image": "9cdfea181475e85ad40277794beb718b",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4ed69d58ff7212e95dc63"
+  },
+  "prodname": "Kék, fehér és mályva fonott karkötő",
+  "price": 890,
+  "image": "a8cf9477a029a37e016a4f3e5574124d",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4f0ffd58ff7212e95dcce"
+  },
+  "prodname": "“Cool” barna fonott karkötő",
+  "price": 590,
+  "image": "ff5dacd7da19c86fc10362285901ba5a",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4f2d0e9d8a8cf1c3c6920"
+  },
+  "prodname": "Fehér és rózsaszín fonott karkötő",
+  "price": 890,
+  "image": "f385cb98547e99b13e38345414d5fec2",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4ff33e9d8a8cf1c3c6a59"
+  },
+  "prodname": "Lila, rózsaszín és fehér fonott karkötő",
+  "price": 890,
+  "image": "c04da66942f0d920b07e9b6e8a5c3648",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f50108e9d8a8cf1c3c6a82"
+  },
+  "prodname": "Piros “Bff” fonott karkötő",
+  "price": 590,
+  "image": "1e1ce485aaea6d2126f6285602561f32",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f5025be9d8a8cf1c3c6aa1"
+  },
+  "prodname": "Sötétkék “Wave” fonott karkötő",
+  "price": 590,
+  "image": "a1db3a9cd36502fb7985fb2a2d08e95e",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f50a69e9d8a8cf1c3c6bec"
+  },
+  "prodname": "Méreg zöld, zöld és fehér fonott karkötő",
+  "price": 590,
+  "image": "46bea41c0363d722467defc2f1ecc234",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f50c6ee9d8a8cf1c3c6c42"
+  },
+  "prodname": "Rózsaszín, világos és sötét kék fonott karkötő",
+  "price": 890,
+  "image": "0e7f5e91b2a2932552f6ad7a4aaaee6c",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f50ec4e9d8a8cf1c3c6cb9"
+  },
+  "prodname": "Fehér és bordó fonott karkötő",
+  "price": 890,
+  "image": "2737808a71cd70b340dc0c9e62b2494e",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f513474c7babcddb8e9fab"
+  },
+  "prodname": "Citrom, narancs, zöld és szürke fonott karkötő",
+  "price": 890,
+  "image": "9192e42475c71bef12e679da98670a3a",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f61015f61d66bcfa298b8a"
+  },
+  "prodname": "Arany kagyló, sötétkék fonott karkötő",
+  "price": 590,
+  "image": "c108034cb62fb083521db14563a2709a",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f61575b52d378aec3b6472"
+  },
+  "prodname": "Fehér, sötétkék és fekete fonott karkötő ",
+  "price": 890,
+  "image": "46bea41c0363d722467defc2f1ecc234",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f615bab52d378aec3b6487"
+  },
+  "prodname": "Fehér, piros és zöld fonott karkötő",
+  "price": 890,
+  "image": "c730b1dbb57d22697304cfac17ad4a29",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f6177eb52d378aec3b6530"
+  },
+  "prodname": "Szürke, narancs és citrom sárga fonott karkötő",
+  "price": 890,
+  "image": "f54a96d3b279b85d49ee18f780eabf22",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f61c7fb52d378aec3b65e5"
+  },
+  "prodname": "Sárga, barna és kék fonott karkötő",
+  "price": 890,
+  "image": "241df8ac10a082d2ca52a08569bfed32",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f61cf4b52d378aec3b65fb"
+  },
+  "prodname": "Fehér betűs világos zöld “Vibe” fonott karkötő",
+  "price": 590,
+  "image": "e1fcadc6b60f13d235e3f04c3ce655eb",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f61f17b52d378aec3b6671"
+  },
+  "prodname": "Fehér kagyló citromsárga fonott karkötő ",
+  "price": 590,
+  "image": "46bea41c0363d722467defc2f1ecc234",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4e5efd58ff7212e95db8d"
+  },
+  "prodname": "“Wave” lila fonott karkötő",
+  "price": 590,
+  "image": "656311fe0af09d8b2eb0b3765b7a5b35",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4e62cd58ff7212e95db98"
+  },
+  "prodname": "“Cool” lila fonott karkötő",
+  "price": 590,
+  "image": "1f43df6c42ad491a3774aaf3bbe0d3c5",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4e86bd58ff7212e95dbe5"
+  },
+  "prodname": "Arany kagyló barna fonott karkötő",
+  "price": 590,
+  "image": "0923238174870be1b1c2d542f60c63cd",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4e91fd58ff7212e95dc04"
+  },
+  "prodname": "“Sun” lila fonott karkötő",
+  "price": 590,
+  "image": "9c5933f0e02b78a8b40e3c2cfb0b9972",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4ecf0d58ff7212e95dc55"
+  },
+  "prodname": "“Cool” világos sárga fonott karkötő",
+  "price": 590,
+  "image": "5bc740646ccc464592cc490ef1ea67c6",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4edbbd58ff7212e95dc73"
+  },
+  "prodname": "Szürke, barna és rózsaszín fonott karkötő",
+  "price": 890,
+  "image": "bb256ebf631ceaa497e6d6fd7ed39c69",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4fc12e9d8a8cf1c3c6a1e"
+  },
+  "prodname": "Kék, zöld és barna fonott karkötő",
+  "price": 890,
+  "image": "8f94872f26645c29f450ad2dea0dc5cd",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4fc71e9d8a8cf1c3c6a25"
+  },
+  "prodname": "Kagyló fehér fonott karkötő",
+  "price": 590,
+  "image": "407749f913966d27e4b8c6d9d4f37793",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4fff5e9d8a8cf1c3c6a6a"
+  },
+  "prodname": "Arany kagyló, világos zöld fonott karkötő",
+  "price": 590,
+  "image": "99356d32350d1d868620ec54c29c4cc8",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f5052fe9d8a8cf1c3c6b02"
+  },
+  "prodname": "Sárga, barna és zöld fonott karkötő",
+  "price": 890,
+  "image": "4498875e671c35c576daed04853605bb",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f5080de9d8a8cf1c3c6bb0"
+  },
+  "prodname": "Kék, lila és zöld fonott karkötő",
+  "price": 890,
+  "image": "933554c08c3f250bf420e296d810cc79",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f50f1ae9d8a8cf1c3c6cc9"
+  },
+  "prodname": "Szürke és rózsaszín fonott karkötő",
+  "price": 590,
+  "image": "46bea41c0363d722467defc2f1ecc234",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f512baa8a5286e90202228"
+  },
+  "prodname": "“Summer” sötétkék fonott karkötő",
+  "price": 590,
+  "image": "43db218699dbb98b6b9d5071b555dff4",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f512f54c7babcddb8e9f96"
+  },
+  "prodname": "Krém “Love” fonott karkötő",
+  "price": 590,
+  "image": "f8a01df8e3c044198b85663abcea2941",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f60eb3f61d66bcfa298b55"
+  },
+  "prodname": "Narancs “Bff” fonott karkötő",
+  "price": 590,
+  "image": "7e5886dc5bb04acc27aaa00280051c72",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f61251f61d66bcfa298bff"
+  },
+  "prodname": "Világos zöld, narancs és fehér fonott karkötő",
+  "price": 890,
+  "image": "3dd159f67f591a8f1d79ec962883711a",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f6164db52d378aec3b64b5"
+  },
+  "prodname": "Krém “Vibe” fonott karkötő",
+  "price": 590,
+  "image": "ad757de512c88215340c817a105b8cb1",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f61bb4b52d378aec3b65c8"
+  },
+  "prodname": "Fehér betűs, piros “Vibe” fonott karkötő",
+  "price": 590,
+  "image": "be63e66d742e8243c6808fd4699a00ad",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f61ea2b52d378aec3b664f"
+  },
+  "prodname": "Fehér betűs “Bff” világos kék fonott karkötő",
+  "price": 590,
+  "image": "e8526450a41347d6a0183ee8e2ab258e",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f61ee1b52d378aec3b6660"
+  },
+  "prodname": "Fekete betűs “Mum” rózsaszín fonott karkötő",
+  "price": 590,
+  "image": "be4a73be8e641acee5009bbce4f27ca9",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f61f89b52d378aec3b669a"
+  },
+  "prodname": "Rózsaszín, bordó karkötő",
+  "price": 890,
+  "image": "9adc0fdd8d7b167024bd488a3aef5333",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f6201cb52d378aec3b66bc"
+  },
+  "prodname": "Kék, barna és sárga karkötő",
+  "price": 890,
+  "image": "caa420d96ebabb03412b1bfecba60d67",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f6315885696c89009214f1"
+  },
+  "prodname": "Zöld aventurin kötött ásvány karkötő",
+  "price": 4490,
+  "image": "edff8f50c031d9a465318914f399f452",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4e9e4d58ff7212e95dc38"
+  },
+  "prodname": "Fehér, fekete és szürke fonott karkötő",
+  "price": 890,
+  "image": "d7577ce86d99094eff81c283c5b67605",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4e356d58ff7212e95db4b"
+  },
+  "prodname": "“Cool” narancs fonott karkötő",
+  "price": 590,
+  "image": "3116212c60b93f1cc6be4a77f547dfc6",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4e73ad58ff7212e95dbbc"
+  },
+  "prodname": "Ezüst kagyló rózsaszín fonott karkötő",
+  "price": 590,
+  "image": "b14cf245db9aed85641e4b62b9eaa03e",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4f4bde9d8a8cf1c3c6960"
+  },
+  "prodname": "Fehér kagyló, rózsaszín fonott karkötő",
+  "price": 590,
+  "image": "9a6611fd9aa257418ad92beb34409ac5",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4fbe8e9d8a8cf1c3c6a17"
+  },
+  "prodname": "Bordó, fekete és rózsaszín fonott karkötő",
+  "price": 890,
+  "image": "090680a01aff209200d510263fc12e6f",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4fe37e9d8a8cf1c3c6a48"
+  },
+  "prodname": "“Love” világos zöld fonott karkötő",
+  "price": 590,
+  "image": "518bae820d4f27b9c3aff757b1d05a0f",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4fea9e9d8a8cf1c3c6a4f"
+  },
+  "prodname": "Fehér kagyló, narancssárga fonott karkötő",
+  "price": 590,
+  "image": "dad072a0d89b6fb2fbf3daaa99bad4ff",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4fedae9d8a8cf1c3c6a52"
+  },
+  "prodname": "“Cool” világos zöld fonott karkötő",
+  "price": 590,
+  "image": "6b0231632edce346b6322d480c1d8637",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f50065e9d8a8cf1c3c6a78"
+  },
+  "prodname": "Rózsaszín, kék és sárga fonott karkötő",
+  "price": 890,
+  "image": "f732c68afbbc0bc67b3bd1ed97ef4f01",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f5013fe9d8a8cf1c3c6a89"
+  },
+  "prodname": "Ezüst kagyló, világos zöld fonott karkötő",
+  "price": 590,
+  "image": "52c86536edea3e015b54b5aae22de88b",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f50225e9d8a8cf1c3c6a9a"
+  },
+  "prodname": "Krém, bordó és zöld fonott karkötő",
+  "price": 890,
+  "image": "0628522ea7743f3a71d2cb547cd92de2",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f60f82f61d66bcfa298b6d"
+  },
+  "prodname": "Piros, barna és fehér fonott karkötő",
+  "price": 890,
+  "image": "3b836ac8d96990260667f82828baa46c",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f610c6f61d66bcfa298bb3"
+  },
+  "prodname": "Mályva “Love” fonott karkötő",
+  "price": 590,
+  "image": "75f4bc30134dfe9de936821043618056",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f617c4b52d378aec3b6546"
+  },
+  "prodname": "Fehér betűs “Bff” szürke karkötő",
+  "price": 590,
+  "image": "e2828f69cb7a5fa6a5220b5c57fb5df9",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f618beb52d378aec3b657f"
+  },
+  "prodname": "Citromsárga “Vibe” fonott karkötő",
+  "price": 590,
+  "image": "427c7f496b6370a54de1aff567b88757",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f62f6b85696c890092143a"
+  },
+  "prodname": "Rózsakvarc kötött ásvány karkötő",
+  "price": 4490,
+  "image": "8b9f8dc7ea060143814bff6fc6d6324c",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f6319d85696c8900921516"
+  },
+  "prodname": "Amazonit kötött ásvány karkötő",
+  "price": 4490,
+  "image": "4c9b26d7989ff3611fd407e589129dfb",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640229130d874548f414b358"
+  },
+  "prodname": "Rózsaszín fehér betűs “Summer” fonott karkötő",
+  "price": 590,
+  "image": "4f6400c14df9afb28d86be13a8730e60",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4ed2dd58ff7212e95dc5c"
+  },
+  "prodname": "Zöld és kék fonott karkötő",
+  "price": 890,
+  "image": "88eec3a3c9109ade4a7d996b89344583",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4ef45d58ff7212e95dca3"
+  },
+  "prodname": "“Family” rózsaszín fonott karkötő",
+  "price": 590,
+  "image": "09a50eec2aee5d3217ed00ee54c1705a",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4f235d58ff7212e95dd2d"
+  },
+  "prodname": "Kék, zöld és szürke fonott karkötő",
+  "price": 890,
+  "image": "b543bcac2107f98380d47a0fa77262e3",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4f475e9d8a8cf1c3c6959"
+  },
+  "prodname": "Lila “Sun” fonott karkötő",
+  "price": 590,
+  "image": "6289c3b8dbb54580397d79ee66f057c2",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4fb24e9d8a8cf1c3c6a09"
+  },
+  "prodname": "Kék, fekete és fehér fonott karkötő",
+  "price": 890,
+  "image": "de05fd1d41c8cc417eb53341555afdcf",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4fb76e9d8a8cf1c3c6a10"
+  },
+  "prodname": "“Bff” piros fonott karkötő",
+  "price": 590,
+  "image": "4fa236fe4d10d0e11631716c8774b07f",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4fd9de9d8a8cf1c3c6a3a"
+  },
+  "prodname": "Narancssárga “Sun” fonott karkötő",
+  "price": 590,
+  "image": "2150c982dd9527d7f56a355d6a02616b",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f501aee9d8a8cf1c3c6a8c"
+  },
+  "prodname": "“Love” rózsaszín fonott karkötő",
+  "price": 590,
+  "image": "04c4f676f952825e42375b0c5826d4a5",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f50295e9d8a8cf1c3c6aa8"
+  },
+  "prodname": "Kék, rózsaszín és fehér fonott karkötő",
+  "price": 890,
+  "image": "1edd7f69209390f56e39a8601582ec19",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f5069ae9d8a8cf1c3c6b4d"
+  },
+  "prodname": "Arany kagyló, világos kék fonott karkötő",
+  "price": 590,
+  "image": "2b70e2a2725cf1b5024d212d957237d9",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f50854e9d8a8cf1c3c6bc1"
+  },
+  "prodname": "Világos zöld, kék és fehér fonott karkötő",
+  "price": 890,
+  "image": "0a833c4f8e67ab03a7b1eb4f8724cfdf",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f50b92e9d8a8cf1c3c6c1e"
+  },
+  "prodname": "Krém és bordó fonott karkötő",
+  "price": 890,
+  "image": "054dab4baa83c2b9249ae1ebedc58d48",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f50c0be9d8a8cf1c3c6c2a"
+  },
+  "prodname": "Világoskék “Bff” fonott karkötő",
+  "price": 590,
+  "image": "2811d0cf408778227a9f6bc16d97c83b",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f5116fa8a5286e902021de"
+  },
+  "prodname": "“Love” sötétkék fonott karkötő",
+  "price": 590,
+  "image": "3700cbad6e2df7135f3b4ad765be00ef",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f61909b52d378aec3b6590"
+  },
+  "prodname": "Szürke és rózsaszín fonott karkötő",
+  "price": 890,
+  "image": "46bea41c0363d722467defc2f1ecc234",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f61980b52d378aec3b65b0"
+  },
+  "prodname": "Világos zöld “Dad” fonott karkötő",
+  "price": 590,
+  "image": "be6f43ff00b699a52a8716583a088801",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f61c3bb52d378aec3b65d9"
+  },
+  "prodname": "Világos rózsaszín és szürke fonott karkötő",
+  "price": 890,
+  "image": "fcb71045f83f9e52d06da3d6a4652ff2",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f61febb52d378aec3b66b0"
+  },
+  "prodname": "Citrom kagyló fonott karkötő",
+  "price": 590,
+  "image": "83708e0e4bd9a2f704b5acc859bcb639",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4e805d58ff7212e95dbd7"
+  },
+  "prodname": "“Summer” narancs fonott karkötő",
+  "price": 590,
+  "image": "1fc9a3b345869b12f0779ee7c521305c",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4e8d0d58ff7212e95dbf9"
+  },
+  "prodname": "“Wave” kék fonott karkötő",
+  "price": 590,
+  "image": "a2c0bb73dcc4ab3d573c4e5190179c65",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4e9a9d58ff7212e95dc27"
+  },
+  "prodname": "“Vibe” piros fonott karkötő",
+  "price": 590,
+  "image": "d64521bbcd76777ee19a402e77937615",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4ea3dd58ff7212e95dc3f"
+  },
+  "prodname": "Krém, barna és zöld fonott karkötő",
+  "price": 890,
+  "image": "2d3389880cfa0c23822fed8fd4063a39",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4f194d58ff7212e95dcf5"
+  },
+  "prodname": "“Cool” zöld fonott karkötő",
+  "price": 590,
+  "image": "00afce33c975a08cdc26f61c076b761c",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4ff99e9d8a8cf1c3c6a60"
+  },
+  "prodname": "Szürke, citrom és narancssárga fonott karkötő",
+  "price": 890,
+  "image": "82bad840791564937c15469038e76ab3",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f50024e9d8a8cf1c3c6a71"
+  },
+  "prodname": "Barna kagyló fonott karkötő",
+  "price": 890,
+  "image": "d2f769ad9347d433dd5fb94ea68f3a33",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f50319e9d8a8cf1c3c6ab6"
+  },
+  "prodname": "Szürke és rózsaszín fonott karkötő",
+  "price": 890,
+  "image": "48be0e61e3c94ca2c0a6578295df9c5c",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f5065be9d8a8cf1c3c6b3d"
+  },
+  "prodname": "Narancs, kék és fehér fonott karkötő",
+  "price": 890,
+  "image": "22d717b9080292b4a9767380ff84f691",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f5072be9d8a8cf1c3c6b76"
+  },
+  "prodname": "Rózsaszín, bordó és fehér fonott karkötő",
+  "price": 890,
+  "image": "bbcf900ce92ba914d99e267a7ba81f72",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f5120aa8a5286e902021f6"
+  },
+  "prodname": "Krém, rózsaszín és szürke fonott karkötő",
+  "price": 890,
+  "image": "bb2cc2b80c0cdb8592657b9e8aa64b05",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f5124ba8a5286e90202202"
+  },
+  "prodname": "Világos kék, rózsaszín és narancs fonott karkötő ",
+  "price": 890,
+  "image": "46bea41c0363d722467defc2f1ecc234",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f51285a8a5286e90202217"
+  },
+  "prodname": "Narancs, rózsaszín és világos kék fonott karkötő",
+  "price": 890,
+  "image": "8a033ac8b4c8e9bd47f21468c932012d",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f517c34c7babcddb8e9fde"
+  },
+  "prodname": "Világos rózsaszín, fehér és lila fonott karkötő",
+  "price": 890,
+  "image": "e97721fd7a9d4ea7691c3f8a7145bacf",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f61192f61d66bcfa298bdb"
+  },
+  "prodname": "Sötétkék ezüst kagyló fonott karkötő",
+  "price": 590,
+  "image": "c595546fe1aa625ff3c457afd8a6cc4c",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f6120ff61d66bcfa298bf3"
+  },
+  "prodname": "Fekete betűs “Love” piros fonott karkötő",
+  "price": 590,
+  "image": "95717d36eb231d46a50a3cadc58d2de2",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f612a1f61d66bcfa298c0f"
+  },
+  "prodname": "Fekete betűs “Sun” mályva fonott karkötő ",
+  "price": 590,
+  "image": "46bea41c0363d722467defc2f1ecc234",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f619c3b52d378aec3b65bc"
+  },
+  "prodname": "Sötétkék, fehér kagyló karkötő",
+  "price": 590,
+  "image": "abd88e35637bae5c95bac2e8354dcdc1",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f6302f85696c8900921486"
+  },
+  "prodname": "Matt tigris jáspis kötött ásvány karkötő ",
+  "price": 4490,
+  "image": "46bea41c0363d722467defc2f1ecc234",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f6308e85696c89009214a6"
+  },
+  "prodname": "Türkiz regalit kötött ásvány karkötő",
+  "price": 4490,
+  "image": "1b9cff9aebb0c82e728fc253ee15131e",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4e522d58ff7212e95db7f"
+  },
+  "prodname": "“Cool” narancssárga fonott karkötő",
+  "price": 590,
+  "image": "261dd50964275cee31248a7d2486bcca",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4e5add58ff7212e95db86"
+  },
+  "prodname": "Mályva, bordó és zöld fonott karkötő",
+  "price": 890,
+  "image": "5950e5fa5aa063d960ee7ab561bc69bc",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4e78bd58ff7212e95dbc6"
+  },
+  "prodname": "Kék fonott karkötő",
+  "price": 890,
+  "image": "60c11cdadeac4020214cb142c69b7642",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4e89bd58ff7212e95dbf2"
+  },
+  "prodname": "“Vibe” fehér fonott karkötő",
+  "price": 590,
+  "image": "9fff3dc002733fab241fced4146e1c26",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4f0aed58ff7212e95dcc0"
+  },
+  "prodname": "“Sun” narancssárga fonott karkötő",
+  "price": 590,
+  "image": "95ed7bed85c8951bf4cc6ab0be82c9a7",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4f144d58ff7212e95dcd5"
+  },
+  "prodname": "Kék kagyló fonott karkötő",
+  "price": 890,
+  "image": "c6521da1ef6f9e2b1b148776b801ee81",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4f281d58ff7212e95dd3f"
+  },
+  "prodname": "Kagyló lila fonott karkötő",
+  "price": 590,
+  "image": "1cf159551b82e43862d664fef51ad82b",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f5009fe9d8a8cf1c3c6a7f"
+  },
+  "prodname": "Fekete, szürke és fehér fonott karkötő",
+  "price": 890,
+  "image": "2bc360160f3421a65cdc0950e783795e",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f501d6e9d8a8cf1c3c6a93"
+  },
+  "prodname": "Fehér, narancs és kék fonott karkötő",
+  "price": 890,
+  "image": "16fd2662741afbb401a10412da8ace69",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f50885e9d8a8cf1c3c6bdf"
+  },
+  "prodname": "“Bff” világos rózsaszín fonott karkötő",
+  "price": 590,
+  "image": "b95c5a863ac2f617e99489e675e278cc",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f50b43e9d8a8cf1c3c6c0d"
+  },
+  "prodname": "Méreg zöld, fehér és zöld fonott karkötő",
+  "price": 890,
+  "image": "84eb0da18dec71d59f681678c6e9d23f",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f50d9fe9d8a8cf1c3c6c82"
+  },
+  "prodname": "“Family” krém fonott karkötő",
+  "price": 590,
+  "image": "8a5f221ea018ab7e6b58c7aa3796ebfd",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f511bea8a5286e902021ea"
+  },
+  "prodname": "Sötétkék “Love” fonott karkötő",
+  "price": 590,
+  "image": "50803203deda36c70f3862339573c930",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f60f0ff61d66bcfa298b61"
+  },
+  "prodname": "Bordó, piros és fehér fonott karkötő",
+  "price": 890,
+  "image": "9325adf1b8bcfcd9284ba34125dd46ba",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f60fcaf61d66bcfa298b79"
+  },
+  "prodname": "Sötét lila “Cool” fonott karkötő",
+  "price": 580,
+  "image": "39c1414912aa3f5bf4ec62169497956c",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f611cdf61d66bcfa298be7"
+  },
+  "prodname": "Méreg zöld, világos zöld és fehér fonott karkötő",
+  "price": 590,
+  "image": "34e601de21fb5647d385cdec6a9c79fc",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f612f8f61d66bcfa298c36"
+  },
+  "prodname": "“Sun” fekete betűs mályva fonott karkötő",
+  "price": 590,
+  "image": "b0250c567289e8774a014ce961af504e",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f61467f61d66bcfa298c7f"
+  },
+  "prodname": "Arany kagyló fehér fonott karkötő",
+  "price": 590,
+  "image": "782fde59f9665ad279268083b3decc47",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f616e7b52d378aec3b64d4"
+  },
+  "prodname": "Bordó és fehér fonott karkötő",
+  "price": 890,
+  "image": "ebe2a5cbb490d042267a1f996650dc4e",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f617feb52d378aec3b6552"
+  },
+  "prodname": "Fehér, világos kék és rózsaszín fonott karkötő",
+  "price": 890,
+  "image": "cf9e0e4d017eb140efd70435f42a9ed3",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f61834b52d378aec3b655e"
+  },
+  "prodname": "Világos lila kagyló fonott karkötő",
+  "price": 590,
+  "image": "829da9291dca291aeb7dd980c1fea9bc",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f61942b52d378aec3b65a4"
+  },
+  "prodname": "Ezüst kagyló rózsaszín karkötő",
+  "price": 590,
+  "image": "5308851e7bdaaa84d8abeebbb5206043",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f61d47b52d378aec3b6610"
+  },
+  "prodname": "Fehér betűs “Bff” narancs fonott karkötő",
+  "price": 590,
+  "image": "9a44a49c4cd306b2c42c87e93492c9c8",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f61e63b52d378aec3b6643"
+  },
+  "prodname": "Világos rózsaszín és szürke karkötő",
+  "price": 890,
+  "image": "ab29290e77d1ef23059a7f95aae1a402",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f61f5ab52d378aec3b6686"
+  },
+  "prodname": "Fekete betűs “Vibe” zöld fonott karkötő",
+  "price": 590,
+  "image": "04d76978c931427199902a4b9dbab530",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f630d485696c89009214ca"
+  },
+  "prodname": "Leopárd jáspis kötött ásvány karkötő",
+  "price": 4490,
+  "image": "72a5dc3d002e65f146732e999f753c30",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640228e80d874548f414b350"
+  },
+  "prodname": "Babaláb fonott karkötő",
+  "price": 590,
+  "image": "b73ce877ad52d9d65e39588eedef99ad",
+  "__v": 0
+}]

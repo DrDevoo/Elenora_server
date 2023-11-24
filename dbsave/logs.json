@@ -1,0 +1,681 @@
+[{
+  "_id": {
+    "$oid": "64ae526070b7ce965bea238e"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 07. 12. 9:12:31",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64ae5c8970b7ce965bea239b"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 07. 12. 9:55:52",
+  "os": "iOS",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64ae681970b7ce965bea23df"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 07. 12. 10:45:11",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64ae7e7d9d317aee1d4c4590"
+  },
+  "action": "openCart",
+  "date": "2023. 07. 12. 12:20:45",
+  "os": "iOS",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64ae9bbe9d317aee1d4c45bb"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 07. 12. 14:25:34",
+  "os": "iOS",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64aeac189d317aee1d4c4630"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 07. 12. 15:35:19",
+  "os": "iOS",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64aec3f09d317aee1d4c463e"
+  },
+  "action": "openCart",
+  "date": "2023. 07. 12. 17:17:04",
+  "os": "Mac OS",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64aec42d9d317aee1d4c464d"
+  },
+  "action": "openCart",
+  "date": "2023. 07. 12. 17:18:05",
+  "os": "Mac OS",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64aec4389d317aee1d4c4654"
+  },
+  "action": "addProdToCart",
+  "date": "2023. 07. 12. 17:18:15",
+  "os": "Mac OS",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64aec4399d317aee1d4c4656"
+  },
+  "action": "openCart",
+  "date": "2023. 07. 12. 17:18:16",
+  "os": "Mac OS",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64aec4519d317aee1d4c466a"
+  },
+  "action": "addProdToCart",
+  "date": "2023. 07. 12. 17:18:40",
+  "os": "Mac OS",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64aec4519d317aee1d4c466c"
+  },
+  "action": "openCart",
+  "date": "2023. 07. 12. 17:18:41",
+  "os": "Mac OS",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64aec45e9d317aee1d4c4675"
+  },
+  "action": "addProdToCart",
+  "date": "2023. 07. 12. 17:18:53",
+  "os": "Mac OS",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64aec4639d317aee1d4c467f"
+  },
+  "action": "addProdToCart",
+  "date": "2023. 07. 12. 17:18:58",
+  "os": "Mac OS",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64aec4649d317aee1d4c4681"
+  },
+  "action": "openCart",
+  "date": "2023. 07. 12. 17:18:59",
+  "os": "Mac OS",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64b6b71ca5dc5b29cc8ce329"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 07. 18. 18:00:27",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64b6b7b8a5dc5b29cc8ce32e"
+  },
+  "action": "openCart",
+  "date": "2023. 07. 18. 18:03:04",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64b6b7daa5dc5b29cc8ce333"
+  },
+  "action": "openCart",
+  "date": "2023. 07. 18. 18:03:37",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64b6b7dea5dc5b29cc8ce337"
+  },
+  "action": "openCart",
+  "date": "2023. 07. 18. 18:03:42",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64b6b7e2a5dc5b29cc8ce33c"
+  },
+  "action": "openCart",
+  "date": "2023. 07. 18. 18:03:46",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64b6b7eaa5dc5b29cc8ce33e"
+  },
+  "action": "openCart",
+  "date": "2023. 07. 18. 18:03:53",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64b6e2a1a5dc5b29cc8ce375"
+  },
+  "action": "openCart",
+  "date": "2023. 07. 18. 21:06:08",
+  "os": "iOS",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64ba8c7aa5dc5b29cc8ce55e"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 07. 21. 15:47:38",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64ba8d6fa5dc5b29cc8ce560"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 07. 21. 15:47:38",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64ba8db8a5dc5b29cc8ce565"
+  },
+  "action": "openCart",
+  "date": "2023. 07. 21. 15:52:56",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64ba8dd4a5dc5b29cc8ce56a"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 07. 21. 15:53:24",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64ba8e1ba5dc5b29cc8ce56f"
+  },
+  "action": "openCart",
+  "date": "2023. 07. 21. 15:54:35",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64c808e1a5dc5b29cc8cf3e2"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 07. 31. 21:17:54",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64c810e9a5dc5b29cc8cf3ef"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 07. 31. 21:52:08",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64ca73d3a5dc5b29cc8cf4af"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 08. 02. 17:18:42",
+  "os": "Mac OS",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64d274cfa5dc5b29cc8cf8f2"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 08. 08. 19:01:03",
+  "os": "Windows",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64d27a3301df2c808b352176"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 08. 08. 19:24:02",
+  "os": "Windows",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64d27a8b01df2c808b35217b"
+  },
+  "action": "openCart",
+  "date": "2023. 08. 08. 19:25:31",
+  "os": "Windows",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64d3cba001df2c808b352214"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 08. 09. 19:23:44",
+  "os": "Windows",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64df56fd01df2c808b35272c"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 08. 18. 14:33:15",
+  "os": "iOS",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64e0782801df2c808b35276e"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 08. 19. 10:07:01",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64e0798601df2c808b352778"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 08. 19. 10:07:01",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64e3cc5401df2c808b352800"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 08. 21. 22:43:00",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64e5b65e01df2c808b35289d"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 08. 23. 9:33:50",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64e5cd4101df2c808b3528bd"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 08. 23. 11:11:29",
+  "os": "Windows",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64ebb9ff01df2c808b352a5a"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 08. 27. 23:02:55",
+  "os": "Windows",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64ebc97601df2c808b352a62"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 08. 28. 0:08:54",
+  "os": "Windows",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64edadad01df2c808b352aa6"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 08. 29. 10:34:53",
+  "os": "Mac OS",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f33eaf01df2c808b352b8b"
+  },
+  "action": "openCart",
+  "date": "2023. 09. 02. 15:54:55",
+  "os": "Mac OS",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f33eb601df2c808b352b8d"
+  },
+  "action": "addProdToCart",
+  "date": "2023. 09. 02. 15:55:02",
+  "os": "Mac OS",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f33eb701df2c808b352b8f"
+  },
+  "action": "openCart",
+  "date": "2023. 09. 02. 15:55:03",
+  "os": "Mac OS",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f33eba01df2c808b352b91"
+  },
+  "action": "openCheckout",
+  "date": "2023. 09. 02. 15:55:06",
+  "os": "Mac OS",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f3427e01df2c808b352bd8"
+  },
+  "action": "openCart",
+  "date": "2023. 09. 02. 16:11:10",
+  "os": "Mac OS",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f342c201df2c808b352bdf"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 09. 02. 16:12:18",
+  "os": "Mac OS",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f3451001df2c808b352c3b"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 09. 02. 16:22:07",
+  "os": "iOS",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f3451501df2c808b352c3d"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 09. 02. 16:22:12",
+  "os": "iOS",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f34a4e01df2c808b352c42"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 09. 02. 16:44:30",
+  "os": "iOS",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f34a5201df2c808b352c44"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 09. 02. 16:44:34",
+  "os": "iOS",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f5ee29d9b5eb7330a29c13"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 09. 04. 16:48:11",
+  "os": "Windows",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f6015dd9b5eb7330a29c23"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 09. 04. 18:10:04",
+  "os": "Windows",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f86037eec0c2607ede0a90"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 09. 06. 13:19:18",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f860faeec0c2607ede0a95"
+  },
+  "action": "openCart",
+  "date": "2023. 09. 06. 13:22:34",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f86119eec0c2607ede0a9a"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 09. 06. 13:23:05",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f86166eec0c2607ede0a9c"
+  },
+  "action": "openCart",
+  "date": "2023. 09. 06. 13:24:21",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f86173eec0c2607ede0a9e"
+  },
+  "action": "openCart",
+  "date": "2023. 09. 06. 13:24:35",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f8618feec0c2607ede0aa3"
+  },
+  "action": "openCart",
+  "date": "2023. 09. 06. 13:25:02",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f861b1eec0c2607ede0aa8"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 09. 06. 13:25:36",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f861dbeec0c2607ede0aad"
+  },
+  "action": "openCart",
+  "date": "2023. 09. 06. 13:26:19",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f86227eec0c2607ede0ab4"
+  },
+  "action": "openCart",
+  "date": "2023. 09. 06. 13:27:34",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f8627eeec0c2607ede0ac7"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 09. 06. 13:29:01",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f8628ceec0c2607ede0ac9"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 09. 06. 13:29:15",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f862efeec0c2607ede0ace"
+  },
+  "action": "openCart",
+  "date": "2023. 09. 06. 13:30:55",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f870c0eec0c2607ede0aed"
+  },
+  "action": "openCart",
+  "date": "2023. 09. 06. 14:29:51",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64fa28a1eec0c2607ede0cdf"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 09. 07. 21:46:40",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64fa29efeec0c2607ede0ce3"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 09. 07. 21:52:14",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64fa2a46eec0c2607ede0ce9"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 09. 07. 21:53:41",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64fa2a83eec0c2607ede0ced"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 09. 07. 21:54:43",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64fa2b1beec0c2607ede0cf1"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 09. 07. 21:57:15",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64fa2c86eec0c2607ede0cf9"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 09. 07. 22:03:17",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64fbdff1eec0c2607ede0d43"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 09. 09. 5:01:05",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64fbe1d51cbced01df5d492c"
+  },
+  "action": "openCart",
+  "date": "2023. 09. 09. 5:09:09",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64fc11ae052f342172dfaf16"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 09. 09. 8:33:18",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6501f84a052f342172dfafea"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 09. 13. 19:58:35",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6505409e052f342172dfb05d"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 09. 16. 7:43:58",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6505529a052f342172dfb065"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 09. 16. 9:00:41",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "650552c5052f342172dfb06a"
+  },
+  "action": "openCart",
+  "date": "2023. 09. 16. 9:01:24",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6511aeb7052f342172dfb235"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 09. 25. 18:00:54",
+  "os": "iOS",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65191e68052f342172dfb380"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 10. 01. 9:23:20",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65195204052f342172dfb38b"
+  },
+  "action": "openCart",
+  "date": "2023. 10. 01. 13:03:32",
+  "os": "Android",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65195226052f342172dfb392"
+  },
+  "action": "startCustomBracelet",
+  "date": "2023. 10. 01. 13:04:05",
+  "os": "Android",
+  "__v": 0
+}]

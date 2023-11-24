@@ -1,0 +1,1569 @@
+[{
+  "_id": {
+    "$oid": "63e68537684c9af48845734f"
+  },
+  "item_name": "Hegyikristály",
+  "item_quantity": 54,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e64beb684c9af48845733b"
+  },
+  "item_name": "Rózsakvarc",
+  "item_quantity": 236,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e6888b684c9af488457392"
+  },
+  "item_name": "Unakit",
+  "item_quantity": 117,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e685d7684c9af488457358"
+  },
+  "item_name": "Matt szerpentin",
+  "item_quantity": 48,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e686bc684c9af488457369"
+  },
+  "item_name": "Matt lápisz lazuli",
+  "item_quantity": 68,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68945684c9af48845739b"
+  },
+  "item_name": "Hematit",
+  "item_quantity": 733,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68dbd684c9af488457407"
+  },
+  "item_name": "Rózsaszín rondell",
+  "item_quantity": 44,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e69605684c9af48845744a"
+  },
+  "item_name": "Bak",
+  "item_quantity": 10,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e6962a684c9af48845744d"
+  },
+  "item_name": "Fehér A",
+  "item_quantity": 84,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e69635684c9af48845744f"
+  },
+  "item_name": "Fehér B",
+  "item_quantity": 80,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e69647684c9af488457452"
+  },
+  "item_name": "Fehér C",
+  "item_quantity": 81,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e69666684c9af488457458"
+  },
+  "item_name": "Fehér F",
+  "item_quantity": 75,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e69685684c9af48845745c"
+  },
+  "item_name": "Fehér F",
+  "item_quantity": 0,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e696e1684c9af488457461"
+  },
+  "item_name": "Fehér H",
+  "item_quantity": 90,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e69750684c9af488457471"
+  },
+  "item_name": "Fehér P",
+  "item_quantity": 77,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e69769684c9af488457475"
+  },
+  "item_name": "Fehér R",
+  "item_quantity": 80,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e697d4684c9af48845748a"
+  },
+  "item_name": "Fekete B",
+  "item_quantity": 93,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e69801684c9af488457494"
+  },
+  "item_name": "Fekete G",
+  "item_quantity": 50,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e69807684c9af488457496"
+  },
+  "item_name": "Fekete H",
+  "item_quantity": 60,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e6980f684c9af488457498"
+  },
+  "item_name": "Fekete I",
+  "item_quantity": 63,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e698c0684c9af4884574b6"
+  },
+  "item_name": "Fekete W",
+  "item_quantity": 50,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a0f2f9802b7452196da58"
+  },
+  "item_name": "Rózsaszín lávakő",
+  "item_quantity": 40,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a10879802b7452196da8e"
+  },
+  "item_name": "Rose gold rondell ",
+  "item_quantity": 2,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a10989802b7452196da92"
+  },
+  "item_name": "Rose gold csillag",
+  "item_quantity": 10,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a17d89802b7452196db31"
+  },
+  "item_name": "Arany F",
+  "item_quantity": 8,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a19199802b7452196db63"
+  },
+  "item_name": "Arany R",
+  "item_quantity": 4,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a1a489802b7452196db9f"
+  },
+  "item_name": "Fehér jáde opál",
+  "item_quantity": 227,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a1b1b9802b7452196dbd1"
+  },
+  "item_name": "Fehér halak",
+  "item_quantity": 13,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "641839db7c0acc55e8a5ad0d"
+  },
+  "item_name": "Amazonit ásvány",
+  "item_quantity": 2,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64183a6e7c0acc55e8a5ad22"
+  },
+  "item_name": "Unakit ásvány",
+  "item_quantity": 3,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e6858e684c9af488457354"
+  },
+  "item_name": "Rózsaszín jáde",
+  "item_quantity": 296,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e6870e684c9af48845736f"
+  },
+  "item_name": "Piros hálós jáspis",
+  "item_quantity": 97,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e6877f684c9af48845737a"
+  },
+  "item_name": "Zöld szezámkő",
+  "item_quantity": 208,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e687b8684c9af488457380"
+  },
+  "item_name": "Arany fényes lávakő",
+  "item_quantity": 45,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68826684c9af488457389"
+  },
+  "item_name": "Rózsaszín roppantott hegyikristály",
+  "item_quantity": 219,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68a33684c9af4884573b5"
+  },
+  "item_name": "Vörös jáspis",
+  "item_quantity": 101,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68cc7684c9af4884573ed"
+  },
+  "item_name": "Ezüst mini golyó 4mm",
+  "item_quantity": 34,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68d04684c9af4884573f3"
+  },
+  "item_name": "Piros üres szív",
+  "item_quantity": 66,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68d9d684c9af488457404"
+  },
+  "item_name": "Fehér rondell",
+  "item_quantity": 92,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68ddf684c9af48845740a"
+  },
+  "item_name": "Fekete telt szív",
+  "item_quantity": 15,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68e0b684c9af48845740d"
+  },
+  "item_name": "Fekete üres szív",
+  "item_quantity": 10,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68e4d684c9af488457413"
+  },
+  "item_name": "Hamsa kéz",
+  "item_quantity": 47,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68ee6684c9af488457422"
+  },
+  "item_name": "Arany korong 4mm",
+  "item_quantity": 37,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e695f2684c9af488457447"
+  },
+  "item_name": "Nyilas",
+  "item_quantity": 13,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e697db684c9af48845748c"
+  },
+  "item_name": "Fekete C",
+  "item_quantity": 53,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e698db684c9af4884574bc"
+  },
+  "item_name": "Fekete Z",
+  "item_quantity": 20,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a0f779802b7452196da64"
+  },
+  "item_name": "6mm barack aventurin",
+  "item_quantity": 36,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a105b9802b7452196da86"
+  },
+  "item_name": "6mm világos ezüst golyó",
+  "item_quantity": 35,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a10db9802b7452196da9a"
+  },
+  "item_name": "4mm hematit",
+  "item_quantity": 77,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a11529802b7452196daaa"
+  },
+  "item_name": "8mm Rose gold korong",
+  "item_quantity": 47,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a17e89802b7452196db35"
+  },
+  "item_name": "Arany G",
+  "item_quantity": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a18079802b7452196db3d"
+  },
+  "item_name": "Arany I",
+  "item_quantity": 4,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a18129802b7452196db41"
+  },
+  "item_name": "Arany J",
+  "item_quantity": 3,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a19539802b7452196db73"
+  },
+  "item_name": "Arany U",
+  "item_quantity": 2,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a19f09802b7452196db8f"
+  },
+  "item_name": "Hematit opál",
+  "item_quantity": 248,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a1a989802b7452196dbad"
+  },
+  "item_name": "Fehér ikrek",
+  "item_quantity": 18,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a1ad49802b7452196dbbd"
+  },
+  "item_name": "Fehér mérleg",
+  "item_quantity": 4,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64171ec697322bc03595b529"
+  },
+  "item_name": "teszt gyöngy 1",
+  "item_quantity": 21,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e689b5684c9af4884573a9"
+  },
+  "item_name": "Szodalit",
+  "item_quantity": 25,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68a50684c9af4884573b8"
+  },
+  "item_name": "Fekete lávakő",
+  "item_quantity": 182,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68b44684c9af4884573d2"
+  },
+  "item_name": "6mm matt fehér jáde",
+  "item_quantity": 21,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68c12684c9af4884573e1"
+  },
+  "item_name": "Fekete szív",
+  "item_quantity": 51,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68ce8684c9af4884573f0"
+  },
+  "item_name": "Piros telt szív",
+  "item_quantity": 87,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e696d4684c9af48845745f"
+  },
+  "item_name": "Fehér G",
+  "item_quantity": 90,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e69748684c9af48845746f"
+  },
+  "item_name": "Fehér O",
+  "item_quantity": 79,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e69772684c9af488457477"
+  },
+  "item_name": "Fehér S",
+  "item_quantity": 92,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e6983b684c9af4884574a2"
+  },
+  "item_name": "Fekete N",
+  "item_quantity": 20,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e69844684c9af4884574a4"
+  },
+  "item_name": "Fekete O",
+  "item_quantity": 20,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e69868684c9af4884574aa"
+  },
+  "item_name": "Fekete Q",
+  "item_quantity": 20,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f3870f753bd1baf134bf5b"
+  },
+  "item_name": "Arany korona",
+  "item_quantity": 4,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f38776753bd1baf134bf61"
+  },
+  "item_name": "Arany korong 6mm",
+  "item_quantity": 10,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a0f1d9802b7452196da54"
+  },
+  "item_name": "Krém lávakő",
+  "item_quantity": 25,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a0fd09802b7452196da6e"
+  },
+  "item_name": "8mm fekete korong",
+  "item_quantity": 50,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a0ffb9802b7452196da76"
+  },
+  "item_name": "8mm arany korong",
+  "item_quantity": 58,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a10289802b7452196da7e"
+  },
+  "item_name": "Fekete csillag",
+  "item_quantity": 7,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a106a9802b7452196da8a"
+  },
+  "item_name": "Nagy rondell",
+  "item_quantity": 2,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a17aa9802b7452196db23"
+  },
+  "item_name": "Arany C",
+  "item_quantity": 7,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a17c89802b7452196db2d"
+  },
+  "item_name": "Arany E",
+  "item_quantity": 6,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a1af09802b7452196dbc5"
+  },
+  "item_name": "Fehér nyilas",
+  "item_quantity": 9,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a1afb9802b7452196dbc9"
+  },
+  "item_name": "Fehér bak",
+  "item_quantity": 9,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64172cc52e6ae9bbc267176e"
+  },
+  "item_name": "teszt gyöngy 3",
+  "item_quantity": 62,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64183a367c0acc55e8a5ad1e"
+  },
+  "item_name": "Vörös jáspis ásvány",
+  "item_quantity": 2,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68693684c9af488457366"
+  },
+  "item_name": "Dalmata jáspis",
+  "item_quantity": 78,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e6886c684c9af48845738f"
+  },
+  "item_name": "Szürke fa achát",
+  "item_quantity": 25,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e688de684c9af488457398"
+  },
+  "item_name": "Matt barack aventurin",
+  "item_quantity": 131,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e689f6684c9af4884573af"
+  },
+  "item_name": "Zebra jáspis",
+  "item_quantity": 67,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68a15684c9af4884573b2"
+  },
+  "item_name": "Csomórejtő",
+  "item_quantity": 680,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68ab9684c9af4884573c4"
+  },
+  "item_name": "6mm hematit",
+  "item_quantity": 728,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68b92684c9af4884573d8"
+  },
+  "item_name": "Fekete fényes lávakő",
+  "item_quantity": 117,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68c8d684c9af4884573ea"
+  },
+  "item_name": "Rose gold mini golyó",
+  "item_quantity": 0,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68d42684c9af4884573fb"
+  },
+  "item_name": "Fekete korona",
+  "item_quantity": 21,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68e2c684c9af488457410"
+  },
+  "item_name": "Hematit korong 8mm",
+  "item_quantity": 0,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68e67684c9af488457416"
+  },
+  "item_name": "Szürke virág",
+  "item_quantity": 69,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e69234684c9af48845742b"
+  },
+  "item_name": "Halak",
+  "item_quantity": 16,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e6953d684c9af48845743a"
+  },
+  "item_name": "Oroszlán",
+  "item_quantity": 13,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e69592684c9af488457443"
+  },
+  "item_name": "Skorpió",
+  "item_quantity": 21,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e6973e684c9af48845746d"
+  },
+  "item_name": "Fehér N",
+  "item_quantity": 80,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e6982a684c9af48845749e"
+  },
+  "item_name": "Fekete L",
+  "item_quantity": 20,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e69832684c9af4884574a0"
+  },
+  "item_name": "Fekete M",
+  "item_quantity": 40,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f38a5c753bd1baf134bf76"
+  },
+  "item_name": "Sima hegyikristály",
+  "item_quantity": 24,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a0f439802b7452196da5c"
+  },
+  "item_name": "Arany oroszlán",
+  "item_quantity": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a17b59802b7452196db27"
+  },
+  "item_name": "Arany D",
+  "item_quantity": 5,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a18259802b7452196db45"
+  },
+  "item_name": "Arany K",
+  "item_quantity": 2,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a19759802b7452196db7f"
+  },
+  "item_name": "Arany V",
+  "item_quantity": 5,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a198b9802b7452196db87"
+  },
+  "item_name": "Arany Z",
+  "item_quantity": 5,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64171ed097322bc03595b52d"
+  },
+  "item_name": "Teszt gyöngy 2",
+  "item_quantity": 24,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68622684c9af488457360"
+  },
+  "item_name": "Matt tigris jáspis",
+  "item_quantity": 70,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e684c2684c9af48845734c"
+  },
+  "item_name": "Fehér jáde",
+  "item_quantity": 196,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e6879b684c9af48845737d"
+  },
+  "item_name": "Ónix",
+  "item_quantity": 85,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68961684c9af48845739e"
+  },
+  "item_name": "Lepidolit",
+  "item_quantity": 177,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68a9d684c9af4884573c1"
+  },
+  "item_name": "Howlit",
+  "item_quantity": 129,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68add684c9af4884573c7"
+  },
+  "item_name": "Türkiz regalit",
+  "item_quantity": 164,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68b22684c9af4884573cf"
+  },
+  "item_name": "6mm fekete lávakő",
+  "item_quantity": 86,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68b63684c9af4884573d5"
+  },
+  "item_name": "Rose gold fényes lávakő",
+  "item_quantity": 38,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68c2b684c9af4884573e4"
+  },
+  "item_name": "Arany szív",
+  "item_quantity": 79,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68c6a684c9af4884573e7"
+  },
+  "item_name": "Rose gold korong 6mm",
+  "item_quantity": 20,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68ea8684c9af48845741c"
+  },
+  "item_name": "Rose gold korong 4mm",
+  "item_quantity": 60,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68ece684c9af48845741f"
+  },
+  "item_name": "Fekete korong 4mm",
+  "item_quantity": 15,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e6924a684c9af48845742e"
+  },
+  "item_name": "Kos",
+  "item_quantity": 18,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e696ec684c9af488457463"
+  },
+  "item_name": "Fehér I",
+  "item_quantity": 103,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e69710684c9af488457469"
+  },
+  "item_name": "Fehér L",
+  "item_quantity": 77,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e697ec684c9af488457490"
+  },
+  "item_name": "Fekete E",
+  "item_quantity": 86,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e697f2684c9af488457492"
+  },
+  "item_name": "Fekete F",
+  "item_quantity": 50,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e69820684c9af48845749c"
+  },
+  "item_name": "Fekete K",
+  "item_quantity": 26,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e69861684c9af4884574a8"
+  },
+  "item_name": "Fekete P",
+  "item_quantity": 0,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e69876684c9af4884574ac"
+  },
+  "item_name": "Fekete R",
+  "item_quantity": 20,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e69892684c9af4884574b0"
+  },
+  "item_name": "Fekete T",
+  "item_quantity": 20,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a10189802b7452196da7a"
+  },
+  "item_name": "Ezüst kereszt",
+  "item_quantity": 51,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a10c59802b7452196da96"
+  },
+  "item_name": "6mm sötét hematit ",
+  "item_quantity": 46,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a11259802b7452196daa2"
+  },
+  "item_name": "8mm ezüst korong",
+  "item_quantity": 73,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a18409802b7452196db4d"
+  },
+  "item_name": "Arany M",
+  "item_quantity": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a18fe9802b7452196db5b"
+  },
+  "item_name": "Arany P",
+  "item_quantity": 3,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a19de9802b7452196db8b"
+  },
+  "item_name": "Tigris opál",
+  "item_quantity": 340,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a1a039802b7452196db93"
+  },
+  "item_name": "Regalit opál",
+  "item_quantity": 165,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6418398b7c0acc55e8a5ad05"
+  },
+  "item_name": "Fekete doboz",
+  "item_quantity": 12,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e685f5684c9af48845735b"
+  },
+  "item_name": "Amazonit",
+  "item_quantity": 67,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e687f9684c9af488457386"
+  },
+  "item_name": "Leopárd jáspis",
+  "item_quantity": 196,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68a6c684c9af4884573bb"
+  },
+  "item_name": "Mályva lávakő",
+  "item_quantity": 123,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68bb3684c9af4884573db"
+  },
+  "item_name": "Szürke fényes lávakő",
+  "item_quantity": 14,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68d5b684c9af4884573fe"
+  },
+  "item_name": "Rose gold korona",
+  "item_quantity": 4,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68e7e684c9af488457419"
+  },
+  "item_name": "Szürke hordó",
+  "item_quantity": 51,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e69723684c9af48845746b"
+  },
+  "item_name": "Fehér M",
+  "item_quantity": 81,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e6975d684c9af488457473"
+  },
+  "item_name": "Fehér Q",
+  "item_quantity": 63,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e69795684c9af48845747f"
+  },
+  "item_name": "Fehér W",
+  "item_quantity": 78,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e6979e684c9af488457481"
+  },
+  "item_name": "Fehér X",
+  "item_quantity": 82,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e69854684c9af4884574a6"
+  },
+  "item_name": "Fekete P",
+  "item_quantity": 20,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e698b7684c9af4884574b4"
+  },
+  "item_name": "Fekete V",
+  "item_quantity": 20,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e698d2684c9af4884574ba"
+  },
+  "item_name": "Fekete Y",
+  "item_quantity": 0,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f389fa753bd1baf134bf74"
+  },
+  "item_name": "ismeretlen",
+  "item_quantity": 0,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f38a6f753bd1baf134bf7a"
+  },
+  "item_name": "Ametiszt",
+  "item_quantity": 19,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f38ab2753bd1baf134bf7c"
+  },
+  "item_name": "Meggy jáde",
+  "item_quantity": 20,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f3a6108a3303a46eefd3b1"
+  },
+  "item_name": "6mm fehér lávakő",
+  "item_quantity": 27,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a0f8e9802b7452196da68"
+  },
+  "item_name": "6mm türkiz regalit",
+  "item_quantity": 36,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a10409802b7452196da82"
+  },
+  "item_name": "6mm arany golyó",
+  "item_quantity": 15,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a11059802b7452196da9e"
+  },
+  "item_name": "6mm ezüst korong",
+  "item_quantity": 40,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a113a9802b7452196daa6"
+  },
+  "item_name": "4mm ezüst korong",
+  "item_quantity": 37,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a17889802b7452196db1b"
+  },
+  "item_name": "Arany A",
+  "item_quantity": 4,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a17f59802b7452196db39"
+  },
+  "item_name": "Arany H",
+  "item_quantity": 7,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a190d9802b7452196db5f"
+  },
+  "item_name": "Arany Q",
+  "item_quantity": 2,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a19399802b7452196db6b"
+  },
+  "item_name": "Arany S",
+  "item_quantity": 3,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a19469802b7452196db6f"
+  },
+  "item_name": "Arany T",
+  "item_quantity": 3,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a195f9802b7452196db77"
+  },
+  "item_name": "Arany Y",
+  "item_quantity": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "641839bf7c0acc55e8a5ad09"
+  },
+  "item_name": "Fehér jáde ásvány",
+  "item_quantity": 3,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e686dc684c9af48845736c"
+  },
+  "item_name": "Matt barna képjáspis",
+  "item_quantity": 211,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68648684c9af488457363"
+  },
+  "item_name": "Kék tigrisszem",
+  "item_quantity": 22,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e688bc684c9af488457395"
+  },
+  "item_name": "6mm fekete ónix",
+  "item_quantity": 105,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68980684c9af4884573a1"
+  },
+  "item_name": "Szürke képjáspis",
+  "item_quantity": 143,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68a87684c9af4884573be"
+  },
+  "item_name": "Tigrisszem",
+  "item_quantity": 31,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e69271684c9af488457434"
+  },
+  "item_name": "Ikrek",
+  "item_quantity": 14,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e69572684c9af488457440"
+  },
+  "item_name": "Mérleg",
+  "item_quantity": 12,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e69654684c9af488457454"
+  },
+  "item_name": "Fehér D",
+  "item_quantity": 74,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e6965d684c9af488457456"
+  },
+  "item_name": "Fehér E",
+  "item_quantity": 79,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e69668684c9af48845745a"
+  },
+  "item_name": "Fehér F",
+  "item_quantity": 0,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e69701684c9af488457467"
+  },
+  "item_name": "Fehér K",
+  "item_quantity": 76,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e6977a684c9af488457479"
+  },
+  "item_name": "Fehér T",
+  "item_quantity": 90,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e69784684c9af48845747b"
+  },
+  "item_name": "Fehér U",
+  "item_quantity": 76,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e697b1684c9af488457485"
+  },
+  "item_name": "Fehér Z",
+  "item_quantity": 82,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e697e3684c9af48845748e"
+  },
+  "item_name": "Fekete D",
+  "item_quantity": 67,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e6988a684c9af4884574ae"
+  },
+  "item_name": "Fekete S",
+  "item_quantity": 20,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63fe2a8c45b672e2c624a7cd"
+  },
+  "item_name": "Holdkő",
+  "item_quantity": 3,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a0fde9802b7452196da72"
+  },
+  "item_name": "Ezüst szív",
+  "item_quantity": 2,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a18509802b7452196db51"
+  },
+  "item_name": "Arany N",
+  "item_quantity": 4,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a19699802b7452196db7b"
+  },
+  "item_name": "Arany X",
+  "item_quantity": 4,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a19809802b7452196db83"
+  },
+  "item_name": "Arany W",
+  "item_quantity": 4,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a1a189802b7452196db97"
+  },
+  "item_name": "Howlit opál",
+  "item_quantity": 357,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a1a8b9802b7452196dba9"
+  },
+  "item_name": "Fehér bika",
+  "item_quantity": 11,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a1aa59802b7452196dbb1"
+  },
+  "item_name": "Fehér rák",
+  "item_quantity": 6,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a1ab49802b7452196dbb5"
+  },
+  "item_name": "Fehér oroszlán",
+  "item_quantity": 6,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a1ac79802b7452196dbb9"
+  },
+  "item_name": "Fehér szűz",
+  "item_quantity": 8,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a1ae19802b7452196dbc1"
+  },
+  "item_name": "Fehér skorpió ",
+  "item_quantity": 4,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a1b0f9802b7452196dbcd"
+  },
+  "item_name": "Fehér vízöntő",
+  "item_quantity": 6,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "641839ef7c0acc55e8a5ad11"
+  },
+  "item_name": "Lávakő szív ásvány",
+  "item_quantity": 3,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64183a237c0acc55e8a5ad1a"
+  },
+  "item_name": "Rózsakvarc ásvány",
+  "item_quantity": 3,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68728684c9af488457374"
+  },
+  "item_name": "Kék jáde",
+  "item_quantity": 39,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68751684c9af488457377"
+  },
+  "item_name": "Fa gyöngy",
+  "item_quantity": 49,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e687db684c9af488457383"
+  },
+  "item_name": "Fehér lávakő",
+  "item_quantity": 74,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68844684c9af48845738c"
+  },
+  "item_name": "Fekete hálós jáspis",
+  "item_quantity": 45,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e6899c684c9af4884573a4"
+  },
+  "item_name": "Rodonit",
+  "item_quantity": 135,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e689ce684c9af4884573ac"
+  },
+  "item_name": "Krém jáde",
+  "item_quantity": 249,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68afe684c9af4884573cc"
+  },
+  "item_name": "Zöld aventurin",
+  "item_quantity": 134,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68bd3684c9af4884573de"
+  },
+  "item_name": "6mm rose gold golyó",
+  "item_quantity": 859,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68d28684c9af4884573f6"
+  },
+  "item_name": "Rose gold szív",
+  "item_quantity": 99,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e68d82684c9af488457401"
+  },
+  "item_name": "Fekete korong 6mm",
+  "item_quantity": 35,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e69224684c9af488457428"
+  },
+  "item_name": "Vízöntő",
+  "item_quantity": 11,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e6925e684c9af488457431"
+  },
+  "item_name": "Bika",
+  "item_quantity": 24,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e69524684c9af488457437"
+  },
+  "item_name": "Rák",
+  "item_quantity": 29,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e69560684c9af48845743d"
+  },
+  "item_name": "Szűz",
+  "item_quantity": 28,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e696f9684c9af488457465"
+  },
+  "item_name": "Fehér J",
+  "item_quantity": 100,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e6978c684c9af48845747d"
+  },
+  "item_name": "Fehér V",
+  "item_quantity": 81,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e697a9684c9af488457483"
+  },
+  "item_name": "Fehér Y",
+  "item_quantity": 93,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e697cd684c9af488457488"
+  },
+  "item_name": "Fekete A",
+  "item_quantity": 90,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e69816684c9af48845749a"
+  },
+  "item_name": "Fekete J",
+  "item_quantity": 50,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e698ae684c9af4884574b2"
+  },
+  "item_name": "Fekete U",
+  "item_quantity": 20,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e698c8684c9af4884574b8"
+  },
+  "item_name": "Fekete X",
+  "item_quantity": 20,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ef8f3ef5da38d7da3fd414"
+  },
+  "item_name": "Angyal szárny",
+  "item_quantity": 10,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f3891e753bd1baf134bf6c"
+  },
+  "item_name": "6mm zebra jáspis",
+  "item_quantity": 33,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a0f089802b7452196da50"
+  },
+  "item_name": "Lila lávakő",
+  "item_quantity": 5,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a0f599802b7452196da60"
+  },
+  "item_name": "Karneol",
+  "item_quantity": 3,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a17959802b7452196db1f"
+  },
+  "item_name": "Arany B",
+  "item_quantity": 5,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a18309802b7452196db49"
+  },
+  "item_name": "Arany L",
+  "item_quantity": 5,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a186d9802b7452196db55"
+  },
+  "item_name": "Arany O",
+  "item_quantity": 10,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a1a309802b7452196db9b"
+  },
+  "item_name": "Rózsakvarc opál",
+  "item_quantity": 279,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640a1a7a9802b7452196dba5"
+  },
+  "item_name": "Fehér kos",
+  "item_quantity": 6,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6418397e7c0acc55e8a5ad01"
+  },
+  "item_name": "Fehér doboz",
+  "item_quantity": 4,
+  "__v": 0
+}]

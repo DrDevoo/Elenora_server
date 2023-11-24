@@ -1,0 +1,113 @@
+[{
+  "_id": {
+    "$oid": "63e79df573ac56cda2d31525"
+  },
+  "col_name": "Csakra",
+  "col_type": "bracelet",
+  "col_gender": "unisex",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e79e3273ac56cda2d3152d"
+  },
+  "col_name": "Rose Gold",
+  "col_type": "bracelet",
+  "col_gender": "female",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e79e3d73ac56cda2d3152f"
+  },
+  "col_name": "Láva",
+  "col_type": "bracelet",
+  "col_gender": "unisex",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e79bad7131d212ae2e657f"
+  },
+  "col_name": "Föld",
+  "col_type": "bracelet",
+  "col_gender": "unisex",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e79e0573ac56cda2d31527"
+  },
+  "col_name": "Pasztell",
+  "col_type": "bracelet",
+  "col_gender": "female",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e79e1a73ac56cda2d31529"
+  },
+  "col_name": "Horoszkóp",
+  "col_type": "bracelet",
+  "col_gender": "unisex",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "641992427c0acc55e8a5af22"
+  },
+  "col_name": "Korona",
+  "col_type": "bracelet",
+  "col_gender": "unisex",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4dfa4f001a291d1374faa"
+  },
+  "col_name": "Tavasz",
+  "col_type": "bracelet",
+  "col_gender": "unisex",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4ce967e463120b77e6952"
+  },
+  "col_name": "Kötött karkötők",
+  "col_type": "bracelet",
+  "col_gender": "unisex",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e79e2573ac56cda2d3152b"
+  },
+  "col_name": "Elegáns",
+  "col_type": "bracelet",
+  "col_gender": "unisex",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e79e4d73ac56cda2d31531"
+  },
+  "col_name": "Minimal",
+  "col_type": "bracelet",
+  "col_gender": "unisex",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e79bc97131d212ae2e6585"
+  },
+  "col_name": "Medál",
+  "col_type": "bracelet",
+  "col_gender": "unisex",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4dfe2d58ff7212e95db11"
+  },
+  "col_name": "Colorful",
+  "col_type": "bracelet",
+  "col_gender": "unisex",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ff8da745b672e2c624a89f"
+  },
+  "col_name": "Black",
+  "col_type": "bracelet",
+  "col_gender": "male",
+  "__v": 0
+}]

@@ -1,0 +1,49 @@
+[{
+  "_id": {
+    "$oid": "641c1e6a1f5325448f57d672"
+  },
+  "prodname": "Fehér jáde ásványkő",
+  "price": 799,
+  "image": "923d9ad68696b40cffa82ef8dfaf18f3",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "641c1eef1f5325448f57d682"
+  },
+  "prodname": "Lávakő szív ásványkő",
+  "price": 749,
+  "image": "5c586a27d60d930a487c5e30b215bd8d",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "641c1f161f5325448f57d68a"
+  },
+  "prodname": "Unakit ásványkő",
+  "price": 799,
+  "image": "514e51ea6eb430f33181ac46dbf79e99",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "641c1e891f5325448f57d67a"
+  },
+  "prodname": "Amazonit ásványkő",
+  "price": 799,
+  "image": "0ae212881b795563f3fa7f94967a12c8",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "641c1f371f5325448f57d692"
+  },
+  "prodname": "Vörös jáspis ásványkő",
+  "price": 799,
+  "image": "cdac4482e3cabc75d747df91b7cf612e",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "641c1d961f5325448f57d658"
+  },
+  "prodname": "Rózsakvarc ásványkő",
+  "price": 799,
+  "image": "00995ab3314ab66fe329197810c42118",
+  "__v": 0
+}]
