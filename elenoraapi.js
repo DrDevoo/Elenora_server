@@ -97,7 +97,7 @@ cron.schedule('00 17 31 3 *', async function() {
 //Szerver certificates
 const httpServer = http.createServer(app);
 //Az app nyitott portjai
-httpServer.listen(3500, () => {
+httpServer.listen(3950, () => {
   console.log('---HTTP gerinc szerver elerheto a 3500 porton---');
 });
 
@@ -105,6 +105,6 @@ const httpsServer = https.createServer({
   key: fs.readFileSync('/etc/letsencrypt/live/elenora.hu/privkey.pem'),
   cert: fs.readFileSync('/etc/letsencrypt/live/elenora.hu/fullchain.pem'),
 }, app);
-httpsServer.listen(420, () => {
+httpsServer.listen(445, () => {
   console.log('---HTTPS gerinc szerver elerheto a 420 porton---');
 });
