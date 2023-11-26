@@ -103,7 +103,9 @@ async function sendSzamlaMail(id,szamlaid){
 }
 
 
-async function sendOrderSYS(id){
+async function sendOrderSYS(id) {
+     console.log("Fut az email kuldes...")
+     const order = await Orders.findById(id);
      message = {
           from: "informacio@elenora.hu",
           to: ["krichard001@icloud.com","h.krisztina0530@gmail.com"],

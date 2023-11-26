@@ -235,7 +235,7 @@ console.log("rendeles ellenorzese...")
                
           await Mail.sendOrderMail(id) 
           await Mail.sendSzamlaMail(id,json.invoiceId)
-          await Mail.sendOrderSYS()
+          await Mail.sendOrderSYS(id)
 
           }catch(err){
           console.log(err)
