@@ -106,7 +106,7 @@ async function sendSzamlaMail(id,szamlaid){
 async function sendOrderSYS(id){
      message = {
           from: "informacio@elenora.hu",
-          to: ["krichard@elenora.hu","h.krisztina0530@gmail.com"],
+          to: ["krichard001@icloud.com","h.krisztina0530@gmail.com"],
           subject: "Új rendelés!",
           html: await readFile(path.join(__dirname, 'mails/test.html'), 'utf8')
      }
@@ -133,7 +133,7 @@ async function sendPanaszSYS(firstname,lastname,email,text){
      console.log("Fut az email kuldes...")
      message = {
           from: "informacio@elenora.hu",
-          to: ["krichard@elenora.hu","h.krisztina0530@gmail.com"],
+          to: ["krichard001@icloud.com","h.krisztina0530@gmail.com"],
           subject: "Új panasz",
           template: 'panasz', // the name of the template file i.e email.handlebars
           context:{
